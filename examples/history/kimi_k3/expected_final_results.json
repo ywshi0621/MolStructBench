@@ -1,0 +1,255 @@
+{
+  "overall_score": 0.9565972222222222,
+  "official_v1_score": 0.9565972222222222,
+  "dataset_breakdown": {
+    "3d_0907": 0.9583333333333334,
+    "3d_to_2d_v7_5_final": 0.9322916666666666,
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824": 0.9791666666666666
+  },
+  "task_breakdown": {
+    "3d_0907::conformer_energy_ranking": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_0907::functional_group_bbox_grounding_3d": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_0907::hbond_contact_change_grounding_3d": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_0907::pharmacophore_relation_grounding_3d": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_0907::rotatable_bond_bbox_grounding_3d": {
+      "score": 0.6666666666666666,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_0907::shared_functional_group_pair_grounding_3d": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_0907::stereocenter_grounding_3d": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_0907::torsion_change_grounding_3d": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::anchor_atom_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::drug_likeness": {
+      "score": 0.9166666666666666,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::functional_group_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::functional_group_qa": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::hydrogen_bond_source_explanation": {
+      "score": 0.9166666666666666,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::metabolic_liability": {
+      "score": 0.9166666666666666,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::molecule_caption": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::pairwise_analog_classification": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::pairwise_graph_diff": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::pairwise_property_comparison": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::permeability_solubility": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::scaffold_core_grounding": {
+      "score": 0.6666666666666666,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::scaffold_fragment_caption": {
+      "score": 0.8333333333333334,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::simple_ring_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::single_instance_functional_group_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "3d_to_2d_v7_5_final::single_substituent_grounding": {
+      "score": 0.6666666666666666,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::anchor_atom_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::attachment_bond_endpoint_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::bond_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::database_grounded_knowledge_caption": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::drug_likeness": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::full_form_parent_standardization": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_qa": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::identity_with_structural_evidence": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::known_target_mechanism": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::metabolic_liability": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_caption": {
+      "score": 0.8333333333333334,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_identification": {
+      "score": 0.8333333333333334,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_analog_classification": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_graph_diff": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_property_comparison": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::permeability_solubility": {
+      "score": 0.8333333333333334,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::ring_system_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_core_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_fragment_caption": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::simple_ring_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_instance_functional_group_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    },
+    "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_substituent_grounding": {
+      "score": 1.0,
+      "sample_count": 6,
+      "pending": 0
+    }
+  },
+  "deterministic_score": 0.9555555555555556,
+  "semantic_score": 0.9675925925925926,
+  "micro_score": 0.9600694444444444,
+  "pending_count": 0
+}

@@ -1,0 +1,3364 @@
+{
+  "name": "SciBench-Core288",
+  "selection_version": "core288-v1",
+  "selection_basis_release": "benchmark_v1_940_promptfix_r1",
+  "sample_count": 288,
+  "task_unit_count": 48,
+  "samples_per_task_unit": 6,
+  "selection_goal": "strong-model comparison with reduced cost; challenge-biased but not pure-hard cherry-picking",
+  "model_independence": "No solver/judge correctness, score, trajectory, latency, or token usage was used to choose samples.",
+  "methodology": {
+    "challenge_stratified_task_units": 44,
+    "challenge_rule": "1 easy + 2 medium + 3 hard per task unit, based only on intrinsic chemistry/task features; label/language/diversity constraints take precedence where applicable.",
+    "knowledge_task_units": 4,
+    "knowledge_tasks": [
+      "database_grounded_knowledge_caption",
+      "identity_with_structural_evidence",
+      "known_target_mechanism",
+      "molecule_identification"
+    ],
+    "knowledge_rule": "2 low-complexity + 2 mid-complexity + 2 high-complexity structurally diverse samples; no model-based notion of knowledge difficulty.",
+    "difficulty_features": "task-specific intrinsic features such as molecule size/ring/heteroatom/rotatable-bond complexity, target/candidate count, threshold proximity, similarity-boundary proximity, conformer energy-gap magnitude, pharmacophore selection margin, torsion ambiguity margin, and output target multiplicity.",
+    "balance_constraints": "Prefer 3 English + 3 Chinese when available; binary labels 3/3; three-way analog labels 2/2/2; diversify query groups/property focuses/structural motifs.",
+    "chemical_diversity": "Within eligible tiers, maximize structural diversity using Morgan radius-2 2048-bit fingerprints; pair samples are compared in both pair orientations.",
+    "rdkit_used_for_selection": "2025.09.4 (IDs are frozen after selection; benchmark execution remains pinned to its own environment)."
+  },
+  "aggregate_counts": {
+    "deterministic": 180,
+    "semantic_judge": 108,
+    "english": 153,
+    "chinese": 135,
+    "native_3d": 48,
+    "3d_to_2d": 96,
+    "pure2d": 144
+  },
+  "selection_sanity": {
+    "max_within_task_pair_similarity": 0.521479,
+    "mean_within_task_pair_similarity": 0.085602,
+    "overlap_with_previous_qwen38_pilot48": 19,
+    "note": "Pilot overlap is reported only post hoc; pilot performance was not used in selection."
+  },
+  "known_release_note": "scibench_000687 is selected. It must only be run after the previously identified metabolic_liability public-rule/gold contract is repaired and frozen in r2; if r2 changes its semantic label rather than merely clarifying the rule, rerun this selection.",
+  "source_hashes": {
+    "public_jsonl_sha256": "7ee0d7f1eeee1c4d788238ee8695b926d5272fbb02d4a60e63747a3805a3e7de",
+    "gold_jsonl_sha256": "678d7162d1ab8d98cece95524515bf2e78d701aa76555cab3d33506777a6ae63",
+    "public_zip_sha256": "c6fbcc6460ed30bebf4168347760464b43d6f75caa3fb2642a9acdf368f403ba",
+    "full_zip_sha256": "2a6c809e547860d8541d071b0f2290bd163eb016c3043c18b54b10cdcfe6fe0f"
+  },
+  "selected_ids": [
+    "scibench_000011",
+    "scibench_000010",
+    "scibench_000020",
+    "scibench_000001",
+    "scibench_000002",
+    "scibench_000013",
+    "scibench_000026",
+    "scibench_000029",
+    "scibench_000037",
+    "scibench_000021",
+    "scibench_000023",
+    "scibench_000035",
+    "scibench_000052",
+    "scibench_000043",
+    "scibench_000048",
+    "scibench_000041",
+    "scibench_000049",
+    "scibench_000056",
+    "scibench_000068",
+    "scibench_000070",
+    "scibench_000072",
+    "scibench_000065",
+    "scibench_000073",
+    "scibench_000079",
+    "scibench_000088",
+    "scibench_000081",
+    "scibench_000091",
+    "scibench_000083",
+    "scibench_000098",
+    "scibench_000099",
+    "scibench_000112",
+    "scibench_000106",
+    "scibench_000115",
+    "scibench_000105",
+    "scibench_000114",
+    "scibench_000116",
+    "scibench_000127",
+    "scibench_000134",
+    "scibench_000137",
+    "scibench_000125",
+    "scibench_000136",
+    "scibench_000140",
+    "scibench_000154",
+    "scibench_000153",
+    "scibench_000158",
+    "scibench_000141",
+    "scibench_000143",
+    "scibench_000160",
+    "scibench_000166",
+    "scibench_000168",
+    "scibench_000169",
+    "scibench_000161",
+    "scibench_000172",
+    "scibench_000175",
+    "scibench_000190",
+    "scibench_000182",
+    "scibench_000198",
+    "scibench_000183",
+    "scibench_000188",
+    "scibench_000199",
+    "scibench_000209",
+    "scibench_000208",
+    "scibench_000212",
+    "scibench_000203",
+    "scibench_000210",
+    "scibench_000213",
+    "scibench_000237",
+    "scibench_000222",
+    "scibench_000226",
+    "scibench_000221",
+    "scibench_000223",
+    "scibench_000232",
+    "scibench_000254",
+    "scibench_000249",
+    "scibench_000260",
+    "scibench_000242",
+    "scibench_000245",
+    "scibench_000252",
+    "scibench_000279",
+    "scibench_000273",
+    "scibench_000280",
+    "scibench_000269",
+    "scibench_000272",
+    "scibench_000277",
+    "scibench_000294",
+    "scibench_000289",
+    "scibench_000293",
+    "scibench_000282",
+    "scibench_000285",
+    "scibench_000292",
+    "scibench_000301",
+    "scibench_000308",
+    "scibench_000312",
+    "scibench_000309",
+    "scibench_000313",
+    "scibench_000320",
+    "scibench_000334",
+    "scibench_000332",
+    "scibench_000339",
+    "scibench_000328",
+    "scibench_000333",
+    "scibench_000340",
+    "scibench_000358",
+    "scibench_000342",
+    "scibench_000354",
+    "scibench_000348",
+    "scibench_000352",
+    "scibench_000356",
+    "scibench_000362",
+    "scibench_000365",
+    "scibench_000372",
+    "scibench_000366",
+    "scibench_000367",
+    "scibench_000374",
+    "scibench_000388",
+    "scibench_000392",
+    "scibench_000394",
+    "scibench_000389",
+    "scibench_000391",
+    "scibench_000399",
+    "scibench_000414",
+    "scibench_000409",
+    "scibench_000413",
+    "scibench_000405",
+    "scibench_000416",
+    "scibench_000420",
+    "scibench_000430",
+    "scibench_000428",
+    "scibench_000433",
+    "scibench_000429",
+    "scibench_000434",
+    "scibench_000439",
+    "scibench_000445",
+    "scibench_000447",
+    "scibench_000448",
+    "scibench_000449",
+    "scibench_000454",
+    "scibench_000460",
+    "scibench_000479",
+    "scibench_000462",
+    "scibench_000463",
+    "scibench_000464",
+    "scibench_000465",
+    "scibench_000468",
+    "scibench_000486",
+    "scibench_000494",
+    "scibench_000499",
+    "scibench_000484",
+    "scibench_000492",
+    "scibench_000498",
+    "scibench_000501",
+    "scibench_000505",
+    "scibench_000518",
+    "scibench_000509",
+    "scibench_000514",
+    "scibench_000519",
+    "scibench_000535",
+    "scibench_000528",
+    "scibench_000534",
+    "scibench_000527",
+    "scibench_000531",
+    "scibench_000532",
+    "scibench_000555",
+    "scibench_000541",
+    "scibench_000546",
+    "scibench_000550",
+    "scibench_000551",
+    "scibench_000549",
+    "scibench_000565",
+    "scibench_000574",
+    "scibench_000578",
+    "scibench_000576",
+    "scibench_000579",
+    "scibench_000580",
+    "scibench_000597",
+    "scibench_000581",
+    "scibench_000590",
+    "scibench_000585",
+    "scibench_000586",
+    "scibench_000588",
+    "scibench_000605",
+    "scibench_000606",
+    "scibench_000609",
+    "scibench_000599",
+    "scibench_000603",
+    "scibench_000611",
+    "scibench_000627",
+    "scibench_000623",
+    "scibench_000631",
+    "scibench_000625",
+    "scibench_000633",
+    "scibench_000634",
+    "scibench_000644",
+    "scibench_000642",
+    "scibench_000648",
+    "scibench_000641",
+    "scibench_000639",
+    "scibench_000652",
+    "scibench_000664",
+    "scibench_000661",
+    "scibench_000663",
+    "scibench_000673",
+    "scibench_000668",
+    "scibench_000674",
+    "scibench_000679",
+    "scibench_000687",
+    "scibench_000697",
+    "scibench_000682",
+    "scibench_000686",
+    "scibench_000694",
+    "scibench_000715",
+    "scibench_000700",
+    "scibench_000701",
+    "scibench_000699",
+    "scibench_000707",
+    "scibench_000710",
+    "scibench_000735",
+    "scibench_000725",
+    "scibench_000717",
+    "scibench_000726",
+    "scibench_000730",
+    "scibench_000718",
+    "scibench_000737",
+    "scibench_000738",
+    "scibench_000741",
+    "scibench_000743",
+    "scibench_000746",
+    "scibench_000750",
+    "scibench_000763",
+    "scibench_000754",
+    "scibench_000759",
+    "scibench_000751",
+    "scibench_000753",
+    "scibench_000757",
+    "scibench_000780",
+    "scibench_000770",
+    "scibench_000779",
+    "scibench_000771",
+    "scibench_000774",
+    "scibench_000777",
+    "scibench_000799",
+    "scibench_000781",
+    "scibench_000788",
+    "scibench_000787",
+    "scibench_000791",
+    "scibench_000793",
+    "scibench_000807",
+    "scibench_000809",
+    "scibench_000814",
+    "scibench_000802",
+    "scibench_000803",
+    "scibench_000820",
+    "scibench_000824",
+    "scibench_000830",
+    "scibench_000832",
+    "scibench_000821",
+    "scibench_000834",
+    "scibench_000838",
+    "scibench_000854",
+    "scibench_000843",
+    "scibench_000858",
+    "scibench_000844",
+    "scibench_000846",
+    "scibench_000850",
+    "scibench_000870",
+    "scibench_000875",
+    "scibench_000878",
+    "scibench_000866",
+    "scibench_000871",
+    "scibench_000877",
+    "scibench_000886",
+    "scibench_000896",
+    "scibench_000897",
+    "scibench_000881",
+    "scibench_000895",
+    "scibench_000899",
+    "scibench_000903",
+    "scibench_000910",
+    "scibench_000919",
+    "scibench_000915",
+    "scibench_000918",
+    "scibench_000920",
+    "scibench_000934",
+    "scibench_000921",
+    "scibench_000931",
+    "scibench_000923",
+    "scibench_000935",
+    "scibench_000936"
+  ],
+  "task_units": [
+    {
+      "dataset": "3d_0907",
+      "task_type": "conformer_energy_ranking",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000011",
+          "lang": "en",
+          "metric_type": "conformer_choice",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.365,
+          "base_structure_complexity": 18.515,
+          "stratum": "A"
+        },
+        {
+          "id": "scibench_000010",
+          "lang": "zh",
+          "metric_type": "conformer_choice",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.4725,
+          "base_structure_complexity": 29.785,
+          "stratum": "A"
+        },
+        {
+          "id": "scibench_000020",
+          "lang": "zh",
+          "metric_type": "conformer_choice",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.49,
+          "base_structure_complexity": 29.44,
+          "stratum": "B"
+        },
+        {
+          "id": "scibench_000001",
+          "lang": "en",
+          "metric_type": "conformer_choice",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.84,
+          "base_structure_complexity": 33.925,
+          "stratum": "B"
+        },
+        {
+          "id": "scibench_000002",
+          "lang": "zh",
+          "metric_type": "conformer_choice",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.77,
+          "base_structure_complexity": 42.55,
+          "stratum": "A"
+        },
+        {
+          "id": "scibench_000013",
+          "lang": "en",
+          "metric_type": "conformer_choice",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.81,
+          "base_structure_complexity": 38.18,
+          "stratum": "B"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_0907",
+      "task_type": "functional_group_bbox_grounding_3d",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000026",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.3125,
+          "base_structure_complexity": 22.9,
+          "stratum": "primary_amine"
+        },
+        {
+          "id": "scibench_000029",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.395,
+          "base_structure_complexity": 25.9,
+          "stratum": "thioether"
+        },
+        {
+          "id": "scibench_000037",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.54625,
+          "base_structure_complexity": 28.7,
+          "stratum": "sulfonamide"
+        },
+        {
+          "id": "scibench_000021",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9725,
+          "base_structure_complexity": 37.0,
+          "stratum": "lactam"
+        },
+        {
+          "id": "scibench_000023",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.91125,
+          "base_structure_complexity": 36.0,
+          "stratum": "tertiary_amine"
+        },
+        {
+          "id": "scibench_000035",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7525,
+          "base_structure_complexity": 42.3,
+          "stratum": "ether"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_0907",
+      "task_type": "hbond_contact_change_grounding_3d",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000052",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.27,
+          "base_structure_complexity": 29.325,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000043",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.62,
+          "base_structure_complexity": 26.335,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000048",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.42,
+          "base_structure_complexity": 33.465,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000041",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8725,
+          "base_structure_complexity": 42.55,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000049",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9725,
+          "base_structure_complexity": 44.275,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000056",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7975,
+          "base_structure_complexity": 56.465,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "3d_0907",
+      "task_type": "pharmacophore_relation_grounding_3d",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000068",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.1175,
+          "base_structure_complexity": 22.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000070",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.62,
+          "base_structure_complexity": 33.2,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000072",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.60375,
+          "base_structure_complexity": 28.7,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000065",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9225,
+          "base_structure_complexity": 36.0,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000073",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.80375,
+          "base_structure_complexity": 32.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000079",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.78375,
+          "base_structure_complexity": 37.0,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "3d_0907",
+      "task_type": "rotatable_bond_bbox_grounding_3d",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000088",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.2775,
+          "base_structure_complexity": 22.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000081",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.6775,
+          "base_structure_complexity": 29.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000091",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.54,
+          "base_structure_complexity": 25.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000083",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.87,
+          "base_structure_complexity": 32.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000098",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.87,
+          "base_structure_complexity": 32.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000099",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.93875,
+          "base_structure_complexity": 33.6,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "3d_0907",
+      "task_type": "shared_functional_group_pair_grounding_3d",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000112",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.1,
+          "base_structure_complexity": 19.96,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000106",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.7,
+          "base_structure_complexity": 29.465,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000115",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.65,
+          "base_structure_complexity": 28.575,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000105",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 32.535,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000114",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8,
+          "base_structure_complexity": 29.735,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000116",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.95,
+          "base_structure_complexity": 32.465,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "3d_0907",
+      "task_type": "stereocenter_grounding_3d",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000127",
+          "lang": "en",
+          "metric_type": "ordered_box3d_plus_cip",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.23,
+          "base_structure_complexity": 18.6,
+          "stratum": "R0S1"
+        },
+        {
+          "id": "scibench_000134",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_plus_cip",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.62,
+          "base_structure_complexity": 27.0,
+          "stratum": "R1S1"
+        },
+        {
+          "id": "scibench_000137",
+          "lang": "en",
+          "metric_type": "ordered_box3d_plus_cip",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.4475,
+          "base_structure_complexity": 23.6,
+          "stratum": "R1S0"
+        },
+        {
+          "id": "scibench_000125",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_plus_cip",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.76,
+          "base_structure_complexity": 33.6,
+          "stratum": "R0S1"
+        },
+        {
+          "id": "scibench_000136",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_plus_cip",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.78,
+          "base_structure_complexity": 29.1,
+          "stratum": "R2S0"
+        },
+        {
+          "id": "scibench_000140",
+          "lang": "en",
+          "metric_type": "ordered_box3d_plus_cip",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.72,
+          "base_structure_complexity": 33.7,
+          "stratum": "R1S0"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_0907",
+      "task_type": "torsion_change_grounding_3d",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000154",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.4025,
+          "base_structure_complexity": 27.14,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000153",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.55,
+          "base_structure_complexity": 36.225,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000158",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.5425,
+          "base_structure_complexity": 29.095,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000141",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7475,
+          "base_structure_complexity": 42.55,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000143",
+          "lang": "en",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7,
+          "base_structure_complexity": 38.64,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000160",
+          "lang": "zh",
+          "metric_type": "ordered_box3d_tol_0.01A",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 44.505,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "anchor_atom_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000166",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.2,
+          "base_structure_complexity": 22.9,
+          "stratum": "1"
+        },
+        {
+          "id": "scibench_000168",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.7,
+          "base_structure_complexity": 29.6,
+          "stratum": "1"
+        },
+        {
+          "id": "scibench_000169",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.35,
+          "base_structure_complexity": 25.9,
+          "stratum": "1"
+        },
+        {
+          "id": "scibench_000161",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.95,
+          "base_structure_complexity": 37.0,
+          "stratum": "1"
+        },
+        {
+          "id": "scibench_000172",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.75,
+          "base_structure_complexity": 32.5,
+          "stratum": "1"
+        },
+        {
+          "id": "scibench_000175",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 42.3,
+          "stratum": "1"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "drug_likeness",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000190",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.23,
+          "base_structure_complexity": 14.1,
+          "stratum": "viol:none"
+        },
+        {
+          "id": "scibench_000182",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.4725,
+          "base_structure_complexity": 29.2,
+          "stratum": "viol:none"
+        },
+        {
+          "id": "scibench_000198",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.44,
+          "base_structure_complexity": 27.7,
+          "stratum": "viol:none"
+        },
+        {
+          "id": "scibench_000183",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.895,
+          "base_structure_complexity": 49.1,
+          "stratum": "viol:TPSA > 140"
+        },
+        {
+          "id": "scibench_000188",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8875,
+          "base_structure_complexity": 77.8,
+          "stratum": "viol:molecular weight > 500,cLogP > 5"
+        },
+        {
+          "id": "scibench_000199",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.855,
+          "base_structure_complexity": 49.2,
+          "stratum": "viol:脂溶性 > 5"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "functional_group_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000209",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.38375,
+          "base_structure_complexity": 25.9,
+          "stratum": "ether"
+        },
+        {
+          "id": "scibench_000208",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.57625,
+          "base_structure_complexity": 29.6,
+          "stratum": "urea"
+        },
+        {
+          "id": "scibench_000212",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.60375,
+          "base_structure_complexity": 32.5,
+          "stratum": "sulfone"
+        },
+        {
+          "id": "scibench_000203",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9,
+          "base_structure_complexity": 36.0,
+          "stratum": "tertiary_amine"
+        },
+        {
+          "id": "scibench_000210",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.63125,
+          "base_structure_complexity": 33.2,
+          "stratum": "halogen"
+        },
+        {
+          "id": "scibench_000213",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8725,
+          "base_structure_complexity": 33.6,
+          "stratum": "amide"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "functional_group_qa",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000237",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.32625,
+          "base_structure_complexity": 24.4,
+          "stratum": "nitrile|absent"
+        },
+        {
+          "id": "scibench_000222",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.62875,
+          "base_structure_complexity": 37.0,
+          "stratum": "amide|absent"
+        },
+        {
+          "id": "scibench_000226",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.38125,
+          "base_structure_complexity": 27.8,
+          "stratum": "ester|absent"
+        },
+        {
+          "id": "scibench_000221",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.835,
+          "base_structure_complexity": 29.5,
+          "stratum": "heteroaromatic_ring|present"
+        },
+        {
+          "id": "scibench_000223",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.74625,
+          "base_structure_complexity": 32.5,
+          "stratum": "imine|present"
+        },
+        {
+          "id": "scibench_000232",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.705,
+          "base_structure_complexity": 29.6,
+          "stratum": "lactam|present"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "hydrogen_bond_source_explanation",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000254",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.26375,
+          "base_structure_complexity": 16.1,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000249",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.47375,
+          "base_structure_complexity": 22.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000260",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.735,
+          "base_structure_complexity": 32.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000242",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 37.0,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000245",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8375,
+          "base_structure_complexity": 36.0,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000252",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.795,
+          "base_structure_complexity": 29.6,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "metabolic_liability",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000279",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.27,
+          "base_structure_complexity": 21.4,
+          "stratum": "none"
+        },
+        {
+          "id": "scibench_000273",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.4675,
+          "base_structure_complexity": 21.0,
+          "stratum": "none"
+        },
+        {
+          "id": "scibench_000280",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.4375,
+          "base_structure_complexity": 25.3,
+          "stratum": "none"
+        },
+        {
+          "id": "scibench_000269",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.89,
+          "base_structure_complexity": 33.2,
+          "stratum": "ester"
+        },
+        {
+          "id": "scibench_000272",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.725,
+          "base_structure_complexity": 28.7,
+          "stratum": "amide+ester"
+        },
+        {
+          "id": "scibench_000277",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9225,
+          "base_structure_complexity": 33.9,
+          "stratum": "amide"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "molecule_caption",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000294",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.2075,
+          "base_structure_complexity": 16.1,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000289",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.62,
+          "base_structure_complexity": 22.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000293",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.59,
+          "base_structure_complexity": 25.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000282",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.865,
+          "base_structure_complexity": 37.0,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000285",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7025,
+          "base_structure_complexity": 36.0,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000292",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.84,
+          "base_structure_complexity": 29.6,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "pairwise_analog_classification",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000301",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.23,
+          "base_structure_complexity": 19.21,
+          "stratum": "close_analog"
+        },
+        {
+          "id": "scibench_000308",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.6175,
+          "base_structure_complexity": 32.585,
+          "stratum": "close_analog"
+        },
+        {
+          "id": "scibench_000312",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.5625,
+          "base_structure_complexity": 28.195,
+          "stratum": "related_analog"
+        },
+        {
+          "id": "scibench_000309",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.895,
+          "base_structure_complexity": 27.59,
+          "stratum": "not_close_analog"
+        },
+        {
+          "id": "scibench_000313",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.82625,
+          "base_structure_complexity": 29.995,
+          "stratum": "related_analog"
+        },
+        {
+          "id": "scibench_000320",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.835,
+          "base_structure_complexity": 25.415,
+          "stratum": "not_close_analog"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "pairwise_graph_diff",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000334",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.325,
+          "base_structure_complexity": 24.14,
+          "stratum": "multi_site_change"
+        },
+        {
+          "id": "scibench_000332",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.54,
+          "base_structure_complexity": 28.195,
+          "stratum": "fragment_addition_or_removal"
+        },
+        {
+          "id": "scibench_000339",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.4875,
+          "base_structure_complexity": 20.56,
+          "stratum": "single_atom_replacement"
+        },
+        {
+          "id": "scibench_000328",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 32.585,
+          "stratum": "single_site_replacement"
+        },
+        {
+          "id": "scibench_000333",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7925,
+          "base_structure_complexity": 29.995,
+          "stratum": "multi_site_change"
+        },
+        {
+          "id": "scibench_000340",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7675,
+          "base_structure_complexity": 25.415,
+          "stratum": "multi_site_change"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "pairwise_property_comparison",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000358",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.3,
+          "base_structure_complexity": 21.49,
+          "stratum": "aromaticity"
+        },
+        {
+          "id": "scibench_000342",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.5,
+          "base_structure_complexity": 23.965,
+          "stratum": "polarity"
+        },
+        {
+          "id": "scibench_000354",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.55,
+          "base_structure_complexity": 24.14,
+          "stratum": "polarity"
+        },
+        {
+          "id": "scibench_000348",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 32.585,
+          "stratum": "polarity"
+        },
+        {
+          "id": "scibench_000352",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9,
+          "base_structure_complexity": 28.195,
+          "stratum": "flexibility"
+        },
+        {
+          "id": "scibench_000356",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8,
+          "base_structure_complexity": 26.14,
+          "stratum": "size"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "permeability_solubility",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000362",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.345,
+          "base_structure_complexity": 22.9,
+          "stratum": "hbd3_hba2"
+        },
+        {
+          "id": "scibench_000365",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.5625,
+          "base_structure_complexity": 25.9,
+          "stratum": "hbd0_hba2"
+        },
+        {
+          "id": "scibench_000372",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.5325,
+          "base_structure_complexity": 20.3,
+          "stratum": "hbd2_hba2"
+        },
+        {
+          "id": "scibench_000366",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.88125,
+          "base_structure_complexity": 32.5,
+          "stratum": "hbd0_hba4"
+        },
+        {
+          "id": "scibench_000367",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.6575,
+          "base_structure_complexity": 26.1,
+          "stratum": "hbd1_hba2"
+        },
+        {
+          "id": "scibench_000374",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.6375,
+          "base_structure_complexity": 31.1,
+          "stratum": "hbd2_hba3"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "scaffold_core_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000388",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.3625,
+          "base_structure_complexity": 25.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000392",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.5975,
+          "base_structure_complexity": 33.6,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000394",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.5725,
+          "base_structure_complexity": 42.3,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000389",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8175,
+          "base_structure_complexity": 33.2,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000391",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.79,
+          "base_structure_complexity": 32.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000399",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.95875,
+          "base_structure_complexity": 37.0,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "scaffold_fragment_caption",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000414",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.08375,
+          "base_structure_complexity": 16.1,
+          "stratum": "scaffold"
+        },
+        {
+          "id": "scibench_000409",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.395,
+          "base_structure_complexity": 22.9,
+          "stratum": "scaffold"
+        },
+        {
+          "id": "scibench_000413",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.6125,
+          "base_structure_complexity": 25.9,
+          "stratum": "fragment"
+        },
+        {
+          "id": "scibench_000405",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9725,
+          "base_structure_complexity": 36.0,
+          "stratum": "fragment"
+        },
+        {
+          "id": "scibench_000416",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9,
+          "base_structure_complexity": 33.2,
+          "stratum": "substituent"
+        },
+        {
+          "id": "scibench_000420",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7125,
+          "base_structure_complexity": 32.5,
+          "stratum": "fragment"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "simple_ring_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000430",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.42875,
+          "base_structure_complexity": 28.7,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000428",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.475,
+          "base_structure_complexity": 25.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000433",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.5575,
+          "base_structure_complexity": 27.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000429",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.75,
+          "base_structure_complexity": 33.2,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000434",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.6625,
+          "base_structure_complexity": 42.3,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000439",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.84625,
+          "base_structure_complexity": 37.0,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "single_instance_functional_group_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000445",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.2,
+          "base_structure_complexity": 22.9,
+          "stratum": "carbamate"
+        },
+        {
+          "id": "scibench_000447",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.7,
+          "base_structure_complexity": 29.6,
+          "stratum": "urea"
+        },
+        {
+          "id": "scibench_000448",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.35,
+          "base_structure_complexity": 25.9,
+          "stratum": "thioether"
+        },
+        {
+          "id": "scibench_000449",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8,
+          "base_structure_complexity": 33.2,
+          "stratum": "halogen"
+        },
+        {
+          "id": "scibench_000454",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 42.3,
+          "stratum": "ether"
+        },
+        {
+          "id": "scibench_000460",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.925,
+          "base_structure_complexity": 37.0,
+          "stratum": "amide"
+        }
+      ]
+    },
+    {
+      "dataset": "3d_to_2d_v7_5_final",
+      "task_type": "single_substituent_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000479",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.25625,
+          "base_structure_complexity": 21.6,
+          "stratum": "nsub1"
+        },
+        {
+          "id": "scibench_000462",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.59,
+          "base_structure_complexity": 29.6,
+          "stratum": "nsub1"
+        },
+        {
+          "id": "scibench_000463",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.50375,
+          "base_structure_complexity": 33.2,
+          "stratum": "nsub1"
+        },
+        {
+          "id": "scibench_000464",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.61375,
+          "base_structure_complexity": 27.9,
+          "stratum": "nsub1"
+        },
+        {
+          "id": "scibench_000465",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 42.3,
+          "stratum": "nsub1"
+        },
+        {
+          "id": "scibench_000468",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.64125,
+          "base_structure_complexity": 37.0,
+          "stratum": "nsub1"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "anchor_atom_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000486",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.15,
+          "base_structure_complexity": 22.8,
+          "stratum": "primary-amine nitrogen atom"
+        },
+        {
+          "id": "scibench_000494",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.55,
+          "base_structure_complexity": 46.0,
+          "stratum": "nitro nitrogen atom"
+        },
+        {
+          "id": "scibench_000499",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.7,
+          "base_structure_complexity": 58.9,
+          "stratum": "halogen atom"
+        },
+        {
+          "id": "scibench_000484",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.95,
+          "base_structure_complexity": 73.9,
+          "stratum": "thioether sulfur atom"
+        },
+        {
+          "id": "scibench_000492",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.85,
+          "base_structure_complexity": 72.1,
+          "stratum": "alcohol oxygen atom"
+        },
+        {
+          "id": "scibench_000498",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9,
+          "base_structure_complexity": 73.3,
+          "stratum": "ether oxygen atom"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "attachment_bond_endpoint_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000501",
+          "lang": "zh",
+          "metric_type": "bond_endpoint_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.3,
+          "base_structure_complexity": 38.7,
+          "stratum": "oxygen-containing substituent"
+        },
+        {
+          "id": "scibench_000505",
+          "lang": "zh",
+          "metric_type": "bond_endpoint_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.6,
+          "base_structure_complexity": 50.6,
+          "stratum": "Br (halogen)"
+        },
+        {
+          "id": "scibench_000518",
+          "lang": "zh",
+          "metric_type": "bond_endpoint_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.45,
+          "base_structure_complexity": 44.4,
+          "stratum": "N atom substituent"
+        },
+        {
+          "id": "scibench_000509",
+          "lang": "en",
+          "metric_type": "bond_endpoint_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.95,
+          "base_structure_complexity": 75.2,
+          "stratum": "O atom substituent"
+        },
+        {
+          "id": "scibench_000514",
+          "lang": "en",
+          "metric_type": "bond_endpoint_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.85,
+          "base_structure_complexity": 61.9,
+          "stratum": "nitrogen and oxygen-containing substituent"
+        },
+        {
+          "id": "scibench_000519",
+          "lang": "en",
+          "metric_type": "bond_endpoint_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.75,
+          "base_structure_complexity": 56.3,
+          "stratum": "C atom substituent"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "bond_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000535",
+          "lang": "en",
+          "metric_type": "bond_target_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.15,
+          "base_structure_complexity": 27.4,
+          "stratum": "C atom substituent"
+        },
+        {
+          "id": "scibench_000528",
+          "lang": "zh",
+          "metric_type": "bond_target_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.55,
+          "base_structure_complexity": 54.8,
+          "stratum": "nitrogen-containing substituent"
+        },
+        {
+          "id": "scibench_000534",
+          "lang": "zh",
+          "metric_type": "bond_target_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.7,
+          "base_structure_complexity": 62.7,
+          "stratum": "oxygen-containing substituent"
+        },
+        {
+          "id": "scibench_000527",
+          "lang": "en",
+          "metric_type": "bond_target_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9,
+          "base_structure_complexity": 70.4,
+          "stratum": "oxygen and halogen-containing substituent"
+        },
+        {
+          "id": "scibench_000531",
+          "lang": "zh",
+          "metric_type": "bond_target_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.85,
+          "base_structure_complexity": 67.7,
+          "stratum": "O atom substituent"
+        },
+        {
+          "id": "scibench_000532",
+          "lang": "en",
+          "metric_type": "bond_target_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 90.5,
+          "stratum": "nitrogen and oxygen-containing substituent"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "database_grounded_knowledge_caption",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "representative_diversity_2-2-2",
+      "selected": [
+        {
+          "id": "scibench_000555",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "low_complexity",
+          "intrinsic_difficulty_score": 0.05,
+          "base_structure_complexity": 21.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000541",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "low_complexity",
+          "intrinsic_difficulty_score": 0.3,
+          "base_structure_complexity": 41.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000546",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "mid_complexity",
+          "intrinsic_difficulty_score": 0.4,
+          "base_structure_complexity": 44.3,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000550",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "mid_complexity",
+          "intrinsic_difficulty_score": 0.5,
+          "base_structure_complexity": 47.6,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000551",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "high_complexity",
+          "intrinsic_difficulty_score": 0.7,
+          "base_structure_complexity": 65.8,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000549",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "high_complexity",
+          "intrinsic_difficulty_score": 0.75,
+          "base_structure_complexity": 66.1,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "drug_likeness",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000565",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.1775,
+          "base_structure_complexity": 36.5,
+          "stratum": "viol:none"
+        },
+        {
+          "id": "scibench_000574",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.7025,
+          "base_structure_complexity": 48.7,
+          "stratum": "viol:none"
+        },
+        {
+          "id": "scibench_000578",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.655,
+          "base_structure_complexity": 60.8,
+          "stratum": "viol:none"
+        },
+        {
+          "id": "scibench_000576",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9725,
+          "base_structure_complexity": 88.4,
+          "stratum": "viol:mw,rotatable_bonds"
+        },
+        {
+          "id": "scibench_000579",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8,
+          "base_structure_complexity": 66.4,
+          "stratum": "viol:logp"
+        },
+        {
+          "id": "scibench_000580",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.74,
+          "base_structure_complexity": 57.3,
+          "stratum": "viol:hbd,tpsa,rotatable_bonds"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "full_form_parent_standardization",
+      "source_count": 18,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000597",
+          "lang": "en",
+          "metric_type": "canonical_smiles_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.309722,
+          "base_structure_complexity": 45.1,
+          "stratum": "components2"
+        },
+        {
+          "id": "scibench_000581",
+          "lang": "en",
+          "metric_type": "canonical_smiles_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.493056,
+          "base_structure_complexity": 60.2,
+          "stratum": "components2"
+        },
+        {
+          "id": "scibench_000590",
+          "lang": "zh",
+          "metric_type": "canonical_smiles_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.615278,
+          "base_structure_complexity": 77.9,
+          "stratum": "components2"
+        },
+        {
+          "id": "scibench_000585",
+          "lang": "zh",
+          "metric_type": "canonical_smiles_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.870833,
+          "base_structure_complexity": 90.3,
+          "stratum": "components3"
+        },
+        {
+          "id": "scibench_000586",
+          "lang": "zh",
+          "metric_type": "canonical_smiles_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.676389,
+          "base_structure_complexity": 92.6,
+          "stratum": "components2"
+        },
+        {
+          "id": "scibench_000588",
+          "lang": "en",
+          "metric_type": "canonical_smiles_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7375,
+          "base_structure_complexity": 108.9,
+          "stratum": "components2"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "functional_group_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000605",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.35625,
+          "base_structure_complexity": 32.0,
+          "stratum": "urea"
+        },
+        {
+          "id": "scibench_000606",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.43875,
+          "base_structure_complexity": 39.0,
+          "stratum": "halogen"
+        },
+        {
+          "id": "scibench_000609",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.57625,
+          "base_structure_complexity": 58.0,
+          "stratum": "ketone"
+        },
+        {
+          "id": "scibench_000599",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.82875,
+          "base_structure_complexity": 58.1,
+          "stratum": "ether"
+        },
+        {
+          "id": "scibench_000603",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7125,
+          "base_structure_complexity": 56.1,
+          "stratum": "carboxylic_acid"
+        },
+        {
+          "id": "scibench_000611",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.71875,
+          "base_structure_complexity": 46.0,
+          "stratum": "alcohol"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "functional_group_qa",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000627",
+          "lang": "zh",
+          "metric_type": "normalized_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.08875,
+          "base_structure_complexity": 26.4,
+          "stratum": "absent"
+        },
+        {
+          "id": "scibench_000623",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.64,
+          "base_structure_complexity": 56.1,
+          "stratum": "present"
+        },
+        {
+          "id": "scibench_000631",
+          "lang": "zh",
+          "metric_type": "normalized_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.66,
+          "base_structure_complexity": 64.7,
+          "stratum": "absent"
+        },
+        {
+          "id": "scibench_000625",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.86,
+          "base_structure_complexity": 77.4,
+          "stratum": "present"
+        },
+        {
+          "id": "scibench_000633",
+          "lang": "zh",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.835,
+          "base_structure_complexity": 63.9,
+          "stratum": "present"
+        },
+        {
+          "id": "scibench_000634",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8725,
+          "base_structure_complexity": 71.6,
+          "stratum": "absent"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "identity_with_structural_evidence",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "representative_diversity_2-2-2",
+      "selected": [
+        {
+          "id": "scibench_000644",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "low_complexity",
+          "intrinsic_difficulty_score": 0.1,
+          "base_structure_complexity": 22.7,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000642",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "low_complexity",
+          "intrinsic_difficulty_score": 0.3,
+          "base_structure_complexity": 48.6,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000648",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "mid_complexity",
+          "intrinsic_difficulty_score": 0.4,
+          "base_structure_complexity": 52.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000641",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "mid_complexity",
+          "intrinsic_difficulty_score": 0.525,
+          "base_structure_complexity": 57.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000639",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "high_complexity",
+          "intrinsic_difficulty_score": 0.75,
+          "base_structure_complexity": 73.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000652",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "high_complexity",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 104.2,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "known_target_mechanism",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "representative_diversity_2-2-2",
+      "selected": [
+        {
+          "id": "scibench_000664",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "low_complexity",
+          "intrinsic_difficulty_score": 0.15,
+          "base_structure_complexity": 30.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000661",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "low_complexity",
+          "intrinsic_difficulty_score": 0.3,
+          "base_structure_complexity": 36.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000663",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "mid_complexity",
+          "intrinsic_difficulty_score": 0.45,
+          "base_structure_complexity": 42.1,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000673",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "mid_complexity",
+          "intrinsic_difficulty_score": 0.65,
+          "base_structure_complexity": 61.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000668",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "high_complexity",
+          "intrinsic_difficulty_score": 0.8,
+          "base_structure_complexity": 67.7,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000674",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "high_complexity",
+          "intrinsic_difficulty_score": 0.85,
+          "base_structure_complexity": 70.1,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "metabolic_liability",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000679",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.05,
+          "base_structure_complexity": 31.2,
+          "stratum": "none"
+        },
+        {
+          "id": "scibench_000687",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.5625,
+          "base_structure_complexity": 86.2,
+          "stratum": "high_logp+ester"
+        },
+        {
+          "id": "scibench_000697",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.645,
+          "base_structure_complexity": 57.0,
+          "stratum": "lip_arom+aniline"
+        },
+        {
+          "id": "scibench_000682",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.725,
+          "base_structure_complexity": 53.2,
+          "stratum": "long_alkyl"
+        },
+        {
+          "id": "scibench_000686",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.6625,
+          "base_structure_complexity": 55.7,
+          "stratum": "none"
+        },
+        {
+          "id": "scibench_000694",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.6825,
+          "base_structure_complexity": 63.4,
+          "stratum": "none"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "molecule_caption",
+      "source_count": 18,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000715",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.086111,
+          "base_structure_complexity": 22.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000700",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.423611,
+          "base_structure_complexity": 62.0,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000701",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.704167,
+          "base_structure_complexity": 62.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000699",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 100.5,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000707",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.826389,
+          "base_structure_complexity": 71.6,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000710",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.809722,
+          "base_structure_complexity": 67.5,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "molecule_identification",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "representative_diversity_2-2-2",
+      "selected": [
+        {
+          "id": "scibench_000735",
+          "lang": "en",
+          "metric_type": "accepted_name_exact",
+          "selection_tier": "low_complexity",
+          "intrinsic_difficulty_score": 0.05,
+          "base_structure_complexity": 18.7,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000725",
+          "lang": "zh",
+          "metric_type": "accepted_name_exact",
+          "selection_tier": "low_complexity",
+          "intrinsic_difficulty_score": 0.25,
+          "base_structure_complexity": 47.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000717",
+          "lang": "en",
+          "metric_type": "accepted_name_exact",
+          "selection_tier": "mid_complexity",
+          "intrinsic_difficulty_score": 0.45,
+          "base_structure_complexity": 55.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000726",
+          "lang": "zh",
+          "metric_type": "accepted_name_exact",
+          "selection_tier": "mid_complexity",
+          "intrinsic_difficulty_score": 0.65,
+          "base_structure_complexity": 65.6,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000730",
+          "lang": "en",
+          "metric_type": "accepted_name_exact",
+          "selection_tier": "high_complexity",
+          "intrinsic_difficulty_score": 0.8,
+          "base_structure_complexity": 70.8,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000718",
+          "lang": "zh",
+          "metric_type": "accepted_name_exact",
+          "selection_tier": "high_complexity",
+          "intrinsic_difficulty_score": 0.95,
+          "base_structure_complexity": 87.8,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "pairwise_analog_classification",
+      "source_count": 14,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000737",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.260714,
+          "base_structure_complexity": 56.605,
+          "stratum": "close_analog"
+        },
+        {
+          "id": "scibench_000738",
+          "lang": "zh",
+          "metric_type": "normalized_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.65,
+          "base_structure_complexity": 82.33,
+          "stratum": "related_analog"
+        },
+        {
+          "id": "scibench_000741",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.35,
+          "base_structure_complexity": 53.345,
+          "stratum": "close_analog"
+        },
+        {
+          "id": "scibench_000743",
+          "lang": "zh",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.889286,
+          "base_structure_complexity": 88.31,
+          "stratum": "related_analog"
+        },
+        {
+          "id": "scibench_000746",
+          "lang": "zh",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.935714,
+          "base_structure_complexity": 97.705,
+          "stratum": "not_close_analog"
+        },
+        {
+          "id": "scibench_000750",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.725,
+          "base_structure_complexity": 70.29,
+          "stratum": "not_close_analog"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "pairwise_graph_diff",
+      "source_count": 14,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000763",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.292857,
+          "base_structure_complexity": 50.24,
+          "stratum": "multi_site_change"
+        },
+        {
+          "id": "scibench_000754",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.589286,
+          "base_structure_complexity": 52.44,
+          "stratum": "single_atom_replacement"
+        },
+        {
+          "id": "scibench_000759",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.489286,
+          "base_structure_complexity": 42.445,
+          "stratum": "fragment_addition_or_removal"
+        },
+        {
+          "id": "scibench_000751",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.675,
+          "base_structure_complexity": 58.735,
+          "stratum": "single_site_replacement"
+        },
+        {
+          "id": "scibench_000753",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.710714,
+          "base_structure_complexity": 86.715,
+          "stratum": "local_modification"
+        },
+        {
+          "id": "scibench_000757",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.889286,
+          "base_structure_complexity": 71.985,
+          "stratum": "fragment_addition_or_removal"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "pairwise_property_comparison",
+      "source_count": 16,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000780",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.1875,
+          "base_structure_complexity": 30.33,
+          "stratum": "flexibility"
+        },
+        {
+          "id": "scibench_000770",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.5625,
+          "base_structure_complexity": 50.035,
+          "stratum": "size"
+        },
+        {
+          "id": "scibench_000779",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.625,
+          "base_structure_complexity": 50.24,
+          "stratum": "aromaticity"
+        },
+        {
+          "id": "scibench_000771",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9375,
+          "base_structure_complexity": 84.61,
+          "stratum": "polarity"
+        },
+        {
+          "id": "scibench_000774",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8125,
+          "base_structure_complexity": 61.3,
+          "stratum": "aromaticity"
+        },
+        {
+          "id": "scibench_000777",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 86.305,
+          "stratum": "size"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "permeability_solubility",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000799",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.4375,
+          "base_structure_complexity": 24.3,
+          "stratum": "moderate|intermediate"
+        },
+        {
+          "id": "scibench_000781",
+          "lang": "zh",
+          "metric_type": "normalized_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.4475,
+          "base_structure_complexity": 31.2,
+          "stratum": "elevated|low"
+        },
+        {
+          "id": "scibench_000788",
+          "lang": "zh",
+          "metric_type": "normalized_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.565,
+          "base_structure_complexity": 32.6,
+          "stratum": "low|intermediate"
+        },
+        {
+          "id": "scibench_000787",
+          "lang": "zh",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.845,
+          "base_structure_complexity": 67.1,
+          "stratum": "elevated|high"
+        },
+        {
+          "id": "scibench_000791",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.63,
+          "base_structure_complexity": 84.9,
+          "stratum": "high|low"
+        },
+        {
+          "id": "scibench_000793",
+          "lang": "en",
+          "metric_type": "normalized_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.815,
+          "base_structure_complexity": 90.5,
+          "stratum": "elevated|intermediate"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "ring_system_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000807",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.16125,
+          "base_structure_complexity": 33.9,
+          "stratum": "含氮5元饱和环"
+        },
+        {
+          "id": "scibench_000809",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.57375,
+          "base_structure_complexity": 66.5,
+          "stratum": "含氮5元杂芳环"
+        },
+        {
+          "id": "scibench_000814",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.43,
+          "base_structure_complexity": 36.9,
+          "stratum": "含氮6元杂芳环"
+        },
+        {
+          "id": "scibench_000802",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9175,
+          "base_structure_complexity": 64.9,
+          "stratum": "7-membered nitrogen-containing non-aromatic ring"
+        },
+        {
+          "id": "scibench_000803",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.65,
+          "base_structure_complexity": 53.9,
+          "stratum": "6-membered nitrogen-containing heteroaromatic ring"
+        },
+        {
+          "id": "scibench_000820",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.7325,
+          "base_structure_complexity": 59.7,
+          "stratum": "6-membered aromatic ring"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "scaffold_core_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000824",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.3,
+          "base_structure_complexity": 37.9,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000830",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.7,
+          "base_structure_complexity": 49.2,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000832",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.55,
+          "base_structure_complexity": 46.1,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000821",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.8,
+          "base_structure_complexity": 53.7,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000834",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.95,
+          "base_structure_complexity": 67.3,
+          "stratum": null
+        },
+        {
+          "id": "scibench_000838",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.75,
+          "base_structure_complexity": 49.5,
+          "stratum": null
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "scaffold_fragment_caption",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000854",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.125,
+          "base_structure_complexity": 22.9,
+          "stratum": "fragment"
+        },
+        {
+          "id": "scibench_000843",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.45,
+          "base_structure_complexity": 42.1,
+          "stratum": "substituent"
+        },
+        {
+          "id": "scibench_000858",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.49,
+          "base_structure_complexity": 37.6,
+          "stratum": "scaffold"
+        },
+        {
+          "id": "scibench_000844",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9775,
+          "base_structure_complexity": 101.5,
+          "stratum": "fragment"
+        },
+        {
+          "id": "scibench_000846",
+          "lang": "en",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.805,
+          "base_structure_complexity": 74.8,
+          "stratum": "fragment"
+        },
+        {
+          "id": "scibench_000850",
+          "lang": "zh",
+          "metric_type": "semantic_judge",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9725,
+          "base_structure_complexity": 94.8,
+          "stratum": "fragment"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "scaffold_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000870",
+          "lang": "en",
+          "metric_type": "scaffold_plus_groups_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.3625,
+          "base_structure_complexity": 40.0,
+          "stratum": "nsub2"
+        },
+        {
+          "id": "scibench_000875",
+          "lang": "en",
+          "metric_type": "scaffold_plus_groups_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.625,
+          "base_structure_complexity": 49.9,
+          "stratum": "nsub5"
+        },
+        {
+          "id": "scibench_000878",
+          "lang": "en",
+          "metric_type": "scaffold_plus_groups_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.6275,
+          "base_structure_complexity": 59.7,
+          "stratum": "nsub3"
+        },
+        {
+          "id": "scibench_000866",
+          "lang": "zh",
+          "metric_type": "scaffold_plus_groups_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.9725,
+          "base_structure_complexity": 107.8,
+          "stratum": "nsub12"
+        },
+        {
+          "id": "scibench_000871",
+          "lang": "zh",
+          "metric_type": "scaffold_plus_groups_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.805,
+          "base_structure_complexity": 67.5,
+          "stratum": "nsub4"
+        },
+        {
+          "id": "scibench_000877",
+          "lang": "zh",
+          "metric_type": "scaffold_plus_groups_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.73,
+          "base_structure_complexity": 57.4,
+          "stratum": "nsub6"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "simple_ring_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000886",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.26625,
+          "base_structure_complexity": 33.8,
+          "stratum": "5-membered nitrogen-containing heteroaromatic ring"
+        },
+        {
+          "id": "scibench_000896",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.51875,
+          "base_structure_complexity": 36.0,
+          "stratum": "6元芳环"
+        },
+        {
+          "id": "scibench_000897",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.62375,
+          "base_structure_complexity": 80.3,
+          "stratum": "5-membered saturated carbocyclic ring"
+        },
+        {
+          "id": "scibench_000881",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.87625,
+          "base_structure_complexity": 94.4,
+          "stratum": "含氮6元非芳香环"
+        },
+        {
+          "id": "scibench_000895",
+          "lang": "en",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.82125,
+          "base_structure_complexity": 76.3,
+          "stratum": "6-membered nitrogen-containing heteroaromatic ring"
+        },
+        {
+          "id": "scibench_000899",
+          "lang": "zh",
+          "metric_type": "atom_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.79375,
+          "base_structure_complexity": 76.0,
+          "stratum": "含氮6元杂芳环"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "single_instance_functional_group_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000903",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.25,
+          "base_structure_complexity": 27.6,
+          "stratum": "halogen"
+        },
+        {
+          "id": "scibench_000910",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.35,
+          "base_structure_complexity": 39.0,
+          "stratum": "phenol"
+        },
+        {
+          "id": "scibench_000919",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.65,
+          "base_structure_complexity": 57.9,
+          "stratum": "ether"
+        },
+        {
+          "id": "scibench_000915",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.75,
+          "base_structure_complexity": 68.8,
+          "stratum": "sulfonamide"
+        },
+        {
+          "id": "scibench_000918",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.85,
+          "base_structure_complexity": 71.6,
+          "stratum": "carboxylic_acid"
+        },
+        {
+          "id": "scibench_000920",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 1.0,
+          "base_structure_complexity": 83.8,
+          "stratum": "carbamate"
+        }
+      ]
+    },
+    {
+      "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+      "task_type": "single_substituent_grounding",
+      "source_count": 20,
+      "selected_count": 6,
+      "selection_method": "challenge_stratified_1-2-3",
+      "selected": [
+        {
+          "id": "scibench_000934",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "easy",
+          "intrinsic_difficulty_score": 0.17875,
+          "base_structure_complexity": 21.7,
+          "stratum": "nsub1"
+        },
+        {
+          "id": "scibench_000921",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.62875,
+          "base_structure_complexity": 51.4,
+          "stratum": "nsub1"
+        },
+        {
+          "id": "scibench_000931",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "medium",
+          "intrinsic_difficulty_score": 0.59125,
+          "base_structure_complexity": 59.8,
+          "stratum": "nsub1"
+        },
+        {
+          "id": "scibench_000923",
+          "lang": "en",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.85625,
+          "base_structure_complexity": 59.0,
+          "stratum": "nsub1"
+        },
+        {
+          "id": "scibench_000935",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.64625,
+          "base_structure_complexity": 68.7,
+          "stratum": "nsub1"
+        },
+        {
+          "id": "scibench_000936",
+          "lang": "zh",
+          "metric_type": "atom_group_set_exact",
+          "selection_tier": "hard",
+          "intrinsic_difficulty_score": 0.87625,
+          "base_structure_complexity": 95.0,
+          "stratum": "nsub1"
+        }
+      ]
+    }
+  ]
+}

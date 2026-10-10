@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "benchmark/qwen3.7-max",
+  "enabled_providers": ["benchmark"],
+  "share": "disabled",
+  "snapshot": false,
+  "autoupdate": false,
+  "compaction": {"auto": false, "prune": false},
+  "permission": {"*": "deny", "scientific_shell": "allow"},
+  "provider": {
+    "benchmark": {
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {"baseURL": "http://127.0.0.1:PORT/v1", "apiKey": "{env:HARNESS_TRANSPORT_TOKEN}"},
+      "models": {"qwen3.7-max": {"tool_call": true, "reasoning": true, "temperature": true}}
+    }
+  },
+  "mcp": {
+    "scientific": {
+      "type": "local",
+      "command": ["/path/to/python", "-m", "runner.mcp_scientific"],
+      "enabled": true
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "pass": true,
+  "runs": [
+    {
+      "model_key": "deepseek_v4_pro_0813",
+      "official_score": 0.9392361111111112,
+      "samples": 288,
+      "task_units": 48,
+      "judge_votes": 333,
+      "pending": 0,
+      "resume_passed": true,
+      "new_api_calls": 0
+    },
+    {
+      "model_key": "glm53_max",
+      "official_score": 0.8738425925925926,
+      "samples": 288,
+      "task_units": 48,
+      "judge_votes": 330,
+      "pending": 0,
+      "resume_passed": true,
+      "new_api_calls": 0
+    },
+    {
+      "model_key": "gpt_6_astra",
+      "official_score": 0.9878472222222222,
+      "samples": 288,
+      "task_units": 48,
+      "judge_votes": 333,
+      "pending": 0,
+      "resume_passed": true,
+      "new_api_calls": 0
+    },
+    {
+      "model_key": "kimi_k3",
+      "official_score": 0.9565972222222222,
+      "samples": 288,
+      "task_units": 48,
+      "judge_votes": 333,
+      "pending": 0,
+      "resume_passed": true,
+      "new_api_calls": 0
+    },
+    {
+      "model_key": "qwen38_max",
+      "official_score": 0.9027777777777778,
+      "samples": 288,
+      "task_units": 48,
+      "judge_votes": 336,
+      "pending": 0,
+      "resume_passed": true,
+      "new_api_calls": 0
+    }
+  ],
+  "predictions": 1440,
+  "judge_votes": 1665,
+  "per_sample_score_changes": [],
+  "new_solver_calls": 0,
+  "new_judge_calls": 0,
+  "scoring_functions_unchanged": true
+}

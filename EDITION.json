@@ -1,0 +1,10 @@
+{
+  "name": "MolStructBench",
+  "version": "1.0.0",
+  "edition": "with-harness",
+  "harness_included": true,
+  "questions": 288,
+  "task_units": 48,
+  "open_gold": true,
+  "official_scoring_identical_in_both_editions": true
+}

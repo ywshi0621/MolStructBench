@@ -1,0 +1,1251 @@
+[
+  {
+    "dataset": "3d_0907",
+    "task_type": "conformer_energy_ranking",
+    "sample_count": 6,
+    "evaluation_role": "stored-energy comparison control",
+    "public_contracts": {
+      "3d_0907::conformer_energy_ranking": {
+        "dataset": "3d_0907",
+        "task_type": "conformer_energy_ranking",
+        "subtask": null,
+        "metric_type": "conformer_choice",
+        "rules_by_lang": {
+          "en": [
+            "Prediction target: for these exact QO2Mol source conformers, predict which conformer has the higher stored DFT energy. Output only A or B."
+          ],
+          "zh": [
+            "预测目标：针对给出的两个精确 QO2Mol 源构象，判断哪个构象的存储 DFT 能量更高。仅输出 A 或 B。"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Output only A or B.",
+          "zh": "仅输出 A 或 B。"
+        },
+        "v1_contract_clarification": "The public input includes stored DFT energies (eV) for each exact source conformer. Compare those supplied values and output the higher-energy label."
+      }
+    }
+  },
+  {
+    "dataset": "3d_0907",
+    "task_type": "functional_group_bbox_grounding_3d",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_0907::functional_group_bbox_grounding_3d": {
+        "dataset": "3d_0907",
+        "task_type": "functional_group_bbox_grounding_3d",
+        "subtask": null,
+        "metric_type": "ordered_box3d_tol_0.01A",
+        "rules_by_lang": {
+          "en": [
+            "Bounding-box rule: use the axis-aligned min/max coordinates of the target atoms and expand the box by 0.5 Å on all six sides; use the given Cartesian coordinates in Å and order [xmin, ymin, zmin, xmax, ymax, zmax].",
+            "Functional-group box atoms: use the chemically named core only, excluding substituent-neighbor atoms matched merely to establish connectivity. Core heavy atoms are: alcohol O; ether O; thioether S; amine N; ketone C=O; nitrile C≡N; amide/lactam N–C(=O); urea N–C(=O)–N; ester O–C(=O); carboxylic acid C(=O)–O; sulfone S(=O)₂; sulfonamide S(=O)₂–N; phosphate P with its four O atoms. Include all explicitly bonded hydrogens on the donor N/O core atoms; aldehyde core includes its aldehydic H.",
+            "Find every instance with the query SMARTS below. Each box encloses only the named core atoms, not substituent neighbors used to establish connectivity: alcohol/ether O, thioether S, amine N, ketone C=O, nitrile C≡N, amide/lactam N–C(=O), urea N–C(=O)–N, ester O–C(=O), acid C(=O)–O, sulfone S(=O)2, sulfonamide S(=O)2–N, phosphate P plus four O. Include explicit H bonded to donor N/O core atoms and aldehydic H; extend each min/max face by 0.5 Å. Distinct SMARTS instances remain separate even when sharing atoms; sort boxes by minimum source atom index. SMARTS: alcohol=[OX2H][CX4]; amide=[NX3][CX3](=[OX1]); carboxylic_acid=[CX3](=O)[OX2H1]; ester=[OX2][CX3](=[OX1]); ether=[OD2]([#6])[#6]; ketone=[#6][CX3](=O)[#6]; lactam=[NX3R][CX3R](=[OX1]); nitrile=[CX2]#[NX1]; phosphate=[PX4](=O)([OX2])([OX2])[OX2]; primary_amine=[NX3H2][CX4]; secondary_amine=[NX3H1]([CX4])[CX4]; sulfonamide=[SX4](=[OX1])(=[OX1])([NX3]); sulfone=[SX4](=[OX1])(=[OX1])([#6])[#6]; tertiary_amine=[NX3H0]([CX4])([CX4])[CX4]; thioether=[SX2]([#6])[#6]; urea=[NX3][CX3](=[OX1])[NX3]"
+          ],
+          "zh": [
+            "包围盒规则：对目标原子坐标取轴对齐的逐轴最小值与最大值，六个面各向外扩展 0.5 Å；单位 Å，顺序为 [xmin, ymin, zmin, xmax, ymax, zmax]。",
+            "官能团包围盒原子：只取所述官能团核心，排除仅用于确认连接方式的取代基邻原子。核心重原子：醇 O、醚 O、硫醚 S、胺 N、酮 C=O、腈 C≡N、酰胺/内酰胺 N–C(=O)、脲 N–C(=O)–N、酯 O–C(=O)、羧酸 C(=O)–O、砜 S(=O)₂、磺酰胺 S(=O)₂–N、磷酸基 P 及其四个 O。包含核心供体 N/O 上显式连接的全部 H；醛基还包含醛氢。",
+            "按下列查询 SMARTS 找到每个实例。每个盒仅包围命名核心原子，不含仅用于确认连接的取代基邻原子：醇/醚 O、硫醚 S、胺 N、酮 C=O、腈 C≡N、酰胺/内酰胺 N–C(=O)、脲 N–C(=O)–N、酯 O–C(=O)、羧酸 C(=O)–O、砜 S(=O)2、磺酰胺 S(=O)2–N、磷酸基 P 及四个 O。供体 N/O 核心显式连接的 H 和醛氢一并纳入；各面外扩 0.5 Å。共享原子的不同 SMARTS 实例仍分别成盒；按最小源原子索引排序。SMARTS：alcohol=[OX2H][CX4]; amide=[NX3][CX3](=[OX1]); carboxylic_acid=[CX3](=O)[OX2H1]; ester=[OX2][CX3](=[OX1]); ether=[OD2]([#6])[#6]; ketone=[#6][CX3](=O)[#6]; lactam=[NX3R][CX3R](=[OX1]); nitrile=[CX2]#[NX1]; phosphate=[PX4](=O)([OX2])([OX2])[OX2]; primary_amine=[NX3H2][CX4]; secondary_amine=[NX3H1]([CX4])[CX4]; sulfonamide=[SX4](=[OX1])(=[OX1])([NX3]); sulfone=[SX4](=[OX1])(=[OX1])([#6])[#6]; tertiary_amine=[NX3H0]([CX4])([CX4])[CX4]; thioether=[SX2]([#6])[#6]; urea=[NX3][CX3](=[OX1])[NX3]"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Return one [xmin, ymin, zmin, xmax, ymax, zmax] per selected box, in the requested order.",
+          "zh": "按要求的顺序为每个盒返回 [xmin, ymin, zmin, xmax, ymax, zmax]。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_0907",
+    "task_type": "hbond_contact_change_grounding_3d",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_0907::hbond_contact_change_grounding_3d": {
+        "dataset": "3d_0907",
+        "task_type": "hbond_contact_change_grounding_3d",
+        "subtask": null,
+        "metric_type": "ordered_box3d_tol_0.01A",
+        "rules_by_lang": {
+          "en": [
+            "Bounding-box rule: use the axis-aligned min/max coordinates of the target atoms and expand the box by 0.5 Å on all six sides; use the given Cartesian coordinates in Å and order [xmin, ymin, zmin, xmax, ymax, zmax].",
+            "Hydrogen-bond-compatible: D–A≤3.3 Å, H–A≤2.5 Å, D–H···A≥135°; clearly separated: D–A≥4.2 Å and H–A≥3.3 Å; donor–acceptor graph distance ≥4 bonds. Donor box uses D and its explicit H; acceptor box uses the acceptor feature atoms."
+          ],
+          "zh": [
+            "包围盒规则：对目标原子坐标取轴对齐的逐轴最小值与最大值，六个面各向外扩展 0.5 Å；单位 Å，顺序为 [xmin, ymin, zmin, xmax, ymax, zmax]。",
+            "氢键兼容：D–A≤3.3 Å、H–A≤2.5 Å、D–H···A≥135°；明显分离：D–A≥4.2 Å 且 H–A≥3.3 Å；供体与受体图距离≥4键。供体盒取 D 和其显式 H，受体盒取受体特征原子。"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Return one [xmin, ymin, zmin, xmax, ymax, zmax] per selected box, in the requested order.",
+          "zh": "按要求的顺序为每个盒返回 [xmin, ymin, zmin, xmax, ymax, zmax]。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_0907",
+    "task_type": "pharmacophore_relation_grounding_3d",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_0907::pharmacophore_relation_grounding_3d": {
+        "dataset": "3d_0907",
+        "task_type": "pharmacophore_relation_grounding_3d",
+        "subtask": null,
+        "metric_type": "ordered_box3d_tol_0.01A",
+        "rules_by_lang": {
+          "en": [
+            "Bounding-box rule: use the axis-aligned min/max coordinates of the target atoms and expand the box by 0.5 Å on all six sides; use the given Cartesian coordinates in Å and order [xmin, ymin, zmin, xmax, ymax, zmax].",
+            "Use RDKit BaseFeatures.fdef; each feature center is its source-atom centroid. Candidate feature atom sets must not overlap; box each selected feature’s source atoms."
+          ],
+          "zh": [
+            "包围盒规则：对目标原子坐标取轴对齐的逐轴最小值与最大值，六个面各向外扩展 0.5 Å；单位 Å，顺序为 [xmin, ymin, zmin, xmax, ymax, zmax]。",
+            "药效团特征采用 RDKit BaseFeatures.fdef，中心为来源原子的几何质心；候选特征原子集不得重叠，盒子包围所选特征的来源原子。"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Return one [xmin, ymin, zmin, xmax, ymax, zmax] per selected box, in the requested order.",
+          "zh": "按要求的顺序为每个盒返回 [xmin, ymin, zmin, xmax, ymax, zmax]。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_0907",
+    "task_type": "rotatable_bond_bbox_grounding_3d",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_0907::rotatable_bond_bbox_grounding_3d": {
+        "dataset": "3d_0907",
+        "task_type": "rotatable_bond_bbox_grounding_3d",
+        "subtask": null,
+        "metric_type": "ordered_box3d_tol_0.01A",
+        "rules_by_lang": {
+          "en": [
+            "Bounding-box rule: use the axis-aligned min/max coordinates of the target atoms and expand the box by 0.5 Å on all six sides; use the given Cartesian coordinates in Å and order [xmin, ymin, zmin, xmax, ymax, zmax].",
+            "Use RDKit NumRotatableBonds Strict; box each selected bond’s two endpoint atom centers."
+          ],
+          "zh": [
+            "包围盒规则：对目标原子坐标取轴对齐的逐轴最小值与最大值，六个面各向外扩展 0.5 Å；单位 Å，顺序为 [xmin, ymin, zmin, xmax, ymax, zmax]。",
+            "可旋转键使用 RDKit NumRotatableBonds Strict；每个盒取所选键两端原子中心。"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Return one [xmin, ymin, zmin, xmax, ymax, zmax] per selected box, in the requested order.",
+          "zh": "按要求的顺序为每个盒返回 [xmin, ymin, zmin, xmax, ymax, zmax]。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_0907",
+    "task_type": "shared_functional_group_pair_grounding_3d",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_0907::shared_functional_group_pair_grounding_3d": {
+        "dataset": "3d_0907",
+        "task_type": "shared_functional_group_pair_grounding_3d",
+        "subtask": null,
+        "metric_type": "ordered_box3d_tol_0.01A",
+        "rules_by_lang": {
+          "en": [
+            "Bounding-box rule: use the axis-aligned min/max coordinates of the target atoms and expand the box by 0.5 Å on all six sides; use the given Cartesian coordinates in Å and order [xmin, ymin, zmin, xmax, ymax, zmax].",
+            "Target group: alcohol, matched as [OX2H][CX4]. Each molecule contains exactly one such alcohol. For the box, use the alcohol O and its explicitly bonded H, excluding the attached carbon."
+          ],
+          "zh": [
+            "包围盒规则：对目标原子坐标取轴对齐的逐轴最小值与最大值，六个面各向外扩展 0.5 Å；单位 Å，顺序为 [xmin, ymin, zmin, xmax, ymax, zmax]。",
+            "目标官能团：醇，匹配式 [OX2H][CX4]。每个分子都恰有一个该醇基。包围盒取醇 O 及其显式连接的 H，不包含相连的碳。"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Return one [xmin, ymin, zmin, xmax, ymax, zmax] per selected box, in the requested order.",
+          "zh": "按要求的顺序为每个盒返回 [xmin, ymin, zmin, xmax, ymax, zmax]。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_0907",
+    "task_type": "stereocenter_grounding_3d",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_0907::stereocenter_grounding_3d": {
+        "dataset": "3d_0907",
+        "task_type": "stereocenter_grounding_3d",
+        "subtask": null,
+        "metric_type": "ordered_box3d_plus_cip",
+        "rules_by_lang": {
+          "en": [
+            "Bounding-box rule: use the axis-aligned min/max coordinates of the target atoms and expand the box by 0.5 Å on all six sides; use the given Cartesian coordinates in Å and order [xmin, ymin, zmin, xmax, ymax, zmax].",
+            "Use RDKit 3D stereochemistry assignment for tetrahedral carbon centers with R/S CIP labels. Box each center and its four directly bonded ligand atoms."
+          ],
+          "zh": [
+            "包围盒规则：对目标原子坐标取轴对齐的逐轴最小值与最大值，六个面各向外扩展 0.5 Å；单位 Å，顺序为 [xmin, ymin, zmin, xmax, ymax, zmax]。",
+            "采用 RDKit 3D 立体化学指派，筛选四面体碳的 R/S CIP 中心；盒子包含中心及直接相连的四个配位原子。"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Return one [xmin, ymin, zmin, xmax, ymax, zmax] per selected box, in the requested order; include the R/S label for each center.",
+          "zh": "按要求的顺序为每个盒返回 [xmin, ymin, zmin, xmax, ymax, zmax]，并附对应 R/S 标记。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_0907",
+    "task_type": "torsion_change_grounding_3d",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_0907::torsion_change_grounding_3d": {
+        "dataset": "3d_0907",
+        "task_type": "torsion_change_grounding_3d",
+        "subtask": null,
+        "metric_type": "ordered_box3d_tol_0.01A",
+        "rules_by_lang": {
+          "en": [
+            "Bounding-box rule: use the axis-aligned min/max coordinates of the target atoms and expand the box by 0.5 Å on all six sides; use the given Cartesian coordinates in Å and order [xmin, ymin, zmin, xmax, ymax, zmax].",
+            "Use RDKit Strict rotatable bonds and RDKit torsion-fingerprint anchors with symmetry radius 2. Compare circular torsion-angle differences; box the selected bond endpoints in each conformer."
+          ],
+          "zh": [
+            "包围盒规则：对目标原子坐标取轴对齐的逐轴最小值与最大值，六个面各向外扩展 0.5 Å；单位 Å，顺序为 [xmin, ymin, zmin, xmax, ymax, zmax]。",
+            "采用 RDKit Strict 可旋转键及对称半径 2 的 RDKit torsion-fingerprint 锚点，比较环绕角差；在两个构象中分别包围所选键的端点。"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Return one [xmin, ymin, zmin, xmax, ymax, zmax] per selected box, in the requested order.",
+          "zh": "按要求的顺序为每个盒返回 [xmin, ymin, zmin, xmax, ymax, zmax]。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "anchor_atom_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::anchor_atom_grounding": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "anchor_atom_grounding",
+        "subtask": null,
+        "metric_type": "atom_set_exact",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": "Return the atom index only.",
+          "zh": "仅返回原子索引。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "drug_likeness",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::drug_likeness": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "drug_likeness",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [
+            "Preliminary drug-likeness alert thresholds: MW>500, cLogP>5, TPSA>140 Å²."
+          ],
+          "zh": [
+            "初步类药性警示阈值：MW>500、cLogP>5、TPSA>140 Å²。"
+          ]
+        },
+        "output_by_lang": {
+          "en": null,
+          "zh": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "functional_group_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::functional_group_grounding": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "functional_group_grounding",
+        "subtask": null,
+        "metric_type": "atom_group_set_exact",
+        "rules_by_lang": {
+          "en": [
+            "Select only functional-core heavy atoms for each instance: amine N; alcohol/ether O; thioether S; halogen atom; ketone carbonyl C,O; nitrile C,N; amide/lactam N,C,O; urea N,C,O,N; carbamate N,C,O,O; ester C,O,O; acid C,O,O; sulfone S,O,O; sulfonamide S,O,O,N; phosphate P and four O. Connectivity-checking substituent neighbors are excluded. Each distinct matcher instance is reported once; keep overlapping but chemically distinct N–C(=O) linkages separate. Sort atoms within a group and order groups by lowest source atom index. Query matchers: alcohol=[OX2H][CX4]; aldehyde=[CX3H1](=O)[#6]; amide=[NX3][CX3](=[OX1]); carbamate=[NX3][CX3](=[OX1])[OX2]; carboxylic_acid=[CX3](=O)[OX2H1]; ester=[OX2][CX3](=[OX1]); ether=[OD2]([#6;!$(C=O)])[#6;!$(C=O)]; halogen=[F,Cl,Br,I]; ketone=[#6][CX3](=O)[#6]; lactam=[NX3R][CX3R](=[OX1]); nitrile=[CX2]#[NX1]; nitro=[NX3+](=O)[O-]; phenol=[OX2H]c; phosphate=[PX4](=O)([OX2])([OX2])[OX2]; primary_amine=[NX3H2;!$(N-C=O);!$(N-S(=O)=O)][#6]; secondary_amine=[NX3H1;!$(N-C=O);!$(N-S(=O)=O)]([#6])[#6]; sulfonamide=[SX4](=[OX1])(=[OX1])([NX3]); sulfone=[SX4](=[OX1])(=[OX1])([#6])[#6]; tertiary_amine=[NX3H0]([#6])([#6])[#6]; thioether=[SX2;!$([SX2]-[CX3](=[O,S,N]))]([#6])[#6]; urea=[NX3][CX3](=[OX1])[NX3]"
+          ],
+          "zh": [
+            "每个实例仅返回官能团核心重原子：胺 N；醇/醚 O；硫醚 S；卤素原子；酮羰基 C、O；腈 C、N；酰胺/内酰胺 N、C、O；脲 N、C、O、N；氨基甲酸酯 N、C、O、O；酯 C、O、O；羧酸 C、O、O；砜 S、O、O；磺酰胺 S、O、O、N；磷酸基 P 及四个 O。仅用于确认连接的取代基邻原子不返回。每个不同匹配实例报告一次；化学上不同但重叠的 N–C(=O) 键分别保留。组内按原子索引升序，组间按最小源原子索引升序。查询匹配 SMARTS：alcohol=[OX2H][CX4]; aldehyde=[CX3H1](=O)[#6]; amide=[NX3][CX3](=[OX1]); carbamate=[NX3][CX3](=[OX1])[OX2]; carboxylic_acid=[CX3](=O)[OX2H1]; ester=[OX2][CX3](=[OX1]); ether=[OD2]([#6;!$(C=O)])[#6;!$(C=O)]; halogen=[F,Cl,Br,I]; ketone=[#6][CX3](=O)[#6]; lactam=[NX3R][CX3R](=[OX1]); nitrile=[CX2]#[NX1]; nitro=[NX3+](=O)[O-]; phenol=[OX2H]c; phosphate=[PX4](=O)([OX2])([OX2])[OX2]; primary_amine=[NX3H2;!$(N-C=O);!$(N-S(=O)=O)][#6]; secondary_amine=[NX3H1;!$(N-C=O);!$(N-S(=O)=O)]([#6])[#6]; sulfonamide=[SX4](=[OX1])(=[OX1])([NX3]); sulfone=[SX4](=[OX1])(=[OX1])([#6])[#6]; tertiary_amine=[NX3H0]([#6])([#6])[#6]; thioether=[SX2;!$([SX2]-[CX3](=[O,S,N]))]([#6])[#6]; urea=[NX3][CX3](=[OX1])[NX3]"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Return each atom-index group as a list of lists.",
+          "zh": "按列表的列表返回各原子索引组。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "functional_group_qa",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::functional_group_qa": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "functional_group_qa",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [
+            "3D→2D ontology differs from Pure2D at cyclic urea/imide overlap: a urea carbonyl is not separately lactam, but a distinct ring N–C(=O) carbonyl outside that urea is a lactam even when its N also belongs to urea. Generic amide still excludes urea/lactam/carbamate carbonyls; generic ester excludes lactone/carbamate; imine is C=N ([CX3]=[NX2]). Count distinct matching centers. Candidate SMARTS: acyl_halide=[CX3](=[OX1])[F,Cl,Br,I]; alcohol=[OX2H][CX4]; aldehyde=[CX3H1](=O)[#6]; amide=[CX3](=[OX1])[NX3]; anhydride=[CX3](=[OX1])[OX2][CX3](=[OX1]); carbamate=[NX3][CX3](=[OX1])[OX2]; carboxylic_acid=[CX3](=O)[OX2H1]; epoxide=[OX2r3]; ester=[CX3](=O)[OX2][#6]; ether=[OD2]([#6;!$(C=O)])[#6;!$(C=O)]; guanidine=[NX3][CX3](=[NX2])[NX3]; halogenated_aromatic=[cX3][F,Cl,Br,I]; heteroaromatic_ring=[nR]; imine=[CX3]=[NX2]; ketone=[CX3](=[OX1])([#6])[#6]; lactam=[NX3R][CX3R](=[OX1]); lactone=[OX2R][CX3R](=[OX1]); nitrile=[CX2]#[NX1]; nitro=[NX3+](=O)[O-]; phenol=[OX2H]c; phosphate=[PX4](=[OX1])([OX2])([OX2])[OX2]; primary_amine=[NX3H2;!$(N-C=O);!$(N-S(=O)=O)][#6]; secondary_amine=[NX3H1;!$(N-C=O);!$(N-S(=O)=O)]([#6])[#6]; sulfonamide=[SX4](=[OX1])(=[OX1])([NX3]); sulfone=[SX4](=[OX1])(=[OX1])([#6])[#6]; tertiary_amine=[NX3H0]([#6])([#6])[#6]; thioether=[SX2;!$([SX2]-[CX3](=[O,S,N]))]([#6])[#6]; thiol=[SX2H]; urea=[NX3][CX3](=[OX1])[NX3]"
+          ],
+          "zh": [
+            "3D→2D 分类与 Pure2D 在环脲/酰亚胺重叠处不同：脲羰基本身不另计内酰胺，但同一 N 参与的另一个环状 N–C(=O) 羰基仍计内酰胺。generic 酰胺排除脲/内酰胺/氨基甲酸酯羰基，generic 酯排除内酯/氨基甲酸酯；亚胺是 C=N（[CX3]=[NX2]）。统计不同匹配中心。候选 SMARTS：acyl_halide=[CX3](=[OX1])[F,Cl,Br,I]; alcohol=[OX2H][CX4]; aldehyde=[CX3H1](=O)[#6]; amide=[CX3](=[OX1])[NX3]; anhydride=[CX3](=[OX1])[OX2][CX3](=[OX1]); carbamate=[NX3][CX3](=[OX1])[OX2]; carboxylic_acid=[CX3](=O)[OX2H1]; epoxide=[OX2r3]; ester=[CX3](=O)[OX2][#6]; ether=[OD2]([#6;!$(C=O)])[#6;!$(C=O)]; guanidine=[NX3][CX3](=[NX2])[NX3]; halogenated_aromatic=[cX3][F,Cl,Br,I]; heteroaromatic_ring=[nR]; imine=[CX3]=[NX2]; ketone=[CX3](=[OX1])([#6])[#6]; lactam=[NX3R][CX3R](=[OX1]); lactone=[OX2R][CX3R](=[OX1]); nitrile=[CX2]#[NX1]; nitro=[NX3+](=O)[O-]; phenol=[OX2H]c; phosphate=[PX4](=[OX1])([OX2])([OX2])[OX2]; primary_amine=[NX3H2;!$(N-C=O);!$(N-S(=O)=O)][#6]; secondary_amine=[NX3H1;!$(N-C=O);!$(N-S(=O)=O)]([#6])[#6]; sulfonamide=[SX4](=[OX1])(=[OX1])([NX3]); sulfone=[SX4](=[OX1])(=[OX1])([#6])[#6]; tertiary_amine=[NX3H0]([#6])([#6])[#6]; thioether=[SX2;!$([SX2]-[CX3](=[O,S,N]))]([#6])[#6]; thiol=[SX2H]; urea=[NX3][CX3](=[OX1])[NX3]"
+          ]
+        },
+        "output_by_lang": {
+          "en": null,
+          "zh": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "hydrogen_bond_source_explanation",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::hydrogen_bond_source_explanation": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "hydrogen_bond_source_explanation",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": null,
+          "zh": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "metabolic_liability",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::metabolic_liability": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "metabolic_liability",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [
+            "长 sp3 碳链指至少 5 个连续的非环 sp3 碳原子组成的简单路径；环原子不得构成或连接该路径。",
+            "先报告芳香环数及 RDKit 氢键供体位点数/HBA 受体数，再仅筛查以下基准局部基序及潜在转化：N–C(=O) 酰胺键（包括脲/内酰胺及氨基甲酸酯中的相应键）和 O–C(=O) 酯键：潜在水解；普通叔胺：潜在 N-氧化或 N-脱烷基化；非羰基醚 O：潜在 O-脱烷基化；醇：潜在氧化或结合反应。统计各不同局部匹配；无上述基序则报告无。其他化学上可能的代谢反应不属于本固定筛查分类。"
+          ],
+          "en": [
+            "Long sp3 carbon chain means a continuous simple path of at least 5 non-ring sp3 carbon atoms. Ring atoms cannot form or connect this path.",
+            "Report aromatic-ring count and RDKit HBD donor-site/HBA acceptor counts, then only these benchmark-local motif classes and potential transformations: N–C(=O) amide edges (including urea/lactam and carbamate edges) and O–C(=O) ester edges: potential hydrolysis; ordinary tertiary amine: potential N-oxidation or N-dealkylation; non-carbonyl ether O: potential O-dealkylation; alcohol: potential oxidation or conjugation. Count distinct local matches; if no listed motif exists, report none. Other plausible metabolic chemistry is outside this fixed screening ontology."
+          ]
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "molecule_caption",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::molecule_caption": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "molecule_caption",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": null,
+          "zh": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "pairwise_analog_classification",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::pairwise_analog_classification": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "pairwise_analog_classification",
+        "subtask": null,
+        "metric_type": "normalized_exact",
+        "rules_by_lang": {
+          "en": [
+            "Similarity coverage uses RDKit rdFMCS.FindMCS with completeRingsOnly=True on heavy-atom graphs. coverage_A = MCS heavy-atom count / heavy-atom count of molecule A. Classify close_analog if coverage_A>0.80; otherwise related_analog if coverage_A>0.60; otherwise not_close_analog."
+          ]
+        },
+        "output_by_lang": {
+          "en": "Output only one label: close_analog, related_analog, or not_close_analog."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "pairwise_graph_diff",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::pairwise_graph_diff": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "pairwise_graph_diff",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": []
+        },
+        "output_by_lang": {
+          "en": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "pairwise_property_comparison",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::pairwise_property_comparison": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "pairwise_property_comparison",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": []
+        },
+        "output_by_lang": {
+          "en": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "permeability_solubility",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::permeability_solubility": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "permeability_solubility",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": null,
+          "zh": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "scaffold_core_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::scaffold_core_grounding": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "scaffold_core_grounding",
+        "subtask": null,
+        "metric_type": "atom_set_exact",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": "Return only the selected atom indices as a list.",
+          "zh": "仅返回所选原子索引列表。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "scaffold_fragment_caption",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::scaffold_fragment_caption::fragment": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "scaffold_fragment_caption",
+        "subtask": "fragment",
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": null,
+          "zh": null
+        }
+      },
+      "3d_to_2d_v7_5_final::scaffold_fragment_caption::scaffold": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "scaffold_fragment_caption",
+        "subtask": "scaffold",
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      },
+      "3d_to_2d_v7_5_final::scaffold_fragment_caption::substituent": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "scaffold_fragment_caption",
+        "subtask": "substituent",
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "simple_ring_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::simple_ring_grounding": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "simple_ring_grounding",
+        "subtask": null,
+        "metric_type": "atom_set_exact",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": "Return only the selected atom indices as a list.",
+          "zh": "仅返回所选原子索引列表。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "single_instance_functional_group_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::single_instance_functional_group_grounding": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "single_instance_functional_group_grounding",
+        "subtask": null,
+        "metric_type": "atom_group_set_exact",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": "Return each atom-index group as a list of lists.",
+          "zh": "按列表的列表返回各原子索引组。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "3d_to_2d_v7_5_final",
+    "task_type": "single_substituent_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "3d_to_2d_v7_5_final::single_substituent_grounding": {
+        "dataset": "3d_to_2d_v7_5_final",
+        "task_type": "single_substituent_grounding",
+        "subtask": null,
+        "metric_type": "atom_group_set_exact",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": "Return each atom-index group as a list of lists.",
+          "zh": "按列表的列表返回各原子索引组。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "anchor_atom_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::anchor_atom_grounding": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "anchor_atom_grounding",
+        "subtask": null,
+        "metric_type": "atom_set_exact",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": "仅返回原子索引。",
+          "en": "Return the atom index only."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "attachment_bond_endpoint_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::attachment_bond_endpoint_grounding": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "attachment_bond_endpoint_grounding",
+        "subtask": null,
+        "metric_type": "bond_endpoint_exact",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": "仅返回端点 [atom_i, atom_j]，顺序不限；不要求键索引和类型。",
+          "en": "Return endpoints [atom_i, atom_j] in either order; bond index and type are not required."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "bond_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::bond_grounding": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "bond_grounding",
+        "subtask": null,
+        "metric_type": "bond_target_exact",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": "返回端点 [atom_i, atom_j]（顺序不限）及键索引；不要求键类型。",
+          "en": "Return endpoints [atom_i, atom_j] (either order) and bond index; bond type is not required."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "database_grounded_knowledge_caption",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::database_grounded_knowledge_caption": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "database_grounded_knowledge_caption",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": null,
+          "zh": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "drug_likeness",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::drug_likeness": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "drug_likeness",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [
+            "Lipinski exceedances: MW>500, cLogP>5, HBD>5, HBA>10. Veber exceedances: rotatable bonds>10 or TPSA>140 Å². Lead-like window: 250≤MW≤350, cLogP≤3, rotatable bonds≤7."
+          ],
+          "zh": [
+            "Lipinski 超限：MW>500、cLogP>5、HBD>5、HBA>10；Veber 超限：可旋转键>10 或 TPSA>140 Å²；先导化合物样窗口：250≤MW≤350、cLogP≤3、可旋转键≤7。"
+          ]
+        },
+        "output_by_lang": {
+          "en": null,
+          "zh": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "full_form_parent_standardization",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::full_form_parent_standardization": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "full_form_parent_standardization",
+        "subtask": null,
+        "metric_type": "canonical_smiles_exact",
+        "rules_by_lang": {
+          "en": [
+            "Return the single-component standardized parent SMILES after removing disconnected counterions and solvates; retain the parent’s formal charge."
+          ],
+          "zh": [
+            "去除不连接的对离子与溶剂，保留母体形式电荷，返回单组分标准化母体 SMILES。"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Output only the parent SMILES.",
+          "zh": "Output only the parent SMILES."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "functional_group_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_grounding": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "functional_group_grounding",
+        "subtask": null,
+        "metric_type": "atom_group_set_exact",
+        "rules_by_lang": {
+          "zh": [
+            "Pure2D grounding 返回原始 RDKit SMARTS 匹配中的全部原子，包括用于确认连接的相邻 C（与 3D 衍生任务的核心原子规则不同）。使用公开的重叠类别层级与叔胺共振失活排除规则；相同实例去重，组内索引升序，组间按最小索引排序。SMARTS：alcohol=[OX2H][CX4]; aldehyde=[CX3H1](=O)[#6]; amide=[NX3][CX3](=[OX1]); carbamate=[NX3][CX3](=[OX1])[OX2]; carboxylic_acid=[CX3](=O)[OX2H1]; ester=[OX2][CX3](=[OX1]); ether=[OD2]([#6;!$(C=O)])[#6;!$(C=O)]; halogen=[F,Cl,Br,I]; ketone=[#6][CX3](=O)[#6]; lactam=[NX3R][CX3R](=[OX1]); nitrile=[CX2]#[NX1]; nitro=[NX3+](=O)[O-]; phenol=[OX2H]c; phosphate=[PX4](=O)([OX2])([OX2])[OX2]; primary_amine=[NX3H2;!$(N-C=O);!$(N-S(=O)=O)][#6]; secondary_amine=[NX3H1;!$(N-C=O);!$(N-S(=O)=O)]([#6])[#6]; sulfonamide=[SX4](=[OX1])(=[OX1])([NX3]); sulfone=[SX4](=[OX1])(=[OX1])([#6])[#6]; tertiary_amine=[NX3H0]([#6])([#6])[#6]; thioether=[SX2;!$([SX2]-[CX3](=[O,S,N]))]([#6])[#6]; urea=[NX3][CX3](=[OX1])[NX3]"
+          ],
+          "en": [
+            "Pure2D grounding returns every atom in each original RDKit SMARTS match, including connectivity-checking C neighbors (unlike the 3D-derived core-atom tasks). Use the documented overlap hierarchy and tertiary-amine resonance exclusion; deduplicate identical matches, sort indices within groups and groups by the smallest index. SMARTS: alcohol=[OX2H][CX4]; aldehyde=[CX3H1](=O)[#6]; amide=[NX3][CX3](=[OX1]); carbamate=[NX3][CX3](=[OX1])[OX2]; carboxylic_acid=[CX3](=O)[OX2H1]; ester=[OX2][CX3](=[OX1]); ether=[OD2]([#6;!$(C=O)])[#6;!$(C=O)]; halogen=[F,Cl,Br,I]; ketone=[#6][CX3](=O)[#6]; lactam=[NX3R][CX3R](=[OX1]); nitrile=[CX2]#[NX1]; nitro=[NX3+](=O)[O-]; phenol=[OX2H]c; phosphate=[PX4](=O)([OX2])([OX2])[OX2]; primary_amine=[NX3H2;!$(N-C=O);!$(N-S(=O)=O)][#6]; secondary_amine=[NX3H1;!$(N-C=O);!$(N-S(=O)=O)]([#6])[#6]; sulfonamide=[SX4](=[OX1])(=[OX1])([NX3]); sulfone=[SX4](=[OX1])(=[OX1])([#6])[#6]; tertiary_amine=[NX3H0]([#6])([#6])[#6]; thioether=[SX2;!$([SX2]-[CX3](=[O,S,N]))]([#6])[#6]; urea=[NX3][CX3](=[OX1])[NX3]"
+          ]
+        },
+        "output_by_lang": {
+          "zh": "按列表的列表返回各原子索引组。",
+          "en": "Return each atom-index group as a list of lists."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "functional_group_qa",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_qa": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "functional_group_qa",
+        "subtask": null,
+        "metric_type": "normalized_exact",
+        "rules_by_lang": {
+          "en": [
+            "Use the generator ontology: generic amide excludes carbonyl centers assigned urea, carbamate, or lactam; generic ester excludes carbamate and lactone. Cyclic urea/imide N–C(=O) edges assigned urea do not create independent lactam labels; cyclic carbamate is neither lactam nor lactone. The imine matcher is C=N ([CX3]=[NX2]). Ether excludes O adjacent to carbonyl carbon; thioether excludes S adjacent to C(=O/S/N); tertiary amine excludes resonance-deactivated N. Count only the queried class under this hierarchy. SMARTS candidates: acyl_halide=[CX3](=[OX1])[F,Cl,Br,I]; alcohol=[OX2H][CX4]; aldehyde=[CX3H1](=O)[#6]; amide=[CX3](=[OX1])[NX3]; anhydride=[CX3](=[OX1])[OX2][CX3](=[OX1]); carbamate=[NX3][CX3](=[OX1])[OX2]; carboxylic_acid=[CX3](=O)[OX2H1]; epoxide=[OX2r3]; ester=[CX3](=O)[OX2][#6]; ether=[OD2]([#6;!$(C=O)])[#6;!$(C=O)]; guanidine=[NX3][CX3](=[NX2])[NX3]; halogenated_aromatic=[cX3][F,Cl,Br,I]; heteroaromatic_ring=[nR]; imine=[CX3]=[NX2]; ketone=[CX3](=[OX1])([#6])[#6]; lactam=[NX3R][CX3R](=[OX1]); lactone=[OX2R][CX3R](=[OX1]); nitrile=[CX2]#[NX1]; nitro=[NX3+](=O)[O-]; phenol=[OX2H]c; phosphate=[PX4](=[OX1])([OX2])([OX2])[OX2]; primary_amine=[NX3H2;!$(N-C=O);!$(N-S(=O)=O)][#6]; secondary_amine=[NX3H1;!$(N-C=O);!$(N-S(=O)=O)]([#6])[#6]; sulfonamide=[SX4](=[OX1])(=[OX1])([NX3]); sulfone=[SX4](=[OX1])(=[OX1])([#6])[#6]; tertiary_amine=[NX3H0]([#6])([#6])[#6]; thioether=[SX2;!$([SX2]-[CX3](=[O,S,N]))]([#6])[#6]; thiol=[SX2H]; urea=[NX3][CX3](=[OX1])[NX3]"
+          ],
+          "zh": [
+            "采用生成器官能团分类：generic 酰胺排除已归为脲、氨基甲酸酯或内酰胺的羰基中心；generic 酯排除氨基甲酸酯和内酯。环脲/酰亚胺中已归为脲的 N–C(=O) 键不另计内酰胺；环状氨基甲酸酯既不另计内酰胺也不另计内酯。亚胺匹配 C=N（[CX3]=[NX2]）。醚排除与羰基碳相邻的 O；硫醚排除与 C(=O/S/N) 相邻的 S；叔胺排除共振失活的 N。按该层级只统计题目所问类别。候选 SMARTS：acyl_halide=[CX3](=[OX1])[F,Cl,Br,I]; alcohol=[OX2H][CX4]; aldehyde=[CX3H1](=O)[#6]; amide=[CX3](=[OX1])[NX3]; anhydride=[CX3](=[OX1])[OX2][CX3](=[OX1]); carbamate=[NX3][CX3](=[OX1])[OX2]; carboxylic_acid=[CX3](=O)[OX2H1]; epoxide=[OX2r3]; ester=[CX3](=O)[OX2][#6]; ether=[OD2]([#6;!$(C=O)])[#6;!$(C=O)]; guanidine=[NX3][CX3](=[NX2])[NX3]; halogenated_aromatic=[cX3][F,Cl,Br,I]; heteroaromatic_ring=[nR]; imine=[CX3]=[NX2]; ketone=[CX3](=[OX1])([#6])[#6]; lactam=[NX3R][CX3R](=[OX1]); lactone=[OX2R][CX3R](=[OX1]); nitrile=[CX2]#[NX1]; nitro=[NX3+](=O)[O-]; phenol=[OX2H]c; phosphate=[PX4](=[OX1])([OX2])([OX2])[OX2]; primary_amine=[NX3H2;!$(N-C=O);!$(N-S(=O)=O)][#6]; secondary_amine=[NX3H1;!$(N-C=O);!$(N-S(=O)=O)]([#6])[#6]; sulfonamide=[SX4](=[OX1])(=[OX1])([NX3]); sulfone=[SX4](=[OX1])(=[OX1])([#6])[#6]; tertiary_amine=[NX3H0]([#6])([#6])[#6]; thioether=[SX2;!$([SX2]-[CX3](=[O,S,N]))]([#6])[#6]; thiol=[SX2H]; urea=[NX3][CX3](=[OX1])[NX3]"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Output only present or absent.",
+          "zh": "Output only present or absent."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "identity_with_structural_evidence",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::identity_with_structural_evidence": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "identity_with_structural_evidence",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "known_target_mechanism",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::known_target_mechanism": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "known_target_mechanism",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "metabolic_liability",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::metabolic_liability": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "metabolic_liability",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [
+            "标志：亲脂–芳香 = cLogP>3 且芳香环≥2；否则 cLogP>4 记作高 cLogP；长 sp³ 碳链 = 由连续≥5 个非环 sp³ 碳原子组成的简单路径，路径内每个原子均须不属于任何环（RDKit IsInRing() 为 false）；环原子不得构成或连接该路径；另检测酯基与芳基胺。符合亲脂–芳香时不重复高 cLogP。",
+            "仅报告以下五类固定基准标志，而非开放式代谢位点：cLogP>3 且芳香环数≥2 为亲脂–芳香；否则 cLogP>4 为高 cLogP；至少五个连续非环 sp3 碳组成简单路径（路径每个原子 IsInRing 为 false）为长 sp3 碳链；[CX3](=O)[OX2][#6] 匹配为酯；芳基胺要求非芳香 N 以单键直接连在全碳芳香环的芳香 C 上，且排除含双键的 N、连接 O/N/P/S 邻原子的 N 及与邻近 C/P/S=O/N/S 共振失活的 N。已有亲脂–芳香时不重复高 cLogP。均无则回答无。"
+          ],
+          "en": [
+            "Flags: lipophilic-aromatic = cLogP>3 and ≥2 aromatic rings; otherwise high-cLogP = cLogP>4. Long sp³-carbon-chain = a simple continuous path of ≥5 non-ring sp³ carbon atoms; every atom in the path must be outside all rings (RDKit IsInRing() is false). Ring atoms cannot form or connect this path. Also detect ester and aryl-amine motifs. Do not repeat high-cLogP if lipophilic-aromatic applies.",
+            "Report only these five fixed benchmark flags, not open-ended metabolic sites: lipophilic–aromatic if cLogP>3 and aromatic rings>=2; otherwise high-cLogP if cLogP>4; long sp3-carbon-chain if a simple path of at least five consecutive non-ring sp3 carbon atoms exists (all path atoms IsInRing false); ester if [CX3](=O)[OX2][#6] matches; aryl-amine if a nonaromatic N is single-bonded to aromatic carbon in an all-carbon aromatic ring, excluding N with double bonds, O/N/P/S neighbors, or resonance deactivation by neighboring C/P/S=O/N/S. Do not repeat high-cLogP when lipophilic–aromatic applies. If none, answer none."
+          ]
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "molecule_caption",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_caption::druglike": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "molecule_caption",
+        "subtask": "druglike",
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [
+            "Lipinski exceedances: MW>500, cLogP>5, HBD>5, HBA>10."
+          ],
+          "zh": [
+            "Lipinski 超限：MW>500、cLogP>5、HBD>5、HBA>10。"
+          ]
+        },
+        "output_by_lang": {
+          "en": null,
+          "zh": null
+        }
+      },
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_caption::overview": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "molecule_caption",
+        "subtask": "overview",
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      },
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_caption::polarity": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "molecule_caption",
+        "subtask": "polarity",
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [
+            "TPSA bins (Å²): low <60, moderate 60–<90, elevated 90–<140, high ≥140. cLogP bins: low <1, intermediate 1–<4, high ≥4."
+          ]
+        },
+        "output_by_lang": {
+          "en": null
+        }
+      },
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_caption::scaffold": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "molecule_caption",
+        "subtask": "scaffold",
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": []
+        },
+        "output_by_lang": {
+          "zh": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "molecule_identification",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_identification": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "molecule_identification",
+        "subtask": null,
+        "metric_type": "accepted_name_exact",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": "Output only a molecule name.",
+          "zh": "仅输出分子名称。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "pairwise_analog_classification",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_analog_classification": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "pairwise_analog_classification",
+        "subtask": null,
+        "metric_type": "normalized_exact",
+        "rules_by_lang": {
+          "en": [
+            "Similarity uses RDKit 2024.03.5 Morgan bit fingerprints (radius=2, fpSize=2048, no chirality) with Tanimoto similarity. Coverage uses RDKit rdFMCS.FindMCS with completeRingsOnly=True and default element/bond-order matching: coverage_A=MCS heavy atoms/heavy atoms in A, coverage_B analogously, symmetric coverage=min(coverage_A,coverage_B). Classify close_analog if Tanimoto≥0.65, symmetric coverage>0.80, and the change is confined to one atom or one substitution site; otherwise related_analog if Tanimoto≥0.50 and symmetric coverage>0.60; otherwise not_close_analog."
+          ],
+          "zh": [
+            "相似度采用 RDKit 2024.03.5 Morgan 位指纹（radius=2，fpSize=2048，不使用手性）及 Tanimoto。覆盖率采用 RDKit rdFMCS.FindMCS（completeRingsOnly=True，默认元素/键级匹配）：coverage_A=MCS 重原子数/A 的重原子数，coverage_B 同理，对称覆盖率=min(coverage_A,coverage_B)。Tanimoto≥0.65、对称覆盖率>0.80 且差异仅限一个原子或一个取代位点时为 close_analog；否则 Tanimoto≥0.50 且对称覆盖率>0.60 为 related_analog；其余为 not_close_analog。"
+          ]
+        },
+        "output_by_lang": {
+          "en": "Output only one label: close_analog, related_analog, or not_close_analog.",
+          "zh": "Output only one label: close_analog, related_analog, or not_close_analog."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "pairwise_graph_diff",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_graph_diff": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "pairwise_graph_diff",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "pairwise_property_comparison",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_property_comparison": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "pairwise_property_comparison",
+        "subtask": null,
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": null,
+          "zh": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "permeability_solubility",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::permeability_solubility": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "permeability_solubility",
+        "subtask": null,
+        "metric_type": "normalized_exact",
+        "rules_by_lang": {
+          "zh": [
+            "TPSA 分档（Å²）：低 <60、中等 60–<90、偏高 90–<140、高 ≥140。cLogP 分档：低 <1、中等 1–<4、高 ≥4。"
+          ],
+          "en": [
+            "TPSA bins (Å²): low <60, moderate 60–<90, elevated 90–<140, high ≥140. cLogP bins: low <1, intermediate 1–<4, high ≥4."
+          ]
+        },
+        "output_by_lang": {
+          "zh": "仅输出：TPSA: <类别>; cLogP: <类别>",
+          "en": "Output only: TPSA: <class>; cLogP: <class>"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "ring_system_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::ring_system_grounding": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "ring_system_grounding",
+        "subtask": null,
+        "metric_type": "atom_set_exact",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": "仅返回所选原子索引列表。",
+          "en": "Return only the selected atom indices as a list."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "scaffold_core_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_core_grounding": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "scaffold_core_grounding",
+        "subtask": null,
+        "metric_type": "atom_set_exact",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": "Return only the selected atom indices as a list.",
+          "zh": "仅返回所选原子索引列表。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "scaffold_fragment_caption",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_fragment_caption::fragment": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "scaffold_fragment_caption",
+        "subtask": "fragment",
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      },
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_fragment_caption::scaffold": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "scaffold_fragment_caption",
+        "subtask": "scaffold",
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      },
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_fragment_caption::substituent": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "scaffold_fragment_caption",
+        "subtask": "substituent",
+        "metric_type": "semantic_judge",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": null,
+          "en": null
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "scaffold_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_grounding": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "scaffold_grounding",
+        "subtask": null,
+        "metric_type": "scaffold_plus_groups_exact",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": "Return the scaffold atom-index list, followed by each substituent atom-index list.",
+          "zh": "先返回骨架原子索引列表，再返回各取代基原子索引列表。"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "simple_ring_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::simple_ring_grounding": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "simple_ring_grounding",
+        "subtask": null,
+        "metric_type": "atom_set_exact",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": "仅返回所选原子索引列表。",
+          "en": "Return only the selected atom indices as a list."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "single_instance_functional_group_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_instance_functional_group_grounding": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "single_instance_functional_group_grounding",
+        "subtask": null,
+        "metric_type": "atom_group_set_exact",
+        "rules_by_lang": {
+          "zh": [],
+          "en": []
+        },
+        "output_by_lang": {
+          "zh": "按列表的列表返回各原子索引组。",
+          "en": "Return each atom-index group as a list of lists."
+        }
+      }
+    }
+  },
+  {
+    "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+    "task_type": "single_substituent_grounding",
+    "sample_count": 6,
+    "evaluation_role": "scientific task",
+    "public_contracts": {
+      "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_substituent_grounding": {
+        "dataset": "pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824",
+        "task_type": "single_substituent_grounding",
+        "subtask": null,
+        "metric_type": "atom_group_set_exact",
+        "rules_by_lang": {
+          "en": [],
+          "zh": []
+        },
+        "output_by_lang": {
+          "en": "Return each atom-index group as a list of lists.",
+          "zh": "按列表的列表返回各原子索引组。"
+        }
+      }
+    }
+  }
+]

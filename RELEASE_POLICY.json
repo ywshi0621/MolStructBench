@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "policy_date": "2026-10-09",
+  "scoring_mechanism": "deterministic scorer + frozen Qwen3.8-Max three independent blind votes, median",
+  "aggregation": "task-unit mean -> dataset mean -> equal three-dataset mean",
+  "required_checks": [
+    "fixed_data_selection_hashes",
+    "deterministic_gold_180",
+    "scoring_regressions",
+    "five_model_predictions_1440",
+    "judge_1665_complete_verified",
+    "credentials_and_human_identity_absent",
+    "local_cli_scoring_and_resume",
+    "freeze_integrity"
+  ],
+  "optional_future_validation": {
+    "full_agent_os_audit": "not_verified",
+    "native_vllm_engine": "not_verified",
+    "immutable_judge_backend_build": "unavailable"
+  },
+  "solver_reruns_authorized_for_this_release": false,
+  "runtime_protocol": "profile-a-timeouts-v2",
+  "runtime_changed_from_rc3": false,
+  "distribution": "open-gold",
+  "hidden_test_set": false,
+  "scoring_location": "local",
+  "benchmark_name": "MolStructBench",
+  "edition": "with-harness"
+}

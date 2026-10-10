@@ -1,0 +1,42 @@
+{
+  "runs": [
+    {
+      "key": "deepseek_v4_pro_0813",
+      "predictions_sha256": "35ce943927f534b75617b328435e52f5ffacf050966e0af59aaf5dc52c746376",
+      "judge_triples_sha256": "2041acd27bd2e98b3235cee7bc3da0345fbc1f5fc98f731495a5039bd3a36072",
+      "expected_scores_sha256": "494ea0e5bbe3293fa481ec651e934243ae9f637e87f7b9b6060da10146d568b9",
+      "vote_count": 333
+    },
+    {
+      "key": "glm53_max",
+      "predictions_sha256": "e974d6f8ba60dd9e26437efa3136606f53b61736ac0e5097df410d8aa2892762",
+      "judge_triples_sha256": "a925a8c6996c4f172adaae9bbb5088d0dae8de926595b5371242718e0c190d7e",
+      "expected_scores_sha256": "4e1e4d537802659331260e089e2206e6fa1dc6e705ebe62d5f7b4e765e33c6ce",
+      "vote_count": 330
+    },
+    {
+      "key": "gpt_6_astra",
+      "predictions_sha256": "530f90182853191b3985640af0c3b5c395bacd05d2c2fed65afdacb32172dfe5",
+      "judge_triples_sha256": "82664ed130d65e03f73669ce42657cb0e9a728ccb15293d6b9e2bc8775e72262",
+      "expected_scores_sha256": "140af449b8ac2e6bddda0822894f34669505422ea02cecf135ffa1fa40612fcc",
+      "vote_count": 333
+    },
+    {
+      "key": "kimi_k3",
+      "predictions_sha256": "e9c72f590e19f11f806e7f3d2c129a9b4eafea114dba38c958f2876cf8f48c6b",
+      "judge_triples_sha256": "fb7c94558ad93d7058ecedcf8a3b29a64549dd71e7abe9498cd935f12d267a1b",
+      "expected_scores_sha256": "9085058033c6eb6f712c30075f6d0690829cc7584334f87635162688e2fccb64",
+      "vote_count": 333
+    },
+    {
+      "key": "qwen38_max",
+      "predictions_sha256": "18312d8fa25f43feaa9314bf3616af5e55408747e1261b59e1ff048ab7333035",
+      "judge_triples_sha256": "0b0d5db68218b0cd9ddae8addc80085f1e9180589ae55fc0dde61cc52b4e94a2",
+      "expected_scores_sha256": "a4cbfb3a0de0cb5d763284adf9e007587895af10b37e660371b4823cf6c6a487",
+      "vote_count": 336
+    }
+  ],
+  "votes": 1665,
+  "human_identity_mapping_included": false,
+  "purpose": "Byte-identical existing predictions/votes for reproducible offline scoring; expected scores are assertions, never scoring inputs"
+}

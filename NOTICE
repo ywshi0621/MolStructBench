@@ -1,0 +1,6 @@
+MolStructBench Core-288 v1.0 open-gold distribution.
+Scientific questions, facts, references and accepted variants are published for local evaluation.
+This redistribution does not claim hidden-test status or transfer third-party molecule/data rights.
+The included OpenCode binary and its upstream license are retained under vendor/.
+Third-party Python packages keep their respective upstream licenses.
+No API credentials or human annotation identities are included.

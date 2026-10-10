@@ -1,0 +1,241 @@
+model,unit,score,sample_count,pending
+Kimi K3,3d_0907::conformer_energy_ranking,1.0,6,0
+Kimi K3,3d_0907::functional_group_bbox_grounding_3d,1.0,6,0
+Kimi K3,3d_0907::hbond_contact_change_grounding_3d,1.0,6,0
+Kimi K3,3d_0907::pharmacophore_relation_grounding_3d,1.0,6,0
+Kimi K3,3d_0907::rotatable_bond_bbox_grounding_3d,0.6666666666666666,6,0
+Kimi K3,3d_0907::shared_functional_group_pair_grounding_3d,1.0,6,0
+Kimi K3,3d_0907::stereocenter_grounding_3d,1.0,6,0
+Kimi K3,3d_0907::torsion_change_grounding_3d,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::anchor_atom_grounding,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::drug_likeness,0.9166666666666666,6,0
+Kimi K3,3d_to_2d_v7_5_final::functional_group_grounding,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::functional_group_qa,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::hydrogen_bond_source_explanation,0.9166666666666666,6,0
+Kimi K3,3d_to_2d_v7_5_final::metabolic_liability,0.9166666666666666,6,0
+Kimi K3,3d_to_2d_v7_5_final::molecule_caption,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::pairwise_analog_classification,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::pairwise_graph_diff,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::pairwise_property_comparison,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::permeability_solubility,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::scaffold_core_grounding,0.6666666666666666,6,0
+Kimi K3,3d_to_2d_v7_5_final::scaffold_fragment_caption,0.8333333333333334,6,0
+Kimi K3,3d_to_2d_v7_5_final::simple_ring_grounding,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::single_instance_functional_group_grounding,1.0,6,0
+Kimi K3,3d_to_2d_v7_5_final::single_substituent_grounding,0.6666666666666666,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::anchor_atom_grounding,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::attachment_bond_endpoint_grounding,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::bond_grounding,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::database_grounded_knowledge_caption,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::drug_likeness,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::full_form_parent_standardization,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_grounding,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_qa,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::identity_with_structural_evidence,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::known_target_mechanism,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::metabolic_liability,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_caption,0.8333333333333334,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_identification,0.8333333333333334,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_analog_classification,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_graph_diff,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_property_comparison,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::permeability_solubility,0.8333333333333334,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::ring_system_grounding,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_core_grounding,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_fragment_caption,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_grounding,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::simple_ring_grounding,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_instance_functional_group_grounding,1.0,6,0
+Kimi K3,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_substituent_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,3d_0907::conformer_energy_ranking,1.0,6,0
+DeepSeek V4 Pro 0813,3d_0907::functional_group_bbox_grounding_3d,1.0,6,0
+DeepSeek V4 Pro 0813,3d_0907::hbond_contact_change_grounding_3d,0.8333333333333334,6,0
+DeepSeek V4 Pro 0813,3d_0907::pharmacophore_relation_grounding_3d,1.0,6,0
+DeepSeek V4 Pro 0813,3d_0907::rotatable_bond_bbox_grounding_3d,0.5,6,0
+DeepSeek V4 Pro 0813,3d_0907::shared_functional_group_pair_grounding_3d,1.0,6,0
+DeepSeek V4 Pro 0813,3d_0907::stereocenter_grounding_3d,1.0,6,0
+DeepSeek V4 Pro 0813,3d_0907::torsion_change_grounding_3d,1.0,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::anchor_atom_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::drug_likeness,0.8333333333333334,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::functional_group_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::functional_group_qa,1.0,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::hydrogen_bond_source_explanation,0.6666666666666666,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::metabolic_liability,0.8333333333333334,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::molecule_caption,0.8333333333333334,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::pairwise_analog_classification,1.0,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::pairwise_graph_diff,0.8333333333333334,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::pairwise_property_comparison,0.75,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::permeability_solubility,1.0,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::scaffold_core_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::scaffold_fragment_caption,1.0,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::simple_ring_grounding,0.8333333333333334,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::single_instance_functional_group_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,3d_to_2d_v7_5_final::single_substituent_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::anchor_atom_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::attachment_bond_endpoint_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::bond_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::database_grounded_knowledge_caption,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::drug_likeness,0.9166666666666666,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::full_form_parent_standardization,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_qa,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::identity_with_structural_evidence,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::known_target_mechanism,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::metabolic_liability,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_caption,0.9166666666666666,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_identification,0.9166666666666666,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_analog_classification,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_graph_diff,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_property_comparison,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::permeability_solubility,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::ring_system_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_core_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_fragment_caption,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::simple_ring_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_instance_functional_group_grounding,1.0,6,0
+DeepSeek V4 Pro 0813,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_substituent_grounding,1.0,6,0
+Qwen3.8-Max,3d_0907::conformer_energy_ranking,1.0,6,0
+Qwen3.8-Max,3d_0907::functional_group_bbox_grounding_3d,1.0,6,0
+Qwen3.8-Max,3d_0907::hbond_contact_change_grounding_3d,1.0,6,0
+Qwen3.8-Max,3d_0907::pharmacophore_relation_grounding_3d,1.0,6,0
+Qwen3.8-Max,3d_0907::rotatable_bond_bbox_grounding_3d,0.5,6,0
+Qwen3.8-Max,3d_0907::shared_functional_group_pair_grounding_3d,1.0,6,0
+Qwen3.8-Max,3d_0907::stereocenter_grounding_3d,1.0,6,0
+Qwen3.8-Max,3d_0907::torsion_change_grounding_3d,1.0,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::anchor_atom_grounding,1.0,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::drug_likeness,0.8333333333333334,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::functional_group_grounding,1.0,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::functional_group_qa,1.0,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::hydrogen_bond_source_explanation,0.6666666666666666,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::metabolic_liability,0.9166666666666666,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::molecule_caption,0.8333333333333334,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::pairwise_analog_classification,1.0,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::pairwise_graph_diff,0.9166666666666666,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::pairwise_property_comparison,0.9166666666666666,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::permeability_solubility,0.9166666666666666,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::scaffold_core_grounding,0.3333333333333333,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::scaffold_fragment_caption,0.8333333333333334,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::simple_ring_grounding,1.0,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::single_instance_functional_group_grounding,1.0,6,0
+Qwen3.8-Max,3d_to_2d_v7_5_final::single_substituent_grounding,0.8333333333333334,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::anchor_atom_grounding,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::attachment_bond_endpoint_grounding,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::bond_grounding,0.8333333333333334,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::database_grounded_knowledge_caption,0.75,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::drug_likeness,0.8333333333333334,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::full_form_parent_standardization,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_grounding,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_qa,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::identity_with_structural_evidence,0.8333333333333334,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::known_target_mechanism,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::metabolic_liability,0.8333333333333334,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_caption,0.9166666666666666,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_identification,0.3333333333333333,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_analog_classification,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_graph_diff,0.9166666666666666,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_property_comparison,0.8333333333333334,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::permeability_solubility,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::ring_system_grounding,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_core_grounding,0.6666666666666666,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_fragment_caption,0.9166666666666666,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_grounding,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::simple_ring_grounding,1.0,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_instance_functional_group_grounding,0.8333333333333334,6,0
+Qwen3.8-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_substituent_grounding,1.0,6,0
+GLM-5.3-Max,3d_0907::conformer_energy_ranking,1.0,6,0
+GLM-5.3-Max,3d_0907::functional_group_bbox_grounding_3d,0.8333333333333334,6,0
+GLM-5.3-Max,3d_0907::hbond_contact_change_grounding_3d,1.0,6,0
+GLM-5.3-Max,3d_0907::pharmacophore_relation_grounding_3d,1.0,6,0
+GLM-5.3-Max,3d_0907::rotatable_bond_bbox_grounding_3d,0.5,6,0
+GLM-5.3-Max,3d_0907::shared_functional_group_pair_grounding_3d,1.0,6,0
+GLM-5.3-Max,3d_0907::stereocenter_grounding_3d,0.6666666666666666,6,0
+GLM-5.3-Max,3d_0907::torsion_change_grounding_3d,0.8333333333333334,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::anchor_atom_grounding,1.0,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::drug_likeness,0.5833333333333334,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::functional_group_grounding,1.0,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::functional_group_qa,0.8333333333333334,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::hydrogen_bond_source_explanation,0.5833333333333334,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::metabolic_liability,0.8333333333333334,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::molecule_caption,0.9166666666666666,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::pairwise_analog_classification,1.0,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::pairwise_graph_diff,0.9166666666666666,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::pairwise_property_comparison,0.9166666666666666,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::permeability_solubility,1.0,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::scaffold_core_grounding,0.8333333333333334,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::scaffold_fragment_caption,0.75,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::simple_ring_grounding,1.0,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::single_instance_functional_group_grounding,1.0,6,0
+GLM-5.3-Max,3d_to_2d_v7_5_final::single_substituent_grounding,0.5,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::anchor_atom_grounding,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::attachment_bond_endpoint_grounding,0.8333333333333334,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::bond_grounding,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::database_grounded_knowledge_caption,0.8333333333333334,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::drug_likeness,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::full_form_parent_standardization,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_grounding,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_qa,0.8333333333333334,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::identity_with_structural_evidence,0.8333333333333334,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::known_target_mechanism,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::metabolic_liability,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_caption,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_identification,0.8333333333333334,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_analog_classification,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_graph_diff,0.3333333333333333,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_property_comparison,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::permeability_solubility,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::ring_system_grounding,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_core_grounding,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_fragment_caption,0.9166666666666666,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_grounding,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::simple_ring_grounding,1.0,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_instance_functional_group_grounding,0.8333333333333334,6,0
+GLM-5.3-Max,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_substituent_grounding,0.6666666666666666,6,0
+GPT-6 Astra,3d_0907::conformer_energy_ranking,1.0,6,0
+GPT-6 Astra,3d_0907::functional_group_bbox_grounding_3d,1.0,6,0
+GPT-6 Astra,3d_0907::hbond_contact_change_grounding_3d,1.0,6,0
+GPT-6 Astra,3d_0907::pharmacophore_relation_grounding_3d,1.0,6,0
+GPT-6 Astra,3d_0907::rotatable_bond_bbox_grounding_3d,1.0,6,0
+GPT-6 Astra,3d_0907::shared_functional_group_pair_grounding_3d,1.0,6,0
+GPT-6 Astra,3d_0907::stereocenter_grounding_3d,1.0,6,0
+GPT-6 Astra,3d_0907::torsion_change_grounding_3d,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::anchor_atom_grounding,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::drug_likeness,0.8333333333333334,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::functional_group_grounding,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::functional_group_qa,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::hydrogen_bond_source_explanation,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::metabolic_liability,0.9166666666666666,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::molecule_caption,0.9166666666666666,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::pairwise_analog_classification,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::pairwise_graph_diff,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::pairwise_property_comparison,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::permeability_solubility,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::scaffold_core_grounding,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::scaffold_fragment_caption,0.9166666666666666,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::simple_ring_grounding,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::single_instance_functional_group_grounding,1.0,6,0
+GPT-6 Astra,3d_to_2d_v7_5_final::single_substituent_grounding,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::anchor_atom_grounding,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::attachment_bond_endpoint_grounding,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::bond_grounding,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::database_grounded_knowledge_caption,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::drug_likeness,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::full_form_parent_standardization,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_grounding,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::functional_group_qa,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::identity_with_structural_evidence,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::known_target_mechanism,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::metabolic_liability,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_caption,0.9166666666666666,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::molecule_identification,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_analog_classification,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_graph_diff,0.8333333333333334,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::pairwise_property_comparison,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::permeability_solubility,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::ring_system_grounding,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_core_grounding,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_fragment_caption,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::scaffold_grounding,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::simple_ring_grounding,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_instance_functional_group_grounding,1.0,6,0
+GPT-6 Astra,pure2d_full_rdkit2024035_sft_v4_pairwisefix_groundingaligned_v12_20260824::single_substituent_grounding,1.0,6,0

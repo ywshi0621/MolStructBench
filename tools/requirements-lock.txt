@@ -1,0 +1,12 @@
+numpy==1.26.4
+networkx==3.4.2
+openbabel-wheel==3.1.1.22
+pandas==2.2.3
+pillow==12.3.0
+python-dateutil==2.9.0.post0
+pytz==2026.4
+PyYAML==6.0.2
+rdkit==2024.3.5
+scipy==1.13.1
+six==1.17.0
+tzdata==2026.4

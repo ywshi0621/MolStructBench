@@ -1,0 +1,62 @@
+[
+  {
+    "model": "GPT-6 Astra",
+    "key": "gpt_6_astra",
+    "MolStructBench_Score": 98.78472222222221,
+    "Native3D": 100.0,
+    "3D→2D": 97.39583333333334,
+    "Pure2D": 98.95833333333334,
+    "deterministic_secondary": 100.0,
+    "semantic_secondary": 96.29629629629629,
+    "micro_secondary": 98.61111111111111,
+    "pending": 0
+  },
+  {
+    "model": "Kimi K3",
+    "key": "kimi_k3",
+    "MolStructBench_Score": 95.65972222222221,
+    "Native3D": 95.83333333333334,
+    "3D→2D": 93.22916666666666,
+    "Pure2D": 97.91666666666666,
+    "deterministic_secondary": 95.55555555555556,
+    "semantic_secondary": 96.75925925925925,
+    "micro_secondary": 96.00694444444444,
+    "pending": 0
+  },
+  {
+    "model": "DeepSeek V4 Pro 0813",
+    "key": "deepseek_v4_pro_0813",
+    "MolStructBench_Score": 93.92361111111111,
+    "Native3D": 91.66666666666666,
+    "3D→2D": 91.14583333333334,
+    "Pure2D": 98.95833333333334,
+    "deterministic_secondary": 96.94444444444444,
+    "semantic_secondary": 92.12962962962963,
+    "micro_secondary": 95.13888888888889,
+    "pending": 0
+  },
+  {
+    "model": "Qwen3.8-Max",
+    "key": "qwen38_max",
+    "MolStructBench_Score": 90.27777777777779,
+    "Native3D": 93.75,
+    "3D→2D": 87.5,
+    "Pure2D": 89.58333333333334,
+    "deterministic_secondary": 91.11111111111111,
+    "semantic_secondary": 87.03703703703704,
+    "micro_secondary": 89.58333333333334,
+    "pending": 0
+  },
+  {
+    "model": "GLM-5.3-Max",
+    "key": "glm53_max",
+    "MolStructBench_Score": 87.38425925925925,
+    "Native3D": 85.41666666666666,
+    "3D→2D": 85.41666666666666,
+    "Pure2D": 91.31944444444444,
+    "deterministic_secondary": 90.55555555555556,
+    "semantic_secondary": 84.72222222222221,
+    "micro_secondary": 88.36805555555556,
+    "pending": 0
+  }
+]

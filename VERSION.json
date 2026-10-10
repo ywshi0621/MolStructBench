@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "scientific_protocol": "v1.0 unchanged; verified evidence snapshot migration",
+  "public_data_sha256": "19142c0794e4259371a41b03ed9553f5df7baf58de08660054237a5a3e61a20a",
+  "selection_sha256": "a0e684a0fe9cdafaaabfcc7fb871b71b17ea696e4d3135a49bc00c7cf8ae02ac",
+  "solver_reruns_in_this_delivery": 0,
+  "task_units": 48,
+  "selected_ids": 288,
+  "runtime_protocol": "profile-a-timeouts-v2",
+  "publication_status": "v1.0_frozen",
+  "distribution": "open-gold offline",
+  "hidden_test_set": false,
+  "scoring_location": "local",
+  "benchmark_name": "MolStructBench",
+  "edition": "with-harness",
+  "legacy_identifiers_preserved": true
+}

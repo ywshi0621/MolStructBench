@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "edition": "WITH_HARNESS",
+  "scanned_files": 133,
+  "personal_identifiers": 0,
+  "known_credential_hits": 0,
+  "credential_pattern_hits": 0,
+  "personal_absolute_paths": 0,
+  "machine_endpoint_literals": 0,
+  "git_history_included": false,
+  "runtime_or_private_logs_included": false,
+  "large_binary_included": false,
+  "scientific_data_prompt_and_judge_protocol_unchanged": true,
+  "scope": "All published filenames and bytes, including archived JSONL and documentation. Generic sandbox, temporary and system paths are intentionally preserved. No private identity strings are printed in this report.",
+  "final_scan_passed": true,
+  "tested_executable_scientific_assets_byte_identical": true,
+  "docx_members_scanned": true
+}

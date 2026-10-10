@@ -1,0 +1,21 @@
+judge:
+  provider: openai-compatible
+  model: qwen3.8-max
+  base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+  api_key_env: DASHSCOPE_API_KEY
+  temperature: 0.6
+  enable_thinking: true
+  reasoning_effort: high
+  max_tokens: 8192
+  timeout_seconds: 1800
+  max_attempts: 3
+  concurrency: 4
+  global_concurrency: 4
+  prompt_template: evaluator/judge_prompt_v1.txt
+calibration:
+  sample_count: 50
+  seed: 288100
+  repetitions: 3
+  required_human_solver_coverage: 5
+  minimum_exact_agreement: 0.85
+  maximum_severe_disagreement: 0.05

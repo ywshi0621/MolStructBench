@@ -1,0 +1,58 @@
+{
+  "original_prompt_sha256": "56d08a35165cc95ec0a8a33381ac734722cd0aaec023c1341b5485c4c7eb3070",
+  "original_judge_config_sha256": "6426d9c83b9bb20e4c5236f2f5cb3b7f93dafd3a259f9bcb856b75eba41ecd46",
+  "source_original_public_sha256": "19142c0794e4259371a41b03ed9553f5df7baf58de08660054237a5a3e61a20a",
+  "original_gold_sha256": "52595cd4052a43bd43d9a34ed1a5c7a06b27e890287417fad81b419753724c5e",
+  "released_gold_sha256": "996dadd0f8731008d4cc288732745d4904e0bf1b3e43e34a0eec2363c6cf12ac",
+  "removed_gold_metadata": [
+    "original_sample_id",
+    "source_split"
+  ],
+  "all_1665_original_request_hashes_matched": true,
+  "archived_votes_modified": false,
+  "evidence_snapshot_sha256": "83949b9b5d7e56855071f0f3e829d6068fff262980d4db6900cea37aa2c0e077",
+  "reconstruction_not_claimed_original_wire_capture": true,
+  "original_environment_audit": {
+    "runtime_rdkit_version": "2024.03.5",
+    "matched_votes": 1665,
+    "total_votes": 1665,
+    "models": [
+      {
+        "model_key": "deepseek_v4_pro_0813",
+        "votes": 333,
+        "mismatches": [],
+        "different_rdkit_version_marker_mismatches": 333
+      },
+      {
+        "model_key": "glm53_max",
+        "votes": 330,
+        "mismatches": [],
+        "different_rdkit_version_marker_mismatches": 330
+      },
+      {
+        "model_key": "gpt_6_astra",
+        "votes": 333,
+        "mismatches": [],
+        "different_rdkit_version_marker_mismatches": 333
+      },
+      {
+        "model_key": "kimi_k3",
+        "votes": 333,
+        "mismatches": [],
+        "different_rdkit_version_marker_mismatches": 333
+      },
+      {
+        "model_key": "qwen38_max",
+        "votes": 336,
+        "mismatches": [],
+        "different_rdkit_version_marker_mismatches": 336
+      }
+    ],
+    "diagnosis": "Current verifier regenerates public evidence including RDKit runtime version, mapped SMILES and binary floats; byte request identity therefore depends on evaluator runtime. This audit tests the archived environment and isolates version-marker sensitivity; the independent failing environment was not provided."
+  },
+  "frozen_scoring_function_sha256": {
+    "aggregate": "9e19ac903fed363e797179073252bce1f380ef763a22efe45defc89e26f44aab",
+    "score_rows": "aa0a30af678bb6d2ce0d3c0893968d3b239c5f0af07cb489c24b526698a884c8",
+    "median_three": "ada2e76e471d095112fa917c6c4aa20571f4a97e01541def397c4d37b47288a8"
+  }
+}

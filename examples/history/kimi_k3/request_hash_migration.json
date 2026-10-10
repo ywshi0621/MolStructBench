@@ -1,0 +1,2337 @@
+{
+  "status": "verified_reconstruction_not_original_wire_capture",
+  "votes_verified": 333,
+  "records": [
+    {
+      "id": "scibench_000182",
+      "replicate": 1,
+      "archived_request_sha256": "d3a74cd4921a2735845ca99edb99decbc0f83280a3e979d5192384f15af5d86e",
+      "reconstructed_request_sha256": "d3a74cd4921a2735845ca99edb99decbc0f83280a3e979d5192384f15af5d86e",
+      "original_timestamp": "2026-10-08T13:09:47.647784+00:00"
+    },
+    {
+      "id": "scibench_000183",
+      "replicate": 1,
+      "archived_request_sha256": "cea6a81f3d212764d7ba0661b6b14a52a60b28c7134bda91bfb6f34a5894a2b9",
+      "reconstructed_request_sha256": "cea6a81f3d212764d7ba0661b6b14a52a60b28c7134bda91bfb6f34a5894a2b9",
+      "original_timestamp": "2026-10-08T13:02:32.334754+00:00"
+    },
+    {
+      "id": "scibench_000188",
+      "replicate": 1,
+      "archived_request_sha256": "cb44a73c7a063a6e66e41d29d720d72a37de1b1396e5525c8a621c706aa45780",
+      "reconstructed_request_sha256": "cb44a73c7a063a6e66e41d29d720d72a37de1b1396e5525c8a621c706aa45780",
+      "original_timestamp": "2026-10-08T13:07:28.003339+00:00"
+    },
+    {
+      "id": "scibench_000190",
+      "replicate": 1,
+      "archived_request_sha256": "1d9ec60c03fff8f69116890ed196c493343f07f72372fc7df9cda8728fd9b5fc",
+      "reconstructed_request_sha256": "1d9ec60c03fff8f69116890ed196c493343f07f72372fc7df9cda8728fd9b5fc",
+      "original_timestamp": "2026-10-08T13:11:52.659628+00:00"
+    },
+    {
+      "id": "scibench_000198",
+      "replicate": 1,
+      "archived_request_sha256": "b6dec3ca70f2edcf55da42686398b8b1f06bd6d668ae6e6641550f9f960581aa",
+      "reconstructed_request_sha256": "b6dec3ca70f2edcf55da42686398b8b1f06bd6d668ae6e6641550f9f960581aa",
+      "original_timestamp": "2026-10-08T13:10:23.906085+00:00"
+    },
+    {
+      "id": "scibench_000199",
+      "replicate": 1,
+      "archived_request_sha256": "1dcfa32c6d7f5e3dd023f1bf4336b32e348afd0130a1833921f4fe23d5f57ea3",
+      "reconstructed_request_sha256": "1dcfa32c6d7f5e3dd023f1bf4336b32e348afd0130a1833921f4fe23d5f57ea3",
+      "original_timestamp": "2026-10-08T13:12:00.520326+00:00"
+    },
+    {
+      "id": "scibench_000221",
+      "replicate": 1,
+      "archived_request_sha256": "c2fa52b0fcf67f9958f57d8e59b77f96c343ad6a093d94ce3d3c241204e15cb5",
+      "reconstructed_request_sha256": "c2fa52b0fcf67f9958f57d8e59b77f96c343ad6a093d94ce3d3c241204e15cb5",
+      "original_timestamp": "2026-10-08T13:13:14.783332+00:00"
+    },
+    {
+      "id": "scibench_000222",
+      "replicate": 1,
+      "archived_request_sha256": "b1b2734b60707ba52ff4ebaabfcc4fd4036055f2440bb83494cb478b947b10f8",
+      "reconstructed_request_sha256": "b1b2734b60707ba52ff4ebaabfcc4fd4036055f2440bb83494cb478b947b10f8",
+      "original_timestamp": "2026-10-08T13:12:30.471440+00:00"
+    },
+    {
+      "id": "scibench_000223",
+      "replicate": 1,
+      "archived_request_sha256": "bd734feffa29bffe8eb9862e8759dd52aff11cac9ab0047489df9353e83deda5",
+      "reconstructed_request_sha256": "bd734feffa29bffe8eb9862e8759dd52aff11cac9ab0047489df9353e83deda5",
+      "original_timestamp": "2026-10-08T13:13:30.543361+00:00"
+    },
+    {
+      "id": "scibench_000226",
+      "replicate": 1,
+      "archived_request_sha256": "1a33c237aa077d3b78dd112acd769e69a9c9d37dd2e142ab4910e7e1f34d6dd4",
+      "reconstructed_request_sha256": "1a33c237aa077d3b78dd112acd769e69a9c9d37dd2e142ab4910e7e1f34d6dd4",
+      "original_timestamp": "2026-10-08T13:12:54.099953+00:00"
+    },
+    {
+      "id": "scibench_000232",
+      "replicate": 1,
+      "archived_request_sha256": "e7b20dea2f756a0a4a59837ba5a9330c795bbbe6a8f4ae7c7693e6aff1d3501a",
+      "reconstructed_request_sha256": "e7b20dea2f756a0a4a59837ba5a9330c795bbbe6a8f4ae7c7693e6aff1d3501a",
+      "original_timestamp": "2026-10-08T13:14:03.589989+00:00"
+    },
+    {
+      "id": "scibench_000237",
+      "replicate": 1,
+      "archived_request_sha256": "bf8ecc9007593790f401d8032f850bce79c0c4100bba12dc8883f5513fb53484",
+      "reconstructed_request_sha256": "bf8ecc9007593790f401d8032f850bce79c0c4100bba12dc8883f5513fb53484",
+      "original_timestamp": "2026-10-08T13:11:59.842103+00:00"
+    },
+    {
+      "id": "scibench_000242",
+      "replicate": 1,
+      "archived_request_sha256": "e290eca9b8dc034f2b265f6b5a8ed7874ad3a31fb96a13e89906c28b16f0c6f4",
+      "reconstructed_request_sha256": "e290eca9b8dc034f2b265f6b5a8ed7874ad3a31fb96a13e89906c28b16f0c6f4",
+      "original_timestamp": "2026-10-08T13:15:18.702969+00:00"
+    },
+    {
+      "id": "scibench_000245",
+      "replicate": 1,
+      "archived_request_sha256": "7fd1079f3464adb05993a85ad208bbc25fa8a29ad4d6f0d40b00a9332660414f",
+      "reconstructed_request_sha256": "7fd1079f3464adb05993a85ad208bbc25fa8a29ad4d6f0d40b00a9332660414f",
+      "original_timestamp": "2026-10-08T13:16:05.311300+00:00"
+    },
+    {
+      "id": "scibench_000249",
+      "replicate": 1,
+      "archived_request_sha256": "d731b2a50dc195d79c9267c2d02c56f84bf9ab517576576b47d82b84f24eed41",
+      "reconstructed_request_sha256": "d731b2a50dc195d79c9267c2d02c56f84bf9ab517576576b47d82b84f24eed41",
+      "original_timestamp": "2026-10-08T13:14:37.112831+00:00"
+    },
+    {
+      "id": "scibench_000252",
+      "replicate": 1,
+      "archived_request_sha256": "52525db71dc73b7e8091d6d19e5848e0412b7196282d0820790b3abbebb6fdff",
+      "reconstructed_request_sha256": "52525db71dc73b7e8091d6d19e5848e0412b7196282d0820790b3abbebb6fdff",
+      "original_timestamp": "2026-10-08T13:15:43.481345+00:00"
+    },
+    {
+      "id": "scibench_000254",
+      "replicate": 1,
+      "archived_request_sha256": "d3c3fe4ac698c27f4c3d3df6d0b743412d9f7d402c6f57443e20cdfc71daaba5",
+      "reconstructed_request_sha256": "d3c3fe4ac698c27f4c3d3df6d0b743412d9f7d402c6f57443e20cdfc71daaba5",
+      "original_timestamp": "2026-10-08T13:14:26.429506+00:00"
+    },
+    {
+      "id": "scibench_000260",
+      "replicate": 1,
+      "archived_request_sha256": "e14855312cfb84a2318917c8e84009b5b625b17be35de777bccba4a84596df7d",
+      "reconstructed_request_sha256": "e14855312cfb84a2318917c8e84009b5b625b17be35de777bccba4a84596df7d",
+      "original_timestamp": "2026-10-08T13:14:35.117934+00:00"
+    },
+    {
+      "id": "scibench_000269",
+      "replicate": 1,
+      "archived_request_sha256": "737217741a4ba607fb3f7ed7fcc5971e4795acee703c9a38f25306fd4e87883a",
+      "reconstructed_request_sha256": "737217741a4ba607fb3f7ed7fcc5971e4795acee703c9a38f25306fd4e87883a",
+      "original_timestamp": "2026-10-08T13:21:27.294252+00:00"
+    },
+    {
+      "id": "scibench_000272",
+      "replicate": 1,
+      "archived_request_sha256": "ab2621aa2c87a7b950291739381701f974d9f5e537a6ba57e077f7d9b65a4583",
+      "reconstructed_request_sha256": "ab2621aa2c87a7b950291739381701f974d9f5e537a6ba57e077f7d9b65a4583",
+      "original_timestamp": "2026-10-08T13:17:30.071019+00:00"
+    },
+    {
+      "id": "scibench_000273",
+      "replicate": 1,
+      "archived_request_sha256": "c016bf809fb004dac54468da117cccb7aba82d1765cbb879de4b841b8aac80db",
+      "reconstructed_request_sha256": "c016bf809fb004dac54468da117cccb7aba82d1765cbb879de4b841b8aac80db",
+      "original_timestamp": "2026-10-08T13:16:23.221186+00:00"
+    },
+    {
+      "id": "scibench_000277",
+      "replicate": 1,
+      "archived_request_sha256": "1fc79fd28e2ebca56ac6bcda8f1196b19ea6675ec54d8cad19d59436138d65e9",
+      "reconstructed_request_sha256": "1fc79fd28e2ebca56ac6bcda8f1196b19ea6675ec54d8cad19d59436138d65e9",
+      "original_timestamp": "2026-10-08T13:19:05.753310+00:00"
+    },
+    {
+      "id": "scibench_000279",
+      "replicate": 1,
+      "archived_request_sha256": "64bc9768c77c991856b57ccf5bed8d9f7390c73bc0a6f61d23234f1836d190f4",
+      "reconstructed_request_sha256": "64bc9768c77c991856b57ccf5bed8d9f7390c73bc0a6f61d23234f1836d190f4",
+      "original_timestamp": "2026-10-08T13:16:03.692249+00:00"
+    },
+    {
+      "id": "scibench_000280",
+      "replicate": 1,
+      "archived_request_sha256": "927589c083aa4457f0ccc2b38736386e6d592dbacfcf2e1a318e6725d4ee9277",
+      "reconstructed_request_sha256": "927589c083aa4457f0ccc2b38736386e6d592dbacfcf2e1a318e6725d4ee9277",
+      "original_timestamp": "2026-10-08T13:16:54.116848+00:00"
+    },
+    {
+      "id": "scibench_000282",
+      "replicate": 1,
+      "archived_request_sha256": "d34194ecd514561006ad5013e5f0c224ad35fbbbd2c4a379fb1b01f4ab85c4d1",
+      "reconstructed_request_sha256": "d34194ecd514561006ad5013e5f0c224ad35fbbbd2c4a379fb1b01f4ab85c4d1",
+      "original_timestamp": "2026-10-08T13:24:44.135670+00:00"
+    },
+    {
+      "id": "scibench_000285",
+      "replicate": 1,
+      "archived_request_sha256": "92b2013437283e74833a6d6a516dab7199a96e21d06179589fa810c5b577783c",
+      "reconstructed_request_sha256": "92b2013437283e74833a6d6a516dab7199a96e21d06179589fa810c5b577783c",
+      "original_timestamp": "2026-10-08T13:23:54.205228+00:00"
+    },
+    {
+      "id": "scibench_000289",
+      "replicate": 1,
+      "archived_request_sha256": "b08cb53d5f726fecd5ccc24c706a023795d246a7d22e0939f5bfdc3d0027e7ea",
+      "reconstructed_request_sha256": "b08cb53d5f726fecd5ccc24c706a023795d246a7d22e0939f5bfdc3d0027e7ea",
+      "original_timestamp": "2026-10-08T13:21:34.800531+00:00"
+    },
+    {
+      "id": "scibench_000292",
+      "replicate": 1,
+      "archived_request_sha256": "feed0ab7a83d5a5c6f04526ed9fb0d3d3cce9e708cfde47679910481451d6e24",
+      "reconstructed_request_sha256": "feed0ab7a83d5a5c6f04526ed9fb0d3d3cce9e708cfde47679910481451d6e24",
+      "original_timestamp": "2026-10-08T13:26:00.307236+00:00"
+    },
+    {
+      "id": "scibench_000293",
+      "replicate": 1,
+      "archived_request_sha256": "4659ea491c01cd7902c909129cb257b1c80268af47ea0aaa4122ee4b96d62ea8",
+      "reconstructed_request_sha256": "4659ea491c01cd7902c909129cb257b1c80268af47ea0aaa4122ee4b96d62ea8",
+      "original_timestamp": "2026-10-08T13:22:14.497537+00:00"
+    },
+    {
+      "id": "scibench_000294",
+      "replicate": 1,
+      "archived_request_sha256": "c687231a75f85d229e851be3108864d00d6dcc9817795c4f770caea8cdea95d3",
+      "reconstructed_request_sha256": "c687231a75f85d229e851be3108864d00d6dcc9817795c4f770caea8cdea95d3",
+      "original_timestamp": "2026-10-08T13:20:04.077883+00:00"
+    },
+    {
+      "id": "scibench_000328",
+      "replicate": 1,
+      "archived_request_sha256": "abf305c27e14d4cdc3e3bdb20638d47514c20c93d5e006c459959876f9e542b3",
+      "reconstructed_request_sha256": "abf305c27e14d4cdc3e3bdb20638d47514c20c93d5e006c459959876f9e542b3",
+      "original_timestamp": "2026-10-08T13:29:27.536601+00:00"
+    },
+    {
+      "id": "scibench_000332",
+      "replicate": 1,
+      "archived_request_sha256": "1453a69260dbb11e4a2bbd14a2a2692d10793e2866242fbf9e04bbf2649746af",
+      "reconstructed_request_sha256": "1453a69260dbb11e4a2bbd14a2a2692d10793e2866242fbf9e04bbf2649746af",
+      "original_timestamp": "2026-10-08T13:28:02.673526+00:00"
+    },
+    {
+      "id": "scibench_000333",
+      "replicate": 1,
+      "archived_request_sha256": "26fbdcaeec3c786298e05b079cf8b2e3d10b44cc783d98daa7ffac5507cc1068",
+      "reconstructed_request_sha256": "26fbdcaeec3c786298e05b079cf8b2e3d10b44cc783d98daa7ffac5507cc1068",
+      "original_timestamp": "2026-10-08T13:30:01.451513+00:00"
+    },
+    {
+      "id": "scibench_000334",
+      "replicate": 1,
+      "archived_request_sha256": "40d097d699dc646f956f7167e3e8fb02e71df5fe72b32b49144d22417af10494",
+      "reconstructed_request_sha256": "40d097d699dc646f956f7167e3e8fb02e71df5fe72b32b49144d22417af10494",
+      "original_timestamp": "2026-10-08T13:30:09.170097+00:00"
+    },
+    {
+      "id": "scibench_000339",
+      "replicate": 1,
+      "archived_request_sha256": "98c33609200f3ebb12f411ef01057a328b66222301059773ded6120c6460b4b4",
+      "reconstructed_request_sha256": "98c33609200f3ebb12f411ef01057a328b66222301059773ded6120c6460b4b4",
+      "original_timestamp": "2026-10-08T13:28:48.153863+00:00"
+    },
+    {
+      "id": "scibench_000340",
+      "replicate": 1,
+      "archived_request_sha256": "08588a1cf7915cadd6344af0bf8b67f3bf060bcb597dff27451d4617e3c631e1",
+      "reconstructed_request_sha256": "08588a1cf7915cadd6344af0bf8b67f3bf060bcb597dff27451d4617e3c631e1",
+      "original_timestamp": "2026-10-08T13:30:40.000582+00:00"
+    },
+    {
+      "id": "scibench_000342",
+      "replicate": 1,
+      "archived_request_sha256": "b93e0ba617e5e5a6d4e8077cef05f0b5c0722facb95b12806dc71af3bbd6255f",
+      "reconstructed_request_sha256": "b93e0ba617e5e5a6d4e8077cef05f0b5c0722facb95b12806dc71af3bbd6255f",
+      "original_timestamp": "2026-10-08T13:31:27.061616+00:00"
+    },
+    {
+      "id": "scibench_000348",
+      "replicate": 1,
+      "archived_request_sha256": "2322ef2d9dc1f5ebce8120988a45d529ad72fbb3412cac2fcfe2817be7e28311",
+      "reconstructed_request_sha256": "2322ef2d9dc1f5ebce8120988a45d529ad72fbb3412cac2fcfe2817be7e28311",
+      "original_timestamp": "2026-10-08T13:32:31.594742+00:00"
+    },
+    {
+      "id": "scibench_000352",
+      "replicate": 1,
+      "archived_request_sha256": "3baa9798b6db5c22ab348dc602123e64e58d1c80021d9a166ce94d06fdc57d14",
+      "reconstructed_request_sha256": "3baa9798b6db5c22ab348dc602123e64e58d1c80021d9a166ce94d06fdc57d14",
+      "original_timestamp": "2026-10-08T13:33:40.633384+00:00"
+    },
+    {
+      "id": "scibench_000354",
+      "replicate": 1,
+      "archived_request_sha256": "c93132c549050a66585d1ea10ee456d7268d5fb786797cd22341d566e1b3e437",
+      "reconstructed_request_sha256": "c93132c549050a66585d1ea10ee456d7268d5fb786797cd22341d566e1b3e437",
+      "original_timestamp": "2026-10-08T13:31:57.541463+00:00"
+    },
+    {
+      "id": "scibench_000356",
+      "replicate": 1,
+      "archived_request_sha256": "735cb17d4d4dab07d85ace50a0b82cfa43d261bb61f140d19bb716ce0f97cff1",
+      "reconstructed_request_sha256": "735cb17d4d4dab07d85ace50a0b82cfa43d261bb61f140d19bb716ce0f97cff1",
+      "original_timestamp": "2026-10-08T13:33:23.796311+00:00"
+    },
+    {
+      "id": "scibench_000358",
+      "replicate": 1,
+      "archived_request_sha256": "74810c4f443256be433b67632f2cb8a38ad51ad640fc6293ddd6e90c258341dd",
+      "reconstructed_request_sha256": "74810c4f443256be433b67632f2cb8a38ad51ad640fc6293ddd6e90c258341dd",
+      "original_timestamp": "2026-10-08T13:31:10.141655+00:00"
+    },
+    {
+      "id": "scibench_000362",
+      "replicate": 1,
+      "archived_request_sha256": "20cb0f2f2c752452977a251da94c3ed8877c734edd3519002ec5f0f3c8823fb0",
+      "reconstructed_request_sha256": "20cb0f2f2c752452977a251da94c3ed8877c734edd3519002ec5f0f3c8823fb0",
+      "original_timestamp": "2026-10-08T13:34:41.557231+00:00"
+    },
+    {
+      "id": "scibench_000365",
+      "replicate": 1,
+      "archived_request_sha256": "6068f4550e809c9c1b314de718830a331ae44934f779699e02fde8f32ab91b98",
+      "reconstructed_request_sha256": "6068f4550e809c9c1b314de718830a331ae44934f779699e02fde8f32ab91b98",
+      "original_timestamp": "2026-10-08T13:34:40.934649+00:00"
+    },
+    {
+      "id": "scibench_000366",
+      "replicate": 1,
+      "archived_request_sha256": "02a03b21aa669039a445a660a7dbb0ff9ef8acc977e90a4c7ae1352b8bee426e",
+      "reconstructed_request_sha256": "02a03b21aa669039a445a660a7dbb0ff9ef8acc977e90a4c7ae1352b8bee426e",
+      "original_timestamp": "2026-10-08T13:35:46.685036+00:00"
+    },
+    {
+      "id": "scibench_000367",
+      "replicate": 1,
+      "archived_request_sha256": "bf4849564005846c55cb762657473cbe952b27a7fa01479f2b01f62a7b736548",
+      "reconstructed_request_sha256": "bf4849564005846c55cb762657473cbe952b27a7fa01479f2b01f62a7b736548",
+      "original_timestamp": "2026-10-08T13:36:52.193656+00:00"
+    },
+    {
+      "id": "scibench_000372",
+      "replicate": 1,
+      "archived_request_sha256": "5219cb423eb04f13d2e08f4e9c700c69bd27376c6f63235f6894b084a584934d",
+      "reconstructed_request_sha256": "5219cb423eb04f13d2e08f4e9c700c69bd27376c6f63235f6894b084a584934d",
+      "original_timestamp": "2026-10-08T13:35:40.580323+00:00"
+    },
+    {
+      "id": "scibench_000374",
+      "replicate": 1,
+      "archived_request_sha256": "96cb3a9c5651e612c4982d1a1f32909e28296dc948a1b6b76d72a15b2d2e9931",
+      "reconstructed_request_sha256": "96cb3a9c5651e612c4982d1a1f32909e28296dc948a1b6b76d72a15b2d2e9931",
+      "original_timestamp": "2026-10-08T13:37:21.392817+00:00"
+    },
+    {
+      "id": "scibench_000405",
+      "replicate": 1,
+      "archived_request_sha256": "f237a0d3bd4ac6c1f9a36b3867a927ac2735c4ac4fd46ad5d4a7542300233804",
+      "reconstructed_request_sha256": "f237a0d3bd4ac6c1f9a36b3867a927ac2735c4ac4fd46ad5d4a7542300233804",
+      "original_timestamp": "2026-10-08T13:41:04.739562+00:00"
+    },
+    {
+      "id": "scibench_000409",
+      "replicate": 1,
+      "archived_request_sha256": "84b6ffb533393fe555c3fa6e2ff1c26d99d78cb29e06d4874af57f311d28fecb",
+      "reconstructed_request_sha256": "84b6ffb533393fe555c3fa6e2ff1c26d99d78cb29e06d4874af57f311d28fecb",
+      "original_timestamp": "2026-10-08T13:38:29.920456+00:00"
+    },
+    {
+      "id": "scibench_000413",
+      "replicate": 1,
+      "archived_request_sha256": "f23fd429d021680c7648bccd1592d25f182e14ec46cb06df43d4e6181d8a6a2a",
+      "reconstructed_request_sha256": "f23fd429d021680c7648bccd1592d25f182e14ec46cb06df43d4e6181d8a6a2a",
+      "original_timestamp": "2026-10-08T13:39:51.063157+00:00"
+    },
+    {
+      "id": "scibench_000414",
+      "replicate": 1,
+      "archived_request_sha256": "2ba73a5f246cee78e99395c25988120522c195de4f54a8502d1723ffa87211ce",
+      "reconstructed_request_sha256": "2ba73a5f246cee78e99395c25988120522c195de4f54a8502d1723ffa87211ce",
+      "original_timestamp": "2026-10-08T13:38:12.312741+00:00"
+    },
+    {
+      "id": "scibench_000416",
+      "replicate": 1,
+      "archived_request_sha256": "99ace799568e65b38fce8957fd65dac7a7989c149c690aa649dacd667726d082",
+      "reconstructed_request_sha256": "99ace799568e65b38fce8957fd65dac7a7989c149c690aa649dacd667726d082",
+      "original_timestamp": "2026-10-08T13:42:44.841249+00:00"
+    },
+    {
+      "id": "scibench_000420",
+      "replicate": 1,
+      "archived_request_sha256": "6c16e99aeaeaea231bebbeab9f7a5c507524b1d00edd5e2127872ab7e7f7199f",
+      "reconstructed_request_sha256": "6c16e99aeaeaea231bebbeab9f7a5c507524b1d00edd5e2127872ab7e7f7199f",
+      "original_timestamp": "2026-10-08T13:46:37.185786+00:00"
+    },
+    {
+      "id": "scibench_000541",
+      "replicate": 1,
+      "archived_request_sha256": "cfd9ea29d3405382591283206181f809cf4e774e94f0bd44ba3c1bd77a90e0da",
+      "reconstructed_request_sha256": "cfd9ea29d3405382591283206181f809cf4e774e94f0bd44ba3c1bd77a90e0da",
+      "original_timestamp": "2026-10-08T13:45:09.238905+00:00"
+    },
+    {
+      "id": "scibench_000546",
+      "replicate": 1,
+      "archived_request_sha256": "1ca5170dcbb846f84ea87e3a135e8620f28ee2a85e5d5329e74dce292b747c5b",
+      "reconstructed_request_sha256": "1ca5170dcbb846f84ea87e3a135e8620f28ee2a85e5d5329e74dce292b747c5b",
+      "original_timestamp": "2026-10-08T13:46:41.782673+00:00"
+    },
+    {
+      "id": "scibench_000549",
+      "replicate": 1,
+      "archived_request_sha256": "6e162817c6c91332b2be428260dff7eee5d83463bb80572b1d7bc8f43006c6d1",
+      "reconstructed_request_sha256": "6e162817c6c91332b2be428260dff7eee5d83463bb80572b1d7bc8f43006c6d1",
+      "original_timestamp": "2026-10-08T13:50:14.392661+00:00"
+    },
+    {
+      "id": "scibench_000550",
+      "replicate": 1,
+      "archived_request_sha256": "c252e77a51954311ac6832161fc6926ace419df0379898861fc7a5e18f23a5de",
+      "reconstructed_request_sha256": "c252e77a51954311ac6832161fc6926ace419df0379898861fc7a5e18f23a5de",
+      "original_timestamp": "2026-10-08T13:47:56.863990+00:00"
+    },
+    {
+      "id": "scibench_000551",
+      "replicate": 1,
+      "archived_request_sha256": "c291cdd14252c32a9bfbcfc6365817e9112a520b46ea8dc9316bc964a0928c72",
+      "reconstructed_request_sha256": "c291cdd14252c32a9bfbcfc6365817e9112a520b46ea8dc9316bc964a0928c72",
+      "original_timestamp": "2026-10-08T13:49:18.783296+00:00"
+    },
+    {
+      "id": "scibench_000555",
+      "replicate": 1,
+      "archived_request_sha256": "548fed46c058cdc230ccb5d5c564a8758f962600e9574233bfeb96c81004abb6",
+      "reconstructed_request_sha256": "548fed46c058cdc230ccb5d5c564a8758f962600e9574233bfeb96c81004abb6",
+      "original_timestamp": "2026-10-08T13:44:31.956594+00:00"
+    },
+    {
+      "id": "scibench_000565",
+      "replicate": 1,
+      "archived_request_sha256": "346648a75e1abcdbe7c7bbf5aeb9faf83b0a6ec933cd16bed96a60ef5ab902dc",
+      "reconstructed_request_sha256": "346648a75e1abcdbe7c7bbf5aeb9faf83b0a6ec933cd16bed96a60ef5ab902dc",
+      "original_timestamp": "2026-10-08T13:50:19.040386+00:00"
+    },
+    {
+      "id": "scibench_000574",
+      "replicate": 1,
+      "archived_request_sha256": "507d1e9dfe7687ca47e2a1578bc34f11b61e11bb95a8c6a0ad28a767b69c8516",
+      "reconstructed_request_sha256": "507d1e9dfe7687ca47e2a1578bc34f11b61e11bb95a8c6a0ad28a767b69c8516",
+      "original_timestamp": "2026-10-08T13:50:31.486911+00:00"
+    },
+    {
+      "id": "scibench_000576",
+      "replicate": 1,
+      "archived_request_sha256": "4fd4f7937b5938228def8eaf3455625fde7e03456abff9f1009af3e1123ceaeb",
+      "reconstructed_request_sha256": "4fd4f7937b5938228def8eaf3455625fde7e03456abff9f1009af3e1123ceaeb",
+      "original_timestamp": "2026-10-08T13:50:41.084042+00:00"
+    },
+    {
+      "id": "scibench_000578",
+      "replicate": 1,
+      "archived_request_sha256": "bd67dd7d2b24c97503be85265b37c5fe28f6f8738144275f6bd661dbc063987c",
+      "reconstructed_request_sha256": "bd67dd7d2b24c97503be85265b37c5fe28f6f8738144275f6bd661dbc063987c",
+      "original_timestamp": "2026-10-08T13:50:41.216055+00:00"
+    },
+    {
+      "id": "scibench_000579",
+      "replicate": 1,
+      "archived_request_sha256": "3338f10dee162abfdbf47b5124537def664c89b96e5022c21ff1c1fadf944a69",
+      "reconstructed_request_sha256": "3338f10dee162abfdbf47b5124537def664c89b96e5022c21ff1c1fadf944a69",
+      "original_timestamp": "2026-10-08T13:50:55.324539+00:00"
+    },
+    {
+      "id": "scibench_000580",
+      "replicate": 1,
+      "archived_request_sha256": "e293457f69295975916de537302dc517f57a0a2b295b4c94db14aca56d8ea3f6",
+      "reconstructed_request_sha256": "e293457f69295975916de537302dc517f57a0a2b295b4c94db14aca56d8ea3f6",
+      "original_timestamp": "2026-10-08T13:51:20.512509+00:00"
+    },
+    {
+      "id": "scibench_000639",
+      "replicate": 1,
+      "archived_request_sha256": "7044d4b44fae659bc4ddfa97b4ee246b03d0db1d2a28b768b0259b95a9465fa6",
+      "reconstructed_request_sha256": "7044d4b44fae659bc4ddfa97b4ee246b03d0db1d2a28b768b0259b95a9465fa6",
+      "original_timestamp": "2026-10-08T13:54:20.348105+00:00"
+    },
+    {
+      "id": "scibench_000641",
+      "replicate": 1,
+      "archived_request_sha256": "4a87ad48e8654a632b253cd0bd3df5a194c99585c1164f873d7fb390af21281f",
+      "reconstructed_request_sha256": "4a87ad48e8654a632b253cd0bd3df5a194c99585c1164f873d7fb390af21281f",
+      "original_timestamp": "2026-10-08T13:54:20.863277+00:00"
+    },
+    {
+      "id": "scibench_000642",
+      "replicate": 1,
+      "archived_request_sha256": "c9c39ae35d99cfa7d42b8e0e07d443155d3b3775b5c6b788c00be328413daae8",
+      "reconstructed_request_sha256": "c9c39ae35d99cfa7d42b8e0e07d443155d3b3775b5c6b788c00be328413daae8",
+      "original_timestamp": "2026-10-08T13:53:01.287723+00:00"
+    },
+    {
+      "id": "scibench_000644",
+      "replicate": 1,
+      "archived_request_sha256": "1098777e8be097efd0b503e02509c6758566897333f81ceaaceddd8fe29711ba",
+      "reconstructed_request_sha256": "1098777e8be097efd0b503e02509c6758566897333f81ceaaceddd8fe29711ba",
+      "original_timestamp": "2026-10-08T13:51:27.518182+00:00"
+    },
+    {
+      "id": "scibench_000648",
+      "replicate": 1,
+      "archived_request_sha256": "d5b94018696489f140aa2c2e26ab5920288af3836e4fb8bb5076ec6f3fbeedaa",
+      "reconstructed_request_sha256": "d5b94018696489f140aa2c2e26ab5920288af3836e4fb8bb5076ec6f3fbeedaa",
+      "original_timestamp": "2026-10-08T13:52:59.364441+00:00"
+    },
+    {
+      "id": "scibench_000652",
+      "replicate": 1,
+      "archived_request_sha256": "6f23345c3ed4af82b7aeff294cb6fc2b407107af64313f103afd8bef6cc0a2b0",
+      "reconstructed_request_sha256": "6f23345c3ed4af82b7aeff294cb6fc2b407107af64313f103afd8bef6cc0a2b0",
+      "original_timestamp": "2026-10-08T13:54:52.293960+00:00"
+    },
+    {
+      "id": "scibench_000661",
+      "replicate": 1,
+      "archived_request_sha256": "e4c7b87da33f771ada0d9e80505f7f39d854feba5fa1e3923d0124cdba84c261",
+      "reconstructed_request_sha256": "e4c7b87da33f771ada0d9e80505f7f39d854feba5fa1e3923d0124cdba84c261",
+      "original_timestamp": "2026-10-08T13:54:57.395925+00:00"
+    },
+    {
+      "id": "scibench_000663",
+      "replicate": 1,
+      "archived_request_sha256": "8104e6c0d526bcaa2e230c91a237de6ce94015c4cc3101741c2d46702c6bbbdc",
+      "reconstructed_request_sha256": "8104e6c0d526bcaa2e230c91a237de6ce94015c4cc3101741c2d46702c6bbbdc",
+      "original_timestamp": "2026-10-08T13:55:05.825709+00:00"
+    },
+    {
+      "id": "scibench_000664",
+      "replicate": 1,
+      "archived_request_sha256": "f1cafff3edf2e8b87c2ca6aab392264ffdd89c9a16d0d90319fde61b4b047521",
+      "reconstructed_request_sha256": "f1cafff3edf2e8b87c2ca6aab392264ffdd89c9a16d0d90319fde61b4b047521",
+      "original_timestamp": "2026-10-08T13:54:43.183161+00:00"
+    },
+    {
+      "id": "scibench_000668",
+      "replicate": 1,
+      "archived_request_sha256": "f39a0566db1c1fcdd99089a1220fd965e582affdf57d1e149181c009d16a8098",
+      "reconstructed_request_sha256": "f39a0566db1c1fcdd99089a1220fd965e582affdf57d1e149181c009d16a8098",
+      "original_timestamp": "2026-10-08T13:56:03.056036+00:00"
+    },
+    {
+      "id": "scibench_000673",
+      "replicate": 1,
+      "archived_request_sha256": "1964deb0781b7c89a247767e7d01c9d7c0bdb4aa01a36c16e7b44984d559a4aa",
+      "reconstructed_request_sha256": "1964deb0781b7c89a247767e7d01c9d7c0bdb4aa01a36c16e7b44984d559a4aa",
+      "original_timestamp": "2026-10-08T13:55:23.904990+00:00"
+    },
+    {
+      "id": "scibench_000674",
+      "replicate": 1,
+      "archived_request_sha256": "94e6ac1acd23262f4f775da58f0075b333270065448315713e8bd015de1f7809",
+      "reconstructed_request_sha256": "94e6ac1acd23262f4f775da58f0075b333270065448315713e8bd015de1f7809",
+      "original_timestamp": "2026-10-08T13:55:45.165320+00:00"
+    },
+    {
+      "id": "scibench_000679",
+      "replicate": 1,
+      "archived_request_sha256": "34d43d0dfa1e971788bcb3e5599e41c12b5f157d14f6fd08c5da1488c509f9a3",
+      "reconstructed_request_sha256": "34d43d0dfa1e971788bcb3e5599e41c12b5f157d14f6fd08c5da1488c509f9a3",
+      "original_timestamp": "2026-10-08T13:56:08.859960+00:00"
+    },
+    {
+      "id": "scibench_000682",
+      "replicate": 1,
+      "archived_request_sha256": "58004d55691afa7c92be971f7da22aaf47eab21755e4fcee55e221fa1911008c",
+      "reconstructed_request_sha256": "58004d55691afa7c92be971f7da22aaf47eab21755e4fcee55e221fa1911008c",
+      "original_timestamp": "2026-10-08T13:56:31.072394+00:00"
+    },
+    {
+      "id": "scibench_000686",
+      "replicate": 1,
+      "archived_request_sha256": "a82b19bd83d993b8ad06adfbf0fd529735f4b541aacd3706dd93885bbdf06291",
+      "reconstructed_request_sha256": "a82b19bd83d993b8ad06adfbf0fd529735f4b541aacd3706dd93885bbdf06291",
+      "original_timestamp": "2026-10-08T13:57:14.156014+00:00"
+    },
+    {
+      "id": "scibench_000687",
+      "replicate": 1,
+      "archived_request_sha256": "72576cc1aebbbf33c6b172ec04aff1767b591eef9212f774f1669b0e20ff3cd1",
+      "reconstructed_request_sha256": "72576cc1aebbbf33c6b172ec04aff1767b591eef9212f774f1669b0e20ff3cd1",
+      "original_timestamp": "2026-10-08T13:56:13.424461+00:00"
+    },
+    {
+      "id": "scibench_000694",
+      "replicate": 1,
+      "archived_request_sha256": "5cfedc584694d2aae5a6b6319a97c48db59e3e9c82bd8d4569d816272e25763e",
+      "reconstructed_request_sha256": "5cfedc584694d2aae5a6b6319a97c48db59e3e9c82bd8d4569d816272e25763e",
+      "original_timestamp": "2026-10-08T13:57:24.209027+00:00"
+    },
+    {
+      "id": "scibench_000697",
+      "replicate": 1,
+      "archived_request_sha256": "74f03f8f65c76aecfe29d3c66f7f61b46320711d7a25e1e4081295248157b12a",
+      "reconstructed_request_sha256": "74f03f8f65c76aecfe29d3c66f7f61b46320711d7a25e1e4081295248157b12a",
+      "original_timestamp": "2026-10-08T13:56:49.690698+00:00"
+    },
+    {
+      "id": "scibench_000699",
+      "replicate": 1,
+      "archived_request_sha256": "d6d34729a71e65a9cccd3c03329c06306d961766c8619f39b4e2c48234eded93",
+      "reconstructed_request_sha256": "d6d34729a71e65a9cccd3c03329c06306d961766c8619f39b4e2c48234eded93",
+      "original_timestamp": "2026-10-08T13:59:58.914322+00:00"
+    },
+    {
+      "id": "scibench_000700",
+      "replicate": 1,
+      "archived_request_sha256": "c6d154f483ff1534ee2be3d59d5de37dd6ef7057592084b1894e184d51eec3e5",
+      "reconstructed_request_sha256": "c6d154f483ff1534ee2be3d59d5de37dd6ef7057592084b1894e184d51eec3e5",
+      "original_timestamp": "2026-10-08T13:58:50.359809+00:00"
+    },
+    {
+      "id": "scibench_000701",
+      "replicate": 1,
+      "archived_request_sha256": "f6e24f43632b4a15bad3b58ec04277022e2f4b814dc956e6e52621a1f177f1f7",
+      "reconstructed_request_sha256": "f6e24f43632b4a15bad3b58ec04277022e2f4b814dc956e6e52621a1f177f1f7",
+      "original_timestamp": "2026-10-08T13:58:05.605060+00:00"
+    },
+    {
+      "id": "scibench_000707",
+      "replicate": 1,
+      "archived_request_sha256": "c1396ff7af457babb25c599240f93071a49fb79656687aa5a39dc7c8c24e272c",
+      "reconstructed_request_sha256": "c1396ff7af457babb25c599240f93071a49fb79656687aa5a39dc7c8c24e272c",
+      "original_timestamp": "2026-10-08T14:06:13.608071+00:00"
+    },
+    {
+      "id": "scibench_000710",
+      "replicate": 1,
+      "archived_request_sha256": "0f6e5ae4ea80c602e315d813eb887aea2cb8186341544d20893beef35bc99940",
+      "reconstructed_request_sha256": "0f6e5ae4ea80c602e315d813eb887aea2cb8186341544d20893beef35bc99940",
+      "original_timestamp": "2026-10-08T14:01:25.670569+00:00"
+    },
+    {
+      "id": "scibench_000715",
+      "replicate": 1,
+      "archived_request_sha256": "ff59a72900fb6e29ec6c7240a1324b5860e68491322a52d0e79f4ef9f0a287e2",
+      "reconstructed_request_sha256": "ff59a72900fb6e29ec6c7240a1324b5860e68491322a52d0e79f4ef9f0a287e2",
+      "original_timestamp": "2026-10-08T13:57:47.266526+00:00"
+    },
+    {
+      "id": "scibench_000718",
+      "replicate": 1,
+      "archived_request_sha256": "6a93d60b35c95d23d89bdd4b0162812f439399f883fbf48f5cba8741f8a94dfc",
+      "reconstructed_request_sha256": "6a93d60b35c95d23d89bdd4b0162812f439399f883fbf48f5cba8741f8a94dfc",
+      "original_timestamp": "2026-10-08T14:06:20.883964+00:00"
+    },
+    {
+      "id": "scibench_000725",
+      "replicate": 1,
+      "archived_request_sha256": "bf0a50a5e4489de145b8955eb74d4c989c2de77e3c2cbfcd6a77558c54b2be4a",
+      "reconstructed_request_sha256": "bf0a50a5e4489de145b8955eb74d4c989c2de77e3c2cbfcd6a77558c54b2be4a",
+      "original_timestamp": "2026-10-08T14:02:58.140046+00:00"
+    },
+    {
+      "id": "scibench_000726",
+      "replicate": 1,
+      "archived_request_sha256": "c42cde05df649074b4320cf96eedcf4cece62e7601a70f39b33d0d37111fef06",
+      "reconstructed_request_sha256": "c42cde05df649074b4320cf96eedcf4cece62e7601a70f39b33d0d37111fef06",
+      "original_timestamp": "2026-10-08T14:03:31.733676+00:00"
+    },
+    {
+      "id": "scibench_000751",
+      "replicate": 1,
+      "archived_request_sha256": "528764c42e51bc4bc53ed3641b1cc10580949408e888e9dc5b1dc03c8f33720d",
+      "reconstructed_request_sha256": "528764c42e51bc4bc53ed3641b1cc10580949408e888e9dc5b1dc03c8f33720d",
+      "original_timestamp": "2026-10-08T14:09:34.134943+00:00"
+    },
+    {
+      "id": "scibench_000753",
+      "replicate": 1,
+      "archived_request_sha256": "27b3b2cf03a8bf3877e0cb11e16d374015e8784725e70501147ed7a7165357fa",
+      "reconstructed_request_sha256": "27b3b2cf03a8bf3877e0cb11e16d374015e8784725e70501147ed7a7165357fa",
+      "original_timestamp": "2026-10-08T14:10:00.089451+00:00"
+    },
+    {
+      "id": "scibench_000754",
+      "replicate": 1,
+      "archived_request_sha256": "cb1ab26a48606ac36e1d5b70040e65ca47f6f168c59d1b7d6604b5bb45a2d80d",
+      "reconstructed_request_sha256": "cb1ab26a48606ac36e1d5b70040e65ca47f6f168c59d1b7d6604b5bb45a2d80d",
+      "original_timestamp": "2026-10-08T14:08:00.081644+00:00"
+    },
+    {
+      "id": "scibench_000757",
+      "replicate": 1,
+      "archived_request_sha256": "5073a0b287e601ba637501781e095474ead3ed9de9beb980975142a5f878438f",
+      "reconstructed_request_sha256": "5073a0b287e601ba637501781e095474ead3ed9de9beb980975142a5f878438f",
+      "original_timestamp": "2026-10-08T14:11:25.591966+00:00"
+    },
+    {
+      "id": "scibench_000759",
+      "replicate": 1,
+      "archived_request_sha256": "f1479aaa5df909b6c7b352c75412575b89ba17e7b9f4d4e26406df81c47cdfd2",
+      "reconstructed_request_sha256": "f1479aaa5df909b6c7b352c75412575b89ba17e7b9f4d4e26406df81c47cdfd2",
+      "original_timestamp": "2026-10-08T14:08:43.106058+00:00"
+    },
+    {
+      "id": "scibench_000763",
+      "replicate": 1,
+      "archived_request_sha256": "835df766061c8ea3ccb785b2ee10ac736f0bee5438654470b0b92d5795465340",
+      "reconstructed_request_sha256": "835df766061c8ea3ccb785b2ee10ac736f0bee5438654470b0b92d5795465340",
+      "original_timestamp": "2026-10-08T14:07:33.739706+00:00"
+    },
+    {
+      "id": "scibench_000770",
+      "replicate": 1,
+      "archived_request_sha256": "a7f4418a22435246b738ea6dc1fbf545685a21519086e265c65526e8e41f2f63",
+      "reconstructed_request_sha256": "a7f4418a22435246b738ea6dc1fbf545685a21519086e265c65526e8e41f2f63",
+      "original_timestamp": "2026-10-08T14:11:38.719446+00:00"
+    },
+    {
+      "id": "scibench_000771",
+      "replicate": 1,
+      "archived_request_sha256": "4916c6db677e0af37be0e43b3526ec97fb371996e795d5ffe219890d8030e8ec",
+      "reconstructed_request_sha256": "4916c6db677e0af37be0e43b3526ec97fb371996e795d5ffe219890d8030e8ec",
+      "original_timestamp": "2026-10-08T14:11:54.395247+00:00"
+    },
+    {
+      "id": "scibench_000774",
+      "replicate": 1,
+      "archived_request_sha256": "9495a63f1e41da9831732debaa797a68751cb53cf6cbee347c3663bfed7c854a",
+      "reconstructed_request_sha256": "9495a63f1e41da9831732debaa797a68751cb53cf6cbee347c3663bfed7c854a",
+      "original_timestamp": "2026-10-08T14:12:02.055265+00:00"
+    },
+    {
+      "id": "scibench_000777",
+      "replicate": 1,
+      "archived_request_sha256": "2bd9c5a4d970361c965f81afbda203ef14000b1f4f70fa4fe37c48d70203dff0",
+      "reconstructed_request_sha256": "2bd9c5a4d970361c965f81afbda203ef14000b1f4f70fa4fe37c48d70203dff0",
+      "original_timestamp": "2026-10-08T14:12:08.856800+00:00"
+    },
+    {
+      "id": "scibench_000779",
+      "replicate": 1,
+      "archived_request_sha256": "6580d0ec57bd6bef6b1a42d5c5eccbc4e25eaf8c4816449f863f927400bb60aa",
+      "reconstructed_request_sha256": "6580d0ec57bd6bef6b1a42d5c5eccbc4e25eaf8c4816449f863f927400bb60aa",
+      "original_timestamp": "2026-10-08T14:11:54.226000+00:00"
+    },
+    {
+      "id": "scibench_000780",
+      "replicate": 1,
+      "archived_request_sha256": "a7e5a29beaf4656f24e285f8652bdd6094270c92e9aaf3e9be7d76b0e2800ec6",
+      "reconstructed_request_sha256": "a7e5a29beaf4656f24e285f8652bdd6094270c92e9aaf3e9be7d76b0e2800ec6",
+      "original_timestamp": "2026-10-08T14:11:26.366653+00:00"
+    },
+    {
+      "id": "scibench_000843",
+      "replicate": 1,
+      "archived_request_sha256": "11daf71292b35368ed9b6f79d8fde09584272bce156f97420158853d8de91ce0",
+      "reconstructed_request_sha256": "11daf71292b35368ed9b6f79d8fde09584272bce156f97420158853d8de91ce0",
+      "original_timestamp": "2026-10-08T14:12:45.339577+00:00"
+    },
+    {
+      "id": "scibench_000844",
+      "replicate": 1,
+      "archived_request_sha256": "0f16ef9cbef2d17573cd6eb37f1373b9a372bc96747bc37ce118dcfb641ca059",
+      "reconstructed_request_sha256": "0f16ef9cbef2d17573cd6eb37f1373b9a372bc96747bc37ce118dcfb641ca059",
+      "original_timestamp": "2026-10-08T14:14:38.216604+00:00"
+    },
+    {
+      "id": "scibench_000846",
+      "replicate": 1,
+      "archived_request_sha256": "28efbb9fef8389b7bd3038e856867f66cfa4287d730b4102fb645ac4b0660239",
+      "reconstructed_request_sha256": "28efbb9fef8389b7bd3038e856867f66cfa4287d730b4102fb645ac4b0660239",
+      "original_timestamp": "2026-10-08T14:15:14.185282+00:00"
+    },
+    {
+      "id": "scibench_000850",
+      "replicate": 1,
+      "archived_request_sha256": "103c3dee641a078c77446dea3efb5518b5c7b9bc62a4b2f681b0039c3df0eed8",
+      "reconstructed_request_sha256": "103c3dee641a078c77446dea3efb5518b5c7b9bc62a4b2f681b0039c3df0eed8",
+      "original_timestamp": "2026-10-08T14:15:26.268121+00:00"
+    },
+    {
+      "id": "scibench_000854",
+      "replicate": 1,
+      "archived_request_sha256": "2bcd585fc85a1645653faeca450b6508c6392fb6a6e2b4573e2265018579581d",
+      "reconstructed_request_sha256": "2bcd585fc85a1645653faeca450b6508c6392fb6a6e2b4573e2265018579581d",
+      "original_timestamp": "2026-10-08T14:13:04.562914+00:00"
+    },
+    {
+      "id": "scibench_000858",
+      "replicate": 1,
+      "archived_request_sha256": "8d080d70248ffe8421a4f05268bd1a9430531f6805fd165340ecf957d65ed9ab",
+      "reconstructed_request_sha256": "8d080d70248ffe8421a4f05268bd1a9430531f6805fd165340ecf957d65ed9ab",
+      "original_timestamp": "2026-10-08T14:14:44.270825+00:00"
+    },
+    {
+      "id": "scibench_000182",
+      "replicate": 2,
+      "archived_request_sha256": "d3a74cd4921a2735845ca99edb99decbc0f83280a3e979d5192384f15af5d86e",
+      "reconstructed_request_sha256": "d3a74cd4921a2735845ca99edb99decbc0f83280a3e979d5192384f15af5d86e",
+      "original_timestamp": "2026-10-08T13:10:18.400341+00:00"
+    },
+    {
+      "id": "scibench_000183",
+      "replicate": 2,
+      "archived_request_sha256": "cea6a81f3d212764d7ba0661b6b14a52a60b28c7134bda91bfb6f34a5894a2b9",
+      "reconstructed_request_sha256": "cea6a81f3d212764d7ba0661b6b14a52a60b28c7134bda91bfb6f34a5894a2b9",
+      "original_timestamp": "2026-10-08T12:59:03.691433+00:00"
+    },
+    {
+      "id": "scibench_000188",
+      "replicate": 2,
+      "archived_request_sha256": "cb44a73c7a063a6e66e41d29d720d72a37de1b1396e5525c8a621c706aa45780",
+      "reconstructed_request_sha256": "cb44a73c7a063a6e66e41d29d720d72a37de1b1396e5525c8a621c706aa45780",
+      "original_timestamp": "2026-10-08T13:08:21.347778+00:00"
+    },
+    {
+      "id": "scibench_000190",
+      "replicate": 2,
+      "archived_request_sha256": "1d9ec60c03fff8f69116890ed196c493343f07f72372fc7df9cda8728fd9b5fc",
+      "reconstructed_request_sha256": "1d9ec60c03fff8f69116890ed196c493343f07f72372fc7df9cda8728fd9b5fc",
+      "original_timestamp": "2026-10-08T13:11:30.166727+00:00"
+    },
+    {
+      "id": "scibench_000198",
+      "replicate": 2,
+      "archived_request_sha256": "b6dec3ca70f2edcf55da42686398b8b1f06bd6d668ae6e6641550f9f960581aa",
+      "reconstructed_request_sha256": "b6dec3ca70f2edcf55da42686398b8b1f06bd6d668ae6e6641550f9f960581aa",
+      "original_timestamp": "2026-10-08T13:10:50.690442+00:00"
+    },
+    {
+      "id": "scibench_000199",
+      "replicate": 2,
+      "archived_request_sha256": "1dcfa32c6d7f5e3dd023f1bf4336b32e348afd0130a1833921f4fe23d5f57ea3",
+      "reconstructed_request_sha256": "1dcfa32c6d7f5e3dd023f1bf4336b32e348afd0130a1833921f4fe23d5f57ea3",
+      "original_timestamp": "2026-10-08T13:12:26.031463+00:00"
+    },
+    {
+      "id": "scibench_000221",
+      "replicate": 2,
+      "archived_request_sha256": "c2fa52b0fcf67f9958f57d8e59b77f96c343ad6a093d94ce3d3c241204e15cb5",
+      "reconstructed_request_sha256": "c2fa52b0fcf67f9958f57d8e59b77f96c343ad6a093d94ce3d3c241204e15cb5",
+      "original_timestamp": "2026-10-08T13:13:19.421818+00:00"
+    },
+    {
+      "id": "scibench_000222",
+      "replicate": 2,
+      "archived_request_sha256": "b1b2734b60707ba52ff4ebaabfcc4fd4036055f2440bb83494cb478b947b10f8",
+      "reconstructed_request_sha256": "b1b2734b60707ba52ff4ebaabfcc4fd4036055f2440bb83494cb478b947b10f8",
+      "original_timestamp": "2026-10-08T13:13:13.385643+00:00"
+    },
+    {
+      "id": "scibench_000223",
+      "replicate": 2,
+      "archived_request_sha256": "bd734feffa29bffe8eb9862e8759dd52aff11cac9ab0047489df9353e83deda5",
+      "reconstructed_request_sha256": "bd734feffa29bffe8eb9862e8759dd52aff11cac9ab0047489df9353e83deda5",
+      "original_timestamp": "2026-10-08T13:14:19.393097+00:00"
+    },
+    {
+      "id": "scibench_000226",
+      "replicate": 2,
+      "archived_request_sha256": "1a33c237aa077d3b78dd112acd769e69a9c9d37dd2e142ab4910e7e1f34d6dd4",
+      "reconstructed_request_sha256": "1a33c237aa077d3b78dd112acd769e69a9c9d37dd2e142ab4910e7e1f34d6dd4",
+      "original_timestamp": "2026-10-08T13:13:04.099210+00:00"
+    },
+    {
+      "id": "scibench_000232",
+      "replicate": 2,
+      "archived_request_sha256": "e7b20dea2f756a0a4a59837ba5a9330c795bbbe6a8f4ae7c7693e6aff1d3501a",
+      "reconstructed_request_sha256": "e7b20dea2f756a0a4a59837ba5a9330c795bbbe6a8f4ae7c7693e6aff1d3501a",
+      "original_timestamp": "2026-10-08T13:13:55.117256+00:00"
+    },
+    {
+      "id": "scibench_000237",
+      "replicate": 2,
+      "archived_request_sha256": "bf8ecc9007593790f401d8032f850bce79c0c4100bba12dc8883f5513fb53484",
+      "reconstructed_request_sha256": "bf8ecc9007593790f401d8032f850bce79c0c4100bba12dc8883f5513fb53484",
+      "original_timestamp": "2026-10-08T13:12:08.638364+00:00"
+    },
+    {
+      "id": "scibench_000242",
+      "replicate": 2,
+      "archived_request_sha256": "e290eca9b8dc034f2b265f6b5a8ed7874ad3a31fb96a13e89906c28b16f0c6f4",
+      "reconstructed_request_sha256": "e290eca9b8dc034f2b265f6b5a8ed7874ad3a31fb96a13e89906c28b16f0c6f4",
+      "original_timestamp": "2026-10-08T13:15:03.713699+00:00"
+    },
+    {
+      "id": "scibench_000245",
+      "replicate": 2,
+      "archived_request_sha256": "7fd1079f3464adb05993a85ad208bbc25fa8a29ad4d6f0d40b00a9332660414f",
+      "reconstructed_request_sha256": "7fd1079f3464adb05993a85ad208bbc25fa8a29ad4d6f0d40b00a9332660414f",
+      "original_timestamp": "2026-10-08T13:15:22.831171+00:00"
+    },
+    {
+      "id": "scibench_000249",
+      "replicate": 2,
+      "archived_request_sha256": "d731b2a50dc195d79c9267c2d02c56f84bf9ab517576576b47d82b84f24eed41",
+      "reconstructed_request_sha256": "d731b2a50dc195d79c9267c2d02c56f84bf9ab517576576b47d82b84f24eed41",
+      "original_timestamp": "2026-10-08T13:14:44.802806+00:00"
+    },
+    {
+      "id": "scibench_000252",
+      "replicate": 2,
+      "archived_request_sha256": "52525db71dc73b7e8091d6d19e5848e0412b7196282d0820790b3abbebb6fdff",
+      "reconstructed_request_sha256": "52525db71dc73b7e8091d6d19e5848e0412b7196282d0820790b3abbebb6fdff",
+      "original_timestamp": "2026-10-08T13:16:25.237660+00:00"
+    },
+    {
+      "id": "scibench_000254",
+      "replicate": 2,
+      "archived_request_sha256": "d3c3fe4ac698c27f4c3d3df6d0b743412d9f7d402c6f57443e20cdfc71daaba5",
+      "reconstructed_request_sha256": "d3c3fe4ac698c27f4c3d3df6d0b743412d9f7d402c6f57443e20cdfc71daaba5",
+      "original_timestamp": "2026-10-08T13:14:28.057015+00:00"
+    },
+    {
+      "id": "scibench_000260",
+      "replicate": 2,
+      "archived_request_sha256": "e14855312cfb84a2318917c8e84009b5b625b17be35de777bccba4a84596df7d",
+      "reconstructed_request_sha256": "e14855312cfb84a2318917c8e84009b5b625b17be35de777bccba4a84596df7d",
+      "original_timestamp": "2026-10-08T13:14:44.368230+00:00"
+    },
+    {
+      "id": "scibench_000269",
+      "replicate": 2,
+      "archived_request_sha256": "737217741a4ba607fb3f7ed7fcc5971e4795acee703c9a38f25306fd4e87883a",
+      "reconstructed_request_sha256": "737217741a4ba607fb3f7ed7fcc5971e4795acee703c9a38f25306fd4e87883a",
+      "original_timestamp": "2026-10-08T13:21:36.703351+00:00"
+    },
+    {
+      "id": "scibench_000272",
+      "replicate": 2,
+      "archived_request_sha256": "ab2621aa2c87a7b950291739381701f974d9f5e537a6ba57e077f7d9b65a4583",
+      "reconstructed_request_sha256": "ab2621aa2c87a7b950291739381701f974d9f5e537a6ba57e077f7d9b65a4583",
+      "original_timestamp": "2026-10-08T13:18:08.510616+00:00"
+    },
+    {
+      "id": "scibench_000273",
+      "replicate": 2,
+      "archived_request_sha256": "c016bf809fb004dac54468da117cccb7aba82d1765cbb879de4b841b8aac80db",
+      "reconstructed_request_sha256": "c016bf809fb004dac54468da117cccb7aba82d1765cbb879de4b841b8aac80db",
+      "original_timestamp": "2026-10-08T13:16:34.220380+00:00"
+    },
+    {
+      "id": "scibench_000277",
+      "replicate": 2,
+      "archived_request_sha256": "1fc79fd28e2ebca56ac6bcda8f1196b19ea6675ec54d8cad19d59436138d65e9",
+      "reconstructed_request_sha256": "1fc79fd28e2ebca56ac6bcda8f1196b19ea6675ec54d8cad19d59436138d65e9",
+      "original_timestamp": "2026-10-08T13:19:43.370663+00:00"
+    },
+    {
+      "id": "scibench_000279",
+      "replicate": 2,
+      "archived_request_sha256": "64bc9768c77c991856b57ccf5bed8d9f7390c73bc0a6f61d23234f1836d190f4",
+      "reconstructed_request_sha256": "64bc9768c77c991856b57ccf5bed8d9f7390c73bc0a6f61d23234f1836d190f4",
+      "original_timestamp": "2026-10-08T13:16:21.327176+00:00"
+    },
+    {
+      "id": "scibench_000280",
+      "replicate": 2,
+      "archived_request_sha256": "927589c083aa4457f0ccc2b38736386e6d592dbacfcf2e1a318e6725d4ee9277",
+      "reconstructed_request_sha256": "927589c083aa4457f0ccc2b38736386e6d592dbacfcf2e1a318e6725d4ee9277",
+      "original_timestamp": "2026-10-08T13:16:56.826976+00:00"
+    },
+    {
+      "id": "scibench_000282",
+      "replicate": 2,
+      "archived_request_sha256": "d34194ecd514561006ad5013e5f0c224ad35fbbbd2c4a379fb1b01f4ab85c4d1",
+      "reconstructed_request_sha256": "d34194ecd514561006ad5013e5f0c224ad35fbbbd2c4a379fb1b01f4ab85c4d1",
+      "original_timestamp": "2026-10-08T13:24:24.569462+00:00"
+    },
+    {
+      "id": "scibench_000285",
+      "replicate": 2,
+      "archived_request_sha256": "92b2013437283e74833a6d6a516dab7199a96e21d06179589fa810c5b577783c",
+      "reconstructed_request_sha256": "92b2013437283e74833a6d6a516dab7199a96e21d06179589fa810c5b577783c",
+      "original_timestamp": "2026-10-08T13:24:24.362217+00:00"
+    },
+    {
+      "id": "scibench_000289",
+      "replicate": 2,
+      "archived_request_sha256": "b08cb53d5f726fecd5ccc24c706a023795d246a7d22e0939f5bfdc3d0027e7ea",
+      "reconstructed_request_sha256": "b08cb53d5f726fecd5ccc24c706a023795d246a7d22e0939f5bfdc3d0027e7ea",
+      "original_timestamp": "2026-10-08T13:22:11.966743+00:00"
+    },
+    {
+      "id": "scibench_000292",
+      "replicate": 2,
+      "archived_request_sha256": "feed0ab7a83d5a5c6f04526ed9fb0d3d3cce9e708cfde47679910481451d6e24",
+      "reconstructed_request_sha256": "feed0ab7a83d5a5c6f04526ed9fb0d3d3cce9e708cfde47679910481451d6e24",
+      "original_timestamp": "2026-10-08T13:26:47.088476+00:00"
+    },
+    {
+      "id": "scibench_000293",
+      "replicate": 2,
+      "archived_request_sha256": "4659ea491c01cd7902c909129cb257b1c80268af47ea0aaa4122ee4b96d62ea8",
+      "reconstructed_request_sha256": "4659ea491c01cd7902c909129cb257b1c80268af47ea0aaa4122ee4b96d62ea8",
+      "original_timestamp": "2026-10-08T13:22:12.678353+00:00"
+    },
+    {
+      "id": "scibench_000294",
+      "replicate": 2,
+      "archived_request_sha256": "c687231a75f85d229e851be3108864d00d6dcc9817795c4f770caea8cdea95d3",
+      "reconstructed_request_sha256": "c687231a75f85d229e851be3108864d00d6dcc9817795c4f770caea8cdea95d3",
+      "original_timestamp": "2026-10-08T13:20:41.418558+00:00"
+    },
+    {
+      "id": "scibench_000328",
+      "replicate": 2,
+      "archived_request_sha256": "abf305c27e14d4cdc3e3bdb20638d47514c20c93d5e006c459959876f9e542b3",
+      "reconstructed_request_sha256": "abf305c27e14d4cdc3e3bdb20638d47514c20c93d5e006c459959876f9e542b3",
+      "original_timestamp": "2026-10-08T13:29:39.592593+00:00"
+    },
+    {
+      "id": "scibench_000332",
+      "replicate": 2,
+      "archived_request_sha256": "1453a69260dbb11e4a2bbd14a2a2692d10793e2866242fbf9e04bbf2649746af",
+      "reconstructed_request_sha256": "1453a69260dbb11e4a2bbd14a2a2692d10793e2866242fbf9e04bbf2649746af",
+      "original_timestamp": "2026-10-08T13:28:14.790602+00:00"
+    },
+    {
+      "id": "scibench_000333",
+      "replicate": 2,
+      "archived_request_sha256": "26fbdcaeec3c786298e05b079cf8b2e3d10b44cc783d98daa7ffac5507cc1068",
+      "reconstructed_request_sha256": "26fbdcaeec3c786298e05b079cf8b2e3d10b44cc783d98daa7ffac5507cc1068",
+      "original_timestamp": "2026-10-08T13:30:26.755808+00:00"
+    },
+    {
+      "id": "scibench_000334",
+      "replicate": 2,
+      "archived_request_sha256": "40d097d699dc646f956f7167e3e8fb02e71df5fe72b32b49144d22417af10494",
+      "reconstructed_request_sha256": "40d097d699dc646f956f7167e3e8fb02e71df5fe72b32b49144d22417af10494",
+      "original_timestamp": "2026-10-08T13:26:58.199011+00:00"
+    },
+    {
+      "id": "scibench_000339",
+      "replicate": 2,
+      "archived_request_sha256": "98c33609200f3ebb12f411ef01057a328b66222301059773ded6120c6460b4b4",
+      "reconstructed_request_sha256": "98c33609200f3ebb12f411ef01057a328b66222301059773ded6120c6460b4b4",
+      "original_timestamp": "2026-10-08T13:28:51.926818+00:00"
+    },
+    {
+      "id": "scibench_000340",
+      "replicate": 2,
+      "archived_request_sha256": "08588a1cf7915cadd6344af0bf8b67f3bf060bcb597dff27451d4617e3c631e1",
+      "reconstructed_request_sha256": "08588a1cf7915cadd6344af0bf8b67f3bf060bcb597dff27451d4617e3c631e1",
+      "original_timestamp": "2026-10-08T13:30:32.352554+00:00"
+    },
+    {
+      "id": "scibench_000342",
+      "replicate": 2,
+      "archived_request_sha256": "b93e0ba617e5e5a6d4e8077cef05f0b5c0722facb95b12806dc71af3bbd6255f",
+      "reconstructed_request_sha256": "b93e0ba617e5e5a6d4e8077cef05f0b5c0722facb95b12806dc71af3bbd6255f",
+      "original_timestamp": "2026-10-08T13:31:47.191387+00:00"
+    },
+    {
+      "id": "scibench_000348",
+      "replicate": 2,
+      "archived_request_sha256": "2322ef2d9dc1f5ebce8120988a45d529ad72fbb3412cac2fcfe2817be7e28311",
+      "reconstructed_request_sha256": "2322ef2d9dc1f5ebce8120988a45d529ad72fbb3412cac2fcfe2817be7e28311",
+      "original_timestamp": "2026-10-08T13:32:59.617715+00:00"
+    },
+    {
+      "id": "scibench_000352",
+      "replicate": 2,
+      "archived_request_sha256": "3baa9798b6db5c22ab348dc602123e64e58d1c80021d9a166ce94d06fdc57d14",
+      "reconstructed_request_sha256": "3baa9798b6db5c22ab348dc602123e64e58d1c80021d9a166ce94d06fdc57d14",
+      "original_timestamp": "2026-10-08T13:33:40.587110+00:00"
+    },
+    {
+      "id": "scibench_000354",
+      "replicate": 2,
+      "archived_request_sha256": "c93132c549050a66585d1ea10ee456d7268d5fb786797cd22341d566e1b3e437",
+      "reconstructed_request_sha256": "c93132c549050a66585d1ea10ee456d7268d5fb786797cd22341d566e1b3e437",
+      "original_timestamp": "2026-10-08T13:32:04.475523+00:00"
+    },
+    {
+      "id": "scibench_000356",
+      "replicate": 2,
+      "archived_request_sha256": "735cb17d4d4dab07d85ace50a0b82cfa43d261bb61f140d19bb716ce0f97cff1",
+      "reconstructed_request_sha256": "735cb17d4d4dab07d85ace50a0b82cfa43d261bb61f140d19bb716ce0f97cff1",
+      "original_timestamp": "2026-10-08T13:33:55.448790+00:00"
+    },
+    {
+      "id": "scibench_000358",
+      "replicate": 2,
+      "archived_request_sha256": "74810c4f443256be433b67632f2cb8a38ad51ad640fc6293ddd6e90c258341dd",
+      "reconstructed_request_sha256": "74810c4f443256be433b67632f2cb8a38ad51ad640fc6293ddd6e90c258341dd",
+      "original_timestamp": "2026-10-08T13:31:14.427416+00:00"
+    },
+    {
+      "id": "scibench_000362",
+      "replicate": 2,
+      "archived_request_sha256": "20cb0f2f2c752452977a251da94c3ed8877c734edd3519002ec5f0f3c8823fb0",
+      "reconstructed_request_sha256": "20cb0f2f2c752452977a251da94c3ed8877c734edd3519002ec5f0f3c8823fb0",
+      "original_timestamp": "2026-10-08T13:34:48.787172+00:00"
+    },
+    {
+      "id": "scibench_000365",
+      "replicate": 2,
+      "archived_request_sha256": "6068f4550e809c9c1b314de718830a331ae44934f779699e02fde8f32ab91b98",
+      "reconstructed_request_sha256": "6068f4550e809c9c1b314de718830a331ae44934f779699e02fde8f32ab91b98",
+      "original_timestamp": "2026-10-08T13:35:10.479089+00:00"
+    },
+    {
+      "id": "scibench_000366",
+      "replicate": 2,
+      "archived_request_sha256": "02a03b21aa669039a445a660a7dbb0ff9ef8acc977e90a4c7ae1352b8bee426e",
+      "reconstructed_request_sha256": "02a03b21aa669039a445a660a7dbb0ff9ef8acc977e90a4c7ae1352b8bee426e",
+      "original_timestamp": "2026-10-08T13:36:03.701937+00:00"
+    },
+    {
+      "id": "scibench_000367",
+      "replicate": 2,
+      "archived_request_sha256": "bf4849564005846c55cb762657473cbe952b27a7fa01479f2b01f62a7b736548",
+      "reconstructed_request_sha256": "bf4849564005846c55cb762657473cbe952b27a7fa01479f2b01f62a7b736548",
+      "original_timestamp": "2026-10-08T13:37:30.418498+00:00"
+    },
+    {
+      "id": "scibench_000372",
+      "replicate": 2,
+      "archived_request_sha256": "5219cb423eb04f13d2e08f4e9c700c69bd27376c6f63235f6894b084a584934d",
+      "reconstructed_request_sha256": "5219cb423eb04f13d2e08f4e9c700c69bd27376c6f63235f6894b084a584934d",
+      "original_timestamp": "2026-10-08T13:36:00.867719+00:00"
+    },
+    {
+      "id": "scibench_000374",
+      "replicate": 2,
+      "archived_request_sha256": "96cb3a9c5651e612c4982d1a1f32909e28296dc948a1b6b76d72a15b2d2e9931",
+      "reconstructed_request_sha256": "96cb3a9c5651e612c4982d1a1f32909e28296dc948a1b6b76d72a15b2d2e9931",
+      "original_timestamp": "2026-10-08T13:37:25.501478+00:00"
+    },
+    {
+      "id": "scibench_000405",
+      "replicate": 2,
+      "archived_request_sha256": "f237a0d3bd4ac6c1f9a36b3867a927ac2735c4ac4fd46ad5d4a7542300233804",
+      "reconstructed_request_sha256": "f237a0d3bd4ac6c1f9a36b3867a927ac2735c4ac4fd46ad5d4a7542300233804",
+      "original_timestamp": "2026-10-08T13:40:36.920569+00:00"
+    },
+    {
+      "id": "scibench_000409",
+      "replicate": 2,
+      "archived_request_sha256": "84b6ffb533393fe555c3fa6e2ff1c26d99d78cb29e06d4874af57f311d28fecb",
+      "reconstructed_request_sha256": "84b6ffb533393fe555c3fa6e2ff1c26d99d78cb29e06d4874af57f311d28fecb",
+      "original_timestamp": "2026-10-08T13:39:13.512630+00:00"
+    },
+    {
+      "id": "scibench_000413",
+      "replicate": 2,
+      "archived_request_sha256": "f23fd429d021680c7648bccd1592d25f182e14ec46cb06df43d4e6181d8a6a2a",
+      "reconstructed_request_sha256": "f23fd429d021680c7648bccd1592d25f182e14ec46cb06df43d4e6181d8a6a2a",
+      "original_timestamp": "2026-10-08T13:40:40.426462+00:00"
+    },
+    {
+      "id": "scibench_000414",
+      "replicate": 2,
+      "archived_request_sha256": "2ba73a5f246cee78e99395c25988120522c195de4f54a8502d1723ffa87211ce",
+      "reconstructed_request_sha256": "2ba73a5f246cee78e99395c25988120522c195de4f54a8502d1723ffa87211ce",
+      "original_timestamp": "2026-10-08T13:38:12.149601+00:00"
+    },
+    {
+      "id": "scibench_000416",
+      "replicate": 2,
+      "archived_request_sha256": "99ace799568e65b38fce8957fd65dac7a7989c149c690aa649dacd667726d082",
+      "reconstructed_request_sha256": "99ace799568e65b38fce8957fd65dac7a7989c149c690aa649dacd667726d082",
+      "original_timestamp": "2026-10-08T13:42:48.370812+00:00"
+    },
+    {
+      "id": "scibench_000420",
+      "replicate": 2,
+      "archived_request_sha256": "6c16e99aeaeaea231bebbeab9f7a5c507524b1d00edd5e2127872ab7e7f7199f",
+      "reconstructed_request_sha256": "6c16e99aeaeaea231bebbeab9f7a5c507524b1d00edd5e2127872ab7e7f7199f",
+      "original_timestamp": "2026-10-09T03:01:37.099077+00:00"
+    },
+    {
+      "id": "scibench_000541",
+      "replicate": 2,
+      "archived_request_sha256": "cfd9ea29d3405382591283206181f809cf4e774e94f0bd44ba3c1bd77a90e0da",
+      "reconstructed_request_sha256": "cfd9ea29d3405382591283206181f809cf4e774e94f0bd44ba3c1bd77a90e0da",
+      "original_timestamp": "2026-10-08T13:45:23.649145+00:00"
+    },
+    {
+      "id": "scibench_000546",
+      "replicate": 2,
+      "archived_request_sha256": "1ca5170dcbb846f84ea87e3a135e8620f28ee2a85e5d5329e74dce292b747c5b",
+      "reconstructed_request_sha256": "1ca5170dcbb846f84ea87e3a135e8620f28ee2a85e5d5329e74dce292b747c5b",
+      "original_timestamp": "2026-10-08T13:47:16.213131+00:00"
+    },
+    {
+      "id": "scibench_000549",
+      "replicate": 2,
+      "archived_request_sha256": "6e162817c6c91332b2be428260dff7eee5d83463bb80572b1d7bc8f43006c6d1",
+      "reconstructed_request_sha256": "6e162817c6c91332b2be428260dff7eee5d83463bb80572b1d7bc8f43006c6d1",
+      "original_timestamp": "2026-10-08T13:49:46.864223+00:00"
+    },
+    {
+      "id": "scibench_000550",
+      "replicate": 2,
+      "archived_request_sha256": "c252e77a51954311ac6832161fc6926ace419df0379898861fc7a5e18f23a5de",
+      "reconstructed_request_sha256": "c252e77a51954311ac6832161fc6926ace419df0379898861fc7a5e18f23a5de",
+      "original_timestamp": "2026-10-08T13:48:23.862016+00:00"
+    },
+    {
+      "id": "scibench_000551",
+      "replicate": 2,
+      "archived_request_sha256": "c291cdd14252c32a9bfbcfc6365817e9112a520b46ea8dc9316bc964a0928c72",
+      "reconstructed_request_sha256": "c291cdd14252c32a9bfbcfc6365817e9112a520b46ea8dc9316bc964a0928c72",
+      "original_timestamp": "2026-10-08T13:49:32.214891+00:00"
+    },
+    {
+      "id": "scibench_000555",
+      "replicate": 2,
+      "archived_request_sha256": "548fed46c058cdc230ccb5d5c564a8758f962600e9574233bfeb96c81004abb6",
+      "reconstructed_request_sha256": "548fed46c058cdc230ccb5d5c564a8758f962600e9574233bfeb96c81004abb6",
+      "original_timestamp": "2026-10-08T13:44:43.822589+00:00"
+    },
+    {
+      "id": "scibench_000565",
+      "replicate": 2,
+      "archived_request_sha256": "346648a75e1abcdbe7c7bbf5aeb9faf83b0a6ec933cd16bed96a60ef5ab902dc",
+      "reconstructed_request_sha256": "346648a75e1abcdbe7c7bbf5aeb9faf83b0a6ec933cd16bed96a60ef5ab902dc",
+      "original_timestamp": "2026-10-08T13:50:14.326481+00:00"
+    },
+    {
+      "id": "scibench_000574",
+      "replicate": 2,
+      "archived_request_sha256": "507d1e9dfe7687ca47e2a1578bc34f11b61e11bb95a8c6a0ad28a767b69c8516",
+      "reconstructed_request_sha256": "507d1e9dfe7687ca47e2a1578bc34f11b61e11bb95a8c6a0ad28a767b69c8516",
+      "original_timestamp": "2026-10-08T13:50:37.808680+00:00"
+    },
+    {
+      "id": "scibench_000576",
+      "replicate": 2,
+      "archived_request_sha256": "4fd4f7937b5938228def8eaf3455625fde7e03456abff9f1009af3e1123ceaeb",
+      "reconstructed_request_sha256": "4fd4f7937b5938228def8eaf3455625fde7e03456abff9f1009af3e1123ceaeb",
+      "original_timestamp": "2026-10-08T13:50:55.220639+00:00"
+    },
+    {
+      "id": "scibench_000578",
+      "replicate": 2,
+      "archived_request_sha256": "bd67dd7d2b24c97503be85265b37c5fe28f6f8738144275f6bd661dbc063987c",
+      "reconstructed_request_sha256": "bd67dd7d2b24c97503be85265b37c5fe28f6f8738144275f6bd661dbc063987c",
+      "original_timestamp": "2026-10-08T13:50:35.397371+00:00"
+    },
+    {
+      "id": "scibench_000579",
+      "replicate": 2,
+      "archived_request_sha256": "3338f10dee162abfdbf47b5124537def664c89b96e5022c21ff1c1fadf944a69",
+      "reconstructed_request_sha256": "3338f10dee162abfdbf47b5124537def664c89b96e5022c21ff1c1fadf944a69",
+      "original_timestamp": "2026-10-08T13:51:18.080462+00:00"
+    },
+    {
+      "id": "scibench_000580",
+      "replicate": 2,
+      "archived_request_sha256": "e293457f69295975916de537302dc517f57a0a2b295b4c94db14aca56d8ea3f6",
+      "reconstructed_request_sha256": "e293457f69295975916de537302dc517f57a0a2b295b4c94db14aca56d8ea3f6",
+      "original_timestamp": "2026-10-08T13:51:20.349728+00:00"
+    },
+    {
+      "id": "scibench_000639",
+      "replicate": 2,
+      "archived_request_sha256": "7044d4b44fae659bc4ddfa97b4ee246b03d0db1d2a28b768b0259b95a9465fa6",
+      "reconstructed_request_sha256": "7044d4b44fae659bc4ddfa97b4ee246b03d0db1d2a28b768b0259b95a9465fa6",
+      "original_timestamp": "2026-10-08T13:54:22.917188+00:00"
+    },
+    {
+      "id": "scibench_000641",
+      "replicate": 2,
+      "archived_request_sha256": "4a87ad48e8654a632b253cd0bd3df5a194c99585c1164f873d7fb390af21281f",
+      "reconstructed_request_sha256": "4a87ad48e8654a632b253cd0bd3df5a194c99585c1164f873d7fb390af21281f",
+      "original_timestamp": "2026-10-08T13:54:23.434868+00:00"
+    },
+    {
+      "id": "scibench_000642",
+      "replicate": 2,
+      "archived_request_sha256": "c9c39ae35d99cfa7d42b8e0e07d443155d3b3775b5c6b788c00be328413daae8",
+      "reconstructed_request_sha256": "c9c39ae35d99cfa7d42b8e0e07d443155d3b3775b5c6b788c00be328413daae8",
+      "original_timestamp": "2026-10-08T13:53:19.262524+00:00"
+    },
+    {
+      "id": "scibench_000644",
+      "replicate": 2,
+      "archived_request_sha256": "1098777e8be097efd0b503e02509c6758566897333f81ceaaceddd8fe29711ba",
+      "reconstructed_request_sha256": "1098777e8be097efd0b503e02509c6758566897333f81ceaaceddd8fe29711ba",
+      "original_timestamp": "2026-10-08T13:51:49.486371+00:00"
+    },
+    {
+      "id": "scibench_000648",
+      "replicate": 2,
+      "archived_request_sha256": "d5b94018696489f140aa2c2e26ab5920288af3836e4fb8bb5076ec6f3fbeedaa",
+      "reconstructed_request_sha256": "d5b94018696489f140aa2c2e26ab5920288af3836e4fb8bb5076ec6f3fbeedaa",
+      "original_timestamp": "2026-10-08T13:53:21.887589+00:00"
+    },
+    {
+      "id": "scibench_000652",
+      "replicate": 2,
+      "archived_request_sha256": "6f23345c3ed4af82b7aeff294cb6fc2b407107af64313f103afd8bef6cc0a2b0",
+      "reconstructed_request_sha256": "6f23345c3ed4af82b7aeff294cb6fc2b407107af64313f103afd8bef6cc0a2b0",
+      "original_timestamp": "2026-10-08T13:55:20.925111+00:00"
+    },
+    {
+      "id": "scibench_000661",
+      "replicate": 2,
+      "archived_request_sha256": "e4c7b87da33f771ada0d9e80505f7f39d854feba5fa1e3923d0124cdba84c261",
+      "reconstructed_request_sha256": "e4c7b87da33f771ada0d9e80505f7f39d854feba5fa1e3923d0124cdba84c261",
+      "original_timestamp": "2026-10-08T13:55:00.032384+00:00"
+    },
+    {
+      "id": "scibench_000663",
+      "replicate": 2,
+      "archived_request_sha256": "8104e6c0d526bcaa2e230c91a237de6ce94015c4cc3101741c2d46702c6bbbdc",
+      "reconstructed_request_sha256": "8104e6c0d526bcaa2e230c91a237de6ce94015c4cc3101741c2d46702c6bbbdc",
+      "original_timestamp": "2026-10-08T13:55:15.957935+00:00"
+    },
+    {
+      "id": "scibench_000664",
+      "replicate": 2,
+      "archived_request_sha256": "f1cafff3edf2e8b87c2ca6aab392264ffdd89c9a16d0d90319fde61b4b047521",
+      "reconstructed_request_sha256": "f1cafff3edf2e8b87c2ca6aab392264ffdd89c9a16d0d90319fde61b4b047521",
+      "original_timestamp": "2026-10-08T13:54:50.628390+00:00"
+    },
+    {
+      "id": "scibench_000668",
+      "replicate": 2,
+      "archived_request_sha256": "f39a0566db1c1fcdd99089a1220fd965e582affdf57d1e149181c009d16a8098",
+      "reconstructed_request_sha256": "f39a0566db1c1fcdd99089a1220fd965e582affdf57d1e149181c009d16a8098",
+      "original_timestamp": "2026-10-08T13:56:03.456547+00:00"
+    },
+    {
+      "id": "scibench_000673",
+      "replicate": 2,
+      "archived_request_sha256": "1964deb0781b7c89a247767e7d01c9d7c0bdb4aa01a36c16e7b44984d559a4aa",
+      "reconstructed_request_sha256": "1964deb0781b7c89a247767e7d01c9d7c0bdb4aa01a36c16e7b44984d559a4aa",
+      "original_timestamp": "2026-10-08T13:55:37.293649+00:00"
+    },
+    {
+      "id": "scibench_000674",
+      "replicate": 2,
+      "archived_request_sha256": "94e6ac1acd23262f4f775da58f0075b333270065448315713e8bd015de1f7809",
+      "reconstructed_request_sha256": "94e6ac1acd23262f4f775da58f0075b333270065448315713e8bd015de1f7809",
+      "original_timestamp": "2026-10-08T13:56:01.731623+00:00"
+    },
+    {
+      "id": "scibench_000679",
+      "replicate": 2,
+      "archived_request_sha256": "34d43d0dfa1e971788bcb3e5599e41c12b5f157d14f6fd08c5da1488c509f9a3",
+      "reconstructed_request_sha256": "34d43d0dfa1e971788bcb3e5599e41c12b5f157d14f6fd08c5da1488c509f9a3",
+      "original_timestamp": "2026-10-08T13:56:10.432547+00:00"
+    },
+    {
+      "id": "scibench_000682",
+      "replicate": 2,
+      "archived_request_sha256": "58004d55691afa7c92be971f7da22aaf47eab21755e4fcee55e221fa1911008c",
+      "reconstructed_request_sha256": "58004d55691afa7c92be971f7da22aaf47eab21755e4fcee55e221fa1911008c",
+      "original_timestamp": "2026-10-08T13:56:55.904071+00:00"
+    },
+    {
+      "id": "scibench_000686",
+      "replicate": 2,
+      "archived_request_sha256": "a82b19bd83d993b8ad06adfbf0fd529735f4b541aacd3706dd93885bbdf06291",
+      "reconstructed_request_sha256": "a82b19bd83d993b8ad06adfbf0fd529735f4b541aacd3706dd93885bbdf06291",
+      "original_timestamp": "2026-10-08T13:57:16.308632+00:00"
+    },
+    {
+      "id": "scibench_000687",
+      "replicate": 2,
+      "archived_request_sha256": "72576cc1aebbbf33c6b172ec04aff1767b591eef9212f774f1669b0e20ff3cd1",
+      "reconstructed_request_sha256": "72576cc1aebbbf33c6b172ec04aff1767b591eef9212f774f1669b0e20ff3cd1",
+      "original_timestamp": "2026-10-08T13:56:08.316788+00:00"
+    },
+    {
+      "id": "scibench_000694",
+      "replicate": 2,
+      "archived_request_sha256": "5cfedc584694d2aae5a6b6319a97c48db59e3e9c82bd8d4569d816272e25763e",
+      "reconstructed_request_sha256": "5cfedc584694d2aae5a6b6319a97c48db59e3e9c82bd8d4569d816272e25763e",
+      "original_timestamp": "2026-10-08T13:57:35.616580+00:00"
+    },
+    {
+      "id": "scibench_000697",
+      "replicate": 2,
+      "archived_request_sha256": "74f03f8f65c76aecfe29d3c66f7f61b46320711d7a25e1e4081295248157b12a",
+      "reconstructed_request_sha256": "74f03f8f65c76aecfe29d3c66f7f61b46320711d7a25e1e4081295248157b12a",
+      "original_timestamp": "2026-10-08T13:56:59.357198+00:00"
+    },
+    {
+      "id": "scibench_000699",
+      "replicate": 2,
+      "archived_request_sha256": "d6d34729a71e65a9cccd3c03329c06306d961766c8619f39b4e2c48234eded93",
+      "reconstructed_request_sha256": "d6d34729a71e65a9cccd3c03329c06306d961766c8619f39b4e2c48234eded93",
+      "original_timestamp": "2026-10-08T14:00:33.751061+00:00"
+    },
+    {
+      "id": "scibench_000700",
+      "replicate": 2,
+      "archived_request_sha256": "c6d154f483ff1534ee2be3d59d5de37dd6ef7057592084b1894e184d51eec3e5",
+      "reconstructed_request_sha256": "c6d154f483ff1534ee2be3d59d5de37dd6ef7057592084b1894e184d51eec3e5",
+      "original_timestamp": "2026-10-08T13:59:02.158306+00:00"
+    },
+    {
+      "id": "scibench_000701",
+      "replicate": 2,
+      "archived_request_sha256": "f6e24f43632b4a15bad3b58ec04277022e2f4b814dc956e6e52621a1f177f1f7",
+      "reconstructed_request_sha256": "f6e24f43632b4a15bad3b58ec04277022e2f4b814dc956e6e52621a1f177f1f7",
+      "original_timestamp": "2026-10-08T13:58:23.329499+00:00"
+    },
+    {
+      "id": "scibench_000707",
+      "replicate": 2,
+      "archived_request_sha256": "c1396ff7af457babb25c599240f93071a49fb79656687aa5a39dc7c8c24e272c",
+      "reconstructed_request_sha256": "c1396ff7af457babb25c599240f93071a49fb79656687aa5a39dc7c8c24e272c",
+      "original_timestamp": "2026-10-08T14:04:36.497107+00:00"
+    },
+    {
+      "id": "scibench_000710",
+      "replicate": 2,
+      "archived_request_sha256": "0f6e5ae4ea80c602e315d813eb887aea2cb8186341544d20893beef35bc99940",
+      "reconstructed_request_sha256": "0f6e5ae4ea80c602e315d813eb887aea2cb8186341544d20893beef35bc99940",
+      "original_timestamp": "2026-10-08T14:02:01.616717+00:00"
+    },
+    {
+      "id": "scibench_000715",
+      "replicate": 2,
+      "archived_request_sha256": "ff59a72900fb6e29ec6c7240a1324b5860e68491322a52d0e79f4ef9f0a287e2",
+      "reconstructed_request_sha256": "ff59a72900fb6e29ec6c7240a1324b5860e68491322a52d0e79f4ef9f0a287e2",
+      "original_timestamp": "2026-10-08T13:57:47.771334+00:00"
+    },
+    {
+      "id": "scibench_000718",
+      "replicate": 2,
+      "archived_request_sha256": "6a93d60b35c95d23d89bdd4b0162812f439399f883fbf48f5cba8741f8a94dfc",
+      "reconstructed_request_sha256": "6a93d60b35c95d23d89bdd4b0162812f439399f883fbf48f5cba8741f8a94dfc",
+      "original_timestamp": "2026-10-08T14:06:25.956898+00:00"
+    },
+    {
+      "id": "scibench_000725",
+      "replicate": 2,
+      "archived_request_sha256": "bf0a50a5e4489de145b8955eb74d4c989c2de77e3c2cbfcd6a77558c54b2be4a",
+      "reconstructed_request_sha256": "bf0a50a5e4489de145b8955eb74d4c989c2de77e3c2cbfcd6a77558c54b2be4a",
+      "original_timestamp": "2026-10-08T14:02:55.176742+00:00"
+    },
+    {
+      "id": "scibench_000726",
+      "replicate": 2,
+      "archived_request_sha256": "c42cde05df649074b4320cf96eedcf4cece62e7601a70f39b33d0d37111fef06",
+      "reconstructed_request_sha256": "c42cde05df649074b4320cf96eedcf4cece62e7601a70f39b33d0d37111fef06",
+      "original_timestamp": "2026-10-08T14:07:15.500628+00:00"
+    },
+    {
+      "id": "scibench_000751",
+      "replicate": 2,
+      "archived_request_sha256": "528764c42e51bc4bc53ed3641b1cc10580949408e888e9dc5b1dc03c8f33720d",
+      "reconstructed_request_sha256": "528764c42e51bc4bc53ed3641b1cc10580949408e888e9dc5b1dc03c8f33720d",
+      "original_timestamp": "2026-10-08T14:09:44.647387+00:00"
+    },
+    {
+      "id": "scibench_000753",
+      "replicate": 2,
+      "archived_request_sha256": "27b3b2cf03a8bf3877e0cb11e16d374015e8784725e70501147ed7a7165357fa",
+      "reconstructed_request_sha256": "27b3b2cf03a8bf3877e0cb11e16d374015e8784725e70501147ed7a7165357fa",
+      "original_timestamp": "2026-10-08T14:12:00.895124+00:00"
+    },
+    {
+      "id": "scibench_000754",
+      "replicate": 2,
+      "archived_request_sha256": "cb1ab26a48606ac36e1d5b70040e65ca47f6f168c59d1b7d6604b5bb45a2d80d",
+      "reconstructed_request_sha256": "cb1ab26a48606ac36e1d5b70040e65ca47f6f168c59d1b7d6604b5bb45a2d80d",
+      "original_timestamp": "2026-10-08T14:08:09.749082+00:00"
+    },
+    {
+      "id": "scibench_000757",
+      "replicate": 2,
+      "archived_request_sha256": "5073a0b287e601ba637501781e095474ead3ed9de9beb980975142a5f878438f",
+      "reconstructed_request_sha256": "5073a0b287e601ba637501781e095474ead3ed9de9beb980975142a5f878438f",
+      "original_timestamp": "2026-10-08T14:11:18.655449+00:00"
+    },
+    {
+      "id": "scibench_000759",
+      "replicate": 2,
+      "archived_request_sha256": "f1479aaa5df909b6c7b352c75412575b89ba17e7b9f4d4e26406df81c47cdfd2",
+      "reconstructed_request_sha256": "f1479aaa5df909b6c7b352c75412575b89ba17e7b9f4d4e26406df81c47cdfd2",
+      "original_timestamp": "2026-10-08T14:08:50.775022+00:00"
+    },
+    {
+      "id": "scibench_000763",
+      "replicate": 2,
+      "archived_request_sha256": "835df766061c8ea3ccb785b2ee10ac736f0bee5438654470b0b92d5795465340",
+      "reconstructed_request_sha256": "835df766061c8ea3ccb785b2ee10ac736f0bee5438654470b0b92d5795465340",
+      "original_timestamp": "2026-10-08T14:07:30.946696+00:00"
+    },
+    {
+      "id": "scibench_000770",
+      "replicate": 2,
+      "archived_request_sha256": "a7f4418a22435246b738ea6dc1fbf545685a21519086e265c65526e8e41f2f63",
+      "reconstructed_request_sha256": "a7f4418a22435246b738ea6dc1fbf545685a21519086e265c65526e8e41f2f63",
+      "original_timestamp": "2026-10-08T14:11:39.566065+00:00"
+    },
+    {
+      "id": "scibench_000771",
+      "replicate": 2,
+      "archived_request_sha256": "4916c6db677e0af37be0e43b3526ec97fb371996e795d5ffe219890d8030e8ec",
+      "reconstructed_request_sha256": "4916c6db677e0af37be0e43b3526ec97fb371996e795d5ffe219890d8030e8ec",
+      "original_timestamp": "2026-10-08T14:11:59.424656+00:00"
+    },
+    {
+      "id": "scibench_000774",
+      "replicate": 2,
+      "archived_request_sha256": "9495a63f1e41da9831732debaa797a68751cb53cf6cbee347c3663bfed7c854a",
+      "reconstructed_request_sha256": "9495a63f1e41da9831732debaa797a68751cb53cf6cbee347c3663bfed7c854a",
+      "original_timestamp": "2026-10-08T14:12:05.729691+00:00"
+    },
+    {
+      "id": "scibench_000777",
+      "replicate": 2,
+      "archived_request_sha256": "2bd9c5a4d970361c965f81afbda203ef14000b1f4f70fa4fe37c48d70203dff0",
+      "reconstructed_request_sha256": "2bd9c5a4d970361c965f81afbda203ef14000b1f4f70fa4fe37c48d70203dff0",
+      "original_timestamp": "2026-10-08T14:12:11.049178+00:00"
+    },
+    {
+      "id": "scibench_000779",
+      "replicate": 2,
+      "archived_request_sha256": "6580d0ec57bd6bef6b1a42d5c5eccbc4e25eaf8c4816449f863f927400bb60aa",
+      "reconstructed_request_sha256": "6580d0ec57bd6bef6b1a42d5c5eccbc4e25eaf8c4816449f863f927400bb60aa",
+      "original_timestamp": "2026-10-08T14:11:46.963257+00:00"
+    },
+    {
+      "id": "scibench_000780",
+      "replicate": 2,
+      "archived_request_sha256": "a7e5a29beaf4656f24e285f8652bdd6094270c92e9aaf3e9be7d76b0e2800ec6",
+      "reconstructed_request_sha256": "a7e5a29beaf4656f24e285f8652bdd6094270c92e9aaf3e9be7d76b0e2800ec6",
+      "original_timestamp": "2026-10-08T14:11:33.610028+00:00"
+    },
+    {
+      "id": "scibench_000843",
+      "replicate": 2,
+      "archived_request_sha256": "11daf71292b35368ed9b6f79d8fde09584272bce156f97420158853d8de91ce0",
+      "reconstructed_request_sha256": "11daf71292b35368ed9b6f79d8fde09584272bce156f97420158853d8de91ce0",
+      "original_timestamp": "2026-10-08T14:13:17.519744+00:00"
+    },
+    {
+      "id": "scibench_000844",
+      "replicate": 2,
+      "archived_request_sha256": "0f16ef9cbef2d17573cd6eb37f1373b9a372bc96747bc37ce118dcfb641ca059",
+      "reconstructed_request_sha256": "0f16ef9cbef2d17573cd6eb37f1373b9a372bc96747bc37ce118dcfb641ca059",
+      "original_timestamp": "2026-10-08T14:16:08.358451+00:00"
+    },
+    {
+      "id": "scibench_000846",
+      "replicate": 2,
+      "archived_request_sha256": "28efbb9fef8389b7bd3038e856867f66cfa4287d730b4102fb645ac4b0660239",
+      "reconstructed_request_sha256": "28efbb9fef8389b7bd3038e856867f66cfa4287d730b4102fb645ac4b0660239",
+      "original_timestamp": "2026-10-08T14:15:10.273201+00:00"
+    },
+    {
+      "id": "scibench_000850",
+      "replicate": 2,
+      "archived_request_sha256": "103c3dee641a078c77446dea3efb5518b5c7b9bc62a4b2f681b0039c3df0eed8",
+      "reconstructed_request_sha256": "103c3dee641a078c77446dea3efb5518b5c7b9bc62a4b2f681b0039c3df0eed8",
+      "original_timestamp": "2026-10-08T14:15:56.009854+00:00"
+    },
+    {
+      "id": "scibench_000854",
+      "replicate": 2,
+      "archived_request_sha256": "2bcd585fc85a1645653faeca450b6508c6392fb6a6e2b4573e2265018579581d",
+      "reconstructed_request_sha256": "2bcd585fc85a1645653faeca450b6508c6392fb6a6e2b4573e2265018579581d",
+      "original_timestamp": "2026-10-08T14:12:34.821170+00:00"
+    },
+    {
+      "id": "scibench_000858",
+      "replicate": 2,
+      "archived_request_sha256": "8d080d70248ffe8421a4f05268bd1a9430531f6805fd165340ecf957d65ed9ab",
+      "reconstructed_request_sha256": "8d080d70248ffe8421a4f05268bd1a9430531f6805fd165340ecf957d65ed9ab",
+      "original_timestamp": "2026-10-08T14:14:40.272887+00:00"
+    },
+    {
+      "id": "scibench_000182",
+      "replicate": 3,
+      "archived_request_sha256": "d3a74cd4921a2735845ca99edb99decbc0f83280a3e979d5192384f15af5d86e",
+      "reconstructed_request_sha256": "d3a74cd4921a2735845ca99edb99decbc0f83280a3e979d5192384f15af5d86e",
+      "original_timestamp": "2026-10-08T13:10:23.429421+00:00"
+    },
+    {
+      "id": "scibench_000183",
+      "replicate": 3,
+      "archived_request_sha256": "cea6a81f3d212764d7ba0661b6b14a52a60b28c7134bda91bfb6f34a5894a2b9",
+      "reconstructed_request_sha256": "cea6a81f3d212764d7ba0661b6b14a52a60b28c7134bda91bfb6f34a5894a2b9",
+      "original_timestamp": "2026-10-08T13:10:44.674838+00:00"
+    },
+    {
+      "id": "scibench_000188",
+      "replicate": 3,
+      "archived_request_sha256": "cb44a73c7a063a6e66e41d29d720d72a37de1b1396e5525c8a621c706aa45780",
+      "reconstructed_request_sha256": "cb44a73c7a063a6e66e41d29d720d72a37de1b1396e5525c8a621c706aa45780",
+      "original_timestamp": "2026-10-08T13:08:24.480653+00:00"
+    },
+    {
+      "id": "scibench_000190",
+      "replicate": 3,
+      "archived_request_sha256": "1d9ec60c03fff8f69116890ed196c493343f07f72372fc7df9cda8728fd9b5fc",
+      "reconstructed_request_sha256": "1d9ec60c03fff8f69116890ed196c493343f07f72372fc7df9cda8728fd9b5fc",
+      "original_timestamp": "2026-10-08T13:10:03.991594+00:00"
+    },
+    {
+      "id": "scibench_000198",
+      "replicate": 3,
+      "archived_request_sha256": "b6dec3ca70f2edcf55da42686398b8b1f06bd6d668ae6e6641550f9f960581aa",
+      "reconstructed_request_sha256": "b6dec3ca70f2edcf55da42686398b8b1f06bd6d668ae6e6641550f9f960581aa",
+      "original_timestamp": "2026-10-08T13:00:25.648391+00:00"
+    },
+    {
+      "id": "scibench_000199",
+      "replicate": 3,
+      "archived_request_sha256": "1dcfa32c6d7f5e3dd023f1bf4336b32e348afd0130a1833921f4fe23d5f57ea3",
+      "reconstructed_request_sha256": "1dcfa32c6d7f5e3dd023f1bf4336b32e348afd0130a1833921f4fe23d5f57ea3",
+      "original_timestamp": "2026-10-08T13:13:29.221169+00:00"
+    },
+    {
+      "id": "scibench_000221",
+      "replicate": 3,
+      "archived_request_sha256": "c2fa52b0fcf67f9958f57d8e59b77f96c343ad6a093d94ce3d3c241204e15cb5",
+      "reconstructed_request_sha256": "c2fa52b0fcf67f9958f57d8e59b77f96c343ad6a093d94ce3d3c241204e15cb5",
+      "original_timestamp": "2026-10-08T13:13:21.582451+00:00"
+    },
+    {
+      "id": "scibench_000222",
+      "replicate": 3,
+      "archived_request_sha256": "b1b2734b60707ba52ff4ebaabfcc4fd4036055f2440bb83494cb478b947b10f8",
+      "reconstructed_request_sha256": "b1b2734b60707ba52ff4ebaabfcc4fd4036055f2440bb83494cb478b947b10f8",
+      "original_timestamp": "2026-10-08T13:13:02.432091+00:00"
+    },
+    {
+      "id": "scibench_000223",
+      "replicate": 3,
+      "archived_request_sha256": "bd734feffa29bffe8eb9862e8759dd52aff11cac9ab0047489df9353e83deda5",
+      "reconstructed_request_sha256": "bd734feffa29bffe8eb9862e8759dd52aff11cac9ab0047489df9353e83deda5",
+      "original_timestamp": "2026-10-08T13:13:50.583983+00:00"
+    },
+    {
+      "id": "scibench_000226",
+      "replicate": 3,
+      "archived_request_sha256": "1a33c237aa077d3b78dd112acd769e69a9c9d37dd2e142ab4910e7e1f34d6dd4",
+      "reconstructed_request_sha256": "1a33c237aa077d3b78dd112acd769e69a9c9d37dd2e142ab4910e7e1f34d6dd4",
+      "original_timestamp": "2026-10-08T13:13:06.219469+00:00"
+    },
+    {
+      "id": "scibench_000232",
+      "replicate": 3,
+      "archived_request_sha256": "e7b20dea2f756a0a4a59837ba5a9330c795bbbe6a8f4ae7c7693e6aff1d3501a",
+      "reconstructed_request_sha256": "e7b20dea2f756a0a4a59837ba5a9330c795bbbe6a8f4ae7c7693e6aff1d3501a",
+      "original_timestamp": "2026-10-08T13:14:29.612144+00:00"
+    },
+    {
+      "id": "scibench_000237",
+      "replicate": 3,
+      "archived_request_sha256": "bf8ecc9007593790f401d8032f850bce79c0c4100bba12dc8883f5513fb53484",
+      "reconstructed_request_sha256": "bf8ecc9007593790f401d8032f850bce79c0c4100bba12dc8883f5513fb53484",
+      "original_timestamp": "2026-10-08T13:12:06.530445+00:00"
+    },
+    {
+      "id": "scibench_000242",
+      "replicate": 3,
+      "archived_request_sha256": "e290eca9b8dc034f2b265f6b5a8ed7874ad3a31fb96a13e89906c28b16f0c6f4",
+      "reconstructed_request_sha256": "e290eca9b8dc034f2b265f6b5a8ed7874ad3a31fb96a13e89906c28b16f0c6f4",
+      "original_timestamp": "2026-10-08T13:15:12.378703+00:00"
+    },
+    {
+      "id": "scibench_000245",
+      "replicate": 3,
+      "archived_request_sha256": "7fd1079f3464adb05993a85ad208bbc25fa8a29ad4d6f0d40b00a9332660414f",
+      "reconstructed_request_sha256": "7fd1079f3464adb05993a85ad208bbc25fa8a29ad4d6f0d40b00a9332660414f",
+      "original_timestamp": "2026-10-08T13:15:31.650919+00:00"
+    },
+    {
+      "id": "scibench_000249",
+      "replicate": 3,
+      "archived_request_sha256": "d731b2a50dc195d79c9267c2d02c56f84bf9ab517576576b47d82b84f24eed41",
+      "reconstructed_request_sha256": "d731b2a50dc195d79c9267c2d02c56f84bf9ab517576576b47d82b84f24eed41",
+      "original_timestamp": "2026-10-08T13:14:39.810568+00:00"
+    },
+    {
+      "id": "scibench_000252",
+      "replicate": 3,
+      "archived_request_sha256": "52525db71dc73b7e8091d6d19e5848e0412b7196282d0820790b3abbebb6fdff",
+      "reconstructed_request_sha256": "52525db71dc73b7e8091d6d19e5848e0412b7196282d0820790b3abbebb6fdff",
+      "original_timestamp": "2026-10-08T13:16:01.429134+00:00"
+    },
+    {
+      "id": "scibench_000254",
+      "replicate": 3,
+      "archived_request_sha256": "d3c3fe4ac698c27f4c3d3df6d0b743412d9f7d402c6f57443e20cdfc71daaba5",
+      "reconstructed_request_sha256": "d3c3fe4ac698c27f4c3d3df6d0b743412d9f7d402c6f57443e20cdfc71daaba5",
+      "original_timestamp": "2026-10-08T13:14:24.731821+00:00"
+    },
+    {
+      "id": "scibench_000260",
+      "replicate": 3,
+      "archived_request_sha256": "e14855312cfb84a2318917c8e84009b5b625b17be35de777bccba4a84596df7d",
+      "reconstructed_request_sha256": "e14855312cfb84a2318917c8e84009b5b625b17be35de777bccba4a84596df7d",
+      "original_timestamp": "2026-10-08T13:14:45.993675+00:00"
+    },
+    {
+      "id": "scibench_000269",
+      "replicate": 3,
+      "archived_request_sha256": "737217741a4ba607fb3f7ed7fcc5971e4795acee703c9a38f25306fd4e87883a",
+      "reconstructed_request_sha256": "737217741a4ba607fb3f7ed7fcc5971e4795acee703c9a38f25306fd4e87883a",
+      "original_timestamp": "2026-10-08T13:18:56.765218+00:00"
+    },
+    {
+      "id": "scibench_000272",
+      "replicate": 3,
+      "archived_request_sha256": "ab2621aa2c87a7b950291739381701f974d9f5e537a6ba57e077f7d9b65a4583",
+      "reconstructed_request_sha256": "ab2621aa2c87a7b950291739381701f974d9f5e537a6ba57e077f7d9b65a4583",
+      "original_timestamp": "2026-10-08T13:18:37.033472+00:00"
+    },
+    {
+      "id": "scibench_000273",
+      "replicate": 3,
+      "archived_request_sha256": "c016bf809fb004dac54468da117cccb7aba82d1765cbb879de4b841b8aac80db",
+      "reconstructed_request_sha256": "c016bf809fb004dac54468da117cccb7aba82d1765cbb879de4b841b8aac80db",
+      "original_timestamp": "2026-10-08T13:16:39.450000+00:00"
+    },
+    {
+      "id": "scibench_000277",
+      "replicate": 3,
+      "archived_request_sha256": "1fc79fd28e2ebca56ac6bcda8f1196b19ea6675ec54d8cad19d59436138d65e9",
+      "reconstructed_request_sha256": "1fc79fd28e2ebca56ac6bcda8f1196b19ea6675ec54d8cad19d59436138d65e9",
+      "original_timestamp": "2026-10-08T13:19:27.453206+00:00"
+    },
+    {
+      "id": "scibench_000279",
+      "replicate": 3,
+      "archived_request_sha256": "64bc9768c77c991856b57ccf5bed8d9f7390c73bc0a6f61d23234f1836d190f4",
+      "reconstructed_request_sha256": "64bc9768c77c991856b57ccf5bed8d9f7390c73bc0a6f61d23234f1836d190f4",
+      "original_timestamp": "2026-10-08T13:16:18.510214+00:00"
+    },
+    {
+      "id": "scibench_000280",
+      "replicate": 3,
+      "archived_request_sha256": "927589c083aa4457f0ccc2b38736386e6d592dbacfcf2e1a318e6725d4ee9277",
+      "reconstructed_request_sha256": "927589c083aa4457f0ccc2b38736386e6d592dbacfcf2e1a318e6725d4ee9277",
+      "original_timestamp": "2026-10-08T13:16:58.596690+00:00"
+    },
+    {
+      "id": "scibench_000282",
+      "replicate": 3,
+      "archived_request_sha256": "d34194ecd514561006ad5013e5f0c224ad35fbbbd2c4a379fb1b01f4ab85c4d1",
+      "reconstructed_request_sha256": "d34194ecd514561006ad5013e5f0c224ad35fbbbd2c4a379fb1b01f4ab85c4d1",
+      "original_timestamp": "2026-10-08T13:25:31.999791+00:00"
+    },
+    {
+      "id": "scibench_000285",
+      "replicate": 3,
+      "archived_request_sha256": "92b2013437283e74833a6d6a516dab7199a96e21d06179589fa810c5b577783c",
+      "reconstructed_request_sha256": "92b2013437283e74833a6d6a516dab7199a96e21d06179589fa810c5b577783c",
+      "original_timestamp": "2026-10-08T13:24:54.842426+00:00"
+    },
+    {
+      "id": "scibench_000289",
+      "replicate": 3,
+      "archived_request_sha256": "b08cb53d5f726fecd5ccc24c706a023795d246a7d22e0939f5bfdc3d0027e7ea",
+      "reconstructed_request_sha256": "b08cb53d5f726fecd5ccc24c706a023795d246a7d22e0939f5bfdc3d0027e7ea",
+      "original_timestamp": "2026-10-08T13:23:22.685224+00:00"
+    },
+    {
+      "id": "scibench_000292",
+      "replicate": 3,
+      "archived_request_sha256": "feed0ab7a83d5a5c6f04526ed9fb0d3d3cce9e708cfde47679910481451d6e24",
+      "reconstructed_request_sha256": "feed0ab7a83d5a5c6f04526ed9fb0d3d3cce9e708cfde47679910481451d6e24",
+      "original_timestamp": "2026-10-08T13:26:26.259351+00:00"
+    },
+    {
+      "id": "scibench_000293",
+      "replicate": 3,
+      "archived_request_sha256": "4659ea491c01cd7902c909129cb257b1c80268af47ea0aaa4122ee4b96d62ea8",
+      "reconstructed_request_sha256": "4659ea491c01cd7902c909129cb257b1c80268af47ea0aaa4122ee4b96d62ea8",
+      "original_timestamp": "2026-10-08T13:23:05.993224+00:00"
+    },
+    {
+      "id": "scibench_000294",
+      "replicate": 3,
+      "archived_request_sha256": "c687231a75f85d229e851be3108864d00d6dcc9817795c4f770caea8cdea95d3",
+      "reconstructed_request_sha256": "c687231a75f85d229e851be3108864d00d6dcc9817795c4f770caea8cdea95d3",
+      "original_timestamp": "2026-10-08T13:21:18.017628+00:00"
+    },
+    {
+      "id": "scibench_000328",
+      "replicate": 3,
+      "archived_request_sha256": "abf305c27e14d4cdc3e3bdb20638d47514c20c93d5e006c459959876f9e542b3",
+      "reconstructed_request_sha256": "abf305c27e14d4cdc3e3bdb20638d47514c20c93d5e006c459959876f9e542b3",
+      "original_timestamp": "2026-10-08T13:30:04.313281+00:00"
+    },
+    {
+      "id": "scibench_000332",
+      "replicate": 3,
+      "archived_request_sha256": "1453a69260dbb11e4a2bbd14a2a2692d10793e2866242fbf9e04bbf2649746af",
+      "reconstructed_request_sha256": "1453a69260dbb11e4a2bbd14a2a2692d10793e2866242fbf9e04bbf2649746af",
+      "original_timestamp": "2026-10-08T13:28:10.671106+00:00"
+    },
+    {
+      "id": "scibench_000333",
+      "replicate": 3,
+      "archived_request_sha256": "26fbdcaeec3c786298e05b079cf8b2e3d10b44cc783d98daa7ffac5507cc1068",
+      "reconstructed_request_sha256": "26fbdcaeec3c786298e05b079cf8b2e3d10b44cc783d98daa7ffac5507cc1068",
+      "original_timestamp": "2026-10-08T13:30:56.019983+00:00"
+    },
+    {
+      "id": "scibench_000334",
+      "replicate": 3,
+      "archived_request_sha256": "40d097d699dc646f956f7167e3e8fb02e71df5fe72b32b49144d22417af10494",
+      "reconstructed_request_sha256": "40d097d699dc646f956f7167e3e8fb02e71df5fe72b32b49144d22417af10494",
+      "original_timestamp": "2026-10-08T13:27:34.168196+00:00"
+    },
+    {
+      "id": "scibench_000339",
+      "replicate": 3,
+      "archived_request_sha256": "98c33609200f3ebb12f411ef01057a328b66222301059773ded6120c6460b4b4",
+      "reconstructed_request_sha256": "98c33609200f3ebb12f411ef01057a328b66222301059773ded6120c6460b4b4",
+      "original_timestamp": "2026-10-08T13:29:35.031914+00:00"
+    },
+    {
+      "id": "scibench_000340",
+      "replicate": 3,
+      "archived_request_sha256": "08588a1cf7915cadd6344af0bf8b67f3bf060bcb597dff27451d4617e3c631e1",
+      "reconstructed_request_sha256": "08588a1cf7915cadd6344af0bf8b67f3bf060bcb597dff27451d4617e3c631e1",
+      "original_timestamp": "2026-10-08T13:30:49.650256+00:00"
+    },
+    {
+      "id": "scibench_000342",
+      "replicate": 3,
+      "archived_request_sha256": "b93e0ba617e5e5a6d4e8077cef05f0b5c0722facb95b12806dc71af3bbd6255f",
+      "reconstructed_request_sha256": "b93e0ba617e5e5a6d4e8077cef05f0b5c0722facb95b12806dc71af3bbd6255f",
+      "original_timestamp": "2026-10-08T13:31:56.128664+00:00"
+    },
+    {
+      "id": "scibench_000348",
+      "replicate": 3,
+      "archived_request_sha256": "2322ef2d9dc1f5ebce8120988a45d529ad72fbb3412cac2fcfe2817be7e28311",
+      "reconstructed_request_sha256": "2322ef2d9dc1f5ebce8120988a45d529ad72fbb3412cac2fcfe2817be7e28311",
+      "original_timestamp": "2026-10-08T13:32:36.161123+00:00"
+    },
+    {
+      "id": "scibench_000352",
+      "replicate": 3,
+      "archived_request_sha256": "3baa9798b6db5c22ab348dc602123e64e58d1c80021d9a166ce94d06fdc57d14",
+      "reconstructed_request_sha256": "3baa9798b6db5c22ab348dc602123e64e58d1c80021d9a166ce94d06fdc57d14",
+      "original_timestamp": "2026-10-08T13:34:04.170918+00:00"
+    },
+    {
+      "id": "scibench_000354",
+      "replicate": 3,
+      "archived_request_sha256": "c93132c549050a66585d1ea10ee456d7268d5fb786797cd22341d566e1b3e437",
+      "reconstructed_request_sha256": "c93132c549050a66585d1ea10ee456d7268d5fb786797cd22341d566e1b3e437",
+      "original_timestamp": "2026-10-08T13:32:17.238326+00:00"
+    },
+    {
+      "id": "scibench_000356",
+      "replicate": 3,
+      "archived_request_sha256": "735cb17d4d4dab07d85ace50a0b82cfa43d261bb61f140d19bb716ce0f97cff1",
+      "reconstructed_request_sha256": "735cb17d4d4dab07d85ace50a0b82cfa43d261bb61f140d19bb716ce0f97cff1",
+      "original_timestamp": "2026-10-08T13:34:16.811289+00:00"
+    },
+    {
+      "id": "scibench_000358",
+      "replicate": 3,
+      "archived_request_sha256": "74810c4f443256be433b67632f2cb8a38ad51ad640fc6293ddd6e90c258341dd",
+      "reconstructed_request_sha256": "74810c4f443256be433b67632f2cb8a38ad51ad640fc6293ddd6e90c258341dd",
+      "original_timestamp": "2026-10-08T13:32:01.410851+00:00"
+    },
+    {
+      "id": "scibench_000362",
+      "replicate": 3,
+      "archived_request_sha256": "20cb0f2f2c752452977a251da94c3ed8877c734edd3519002ec5f0f3c8823fb0",
+      "reconstructed_request_sha256": "20cb0f2f2c752452977a251da94c3ed8877c734edd3519002ec5f0f3c8823fb0",
+      "original_timestamp": "2026-10-08T13:35:07.330425+00:00"
+    },
+    {
+      "id": "scibench_000365",
+      "replicate": 3,
+      "archived_request_sha256": "6068f4550e809c9c1b314de718830a331ae44934f779699e02fde8f32ab91b98",
+      "reconstructed_request_sha256": "6068f4550e809c9c1b314de718830a331ae44934f779699e02fde8f32ab91b98",
+      "original_timestamp": "2026-10-08T13:35:05.999307+00:00"
+    },
+    {
+      "id": "scibench_000366",
+      "replicate": 3,
+      "archived_request_sha256": "02a03b21aa669039a445a660a7dbb0ff9ef8acc977e90a4c7ae1352b8bee426e",
+      "reconstructed_request_sha256": "02a03b21aa669039a445a660a7dbb0ff9ef8acc977e90a4c7ae1352b8bee426e",
+      "original_timestamp": "2026-10-08T13:36:22.288997+00:00"
+    },
+    {
+      "id": "scibench_000367",
+      "replicate": 3,
+      "archived_request_sha256": "bf4849564005846c55cb762657473cbe952b27a7fa01479f2b01f62a7b736548",
+      "reconstructed_request_sha256": "bf4849564005846c55cb762657473cbe952b27a7fa01479f2b01f62a7b736548",
+      "original_timestamp": "2026-10-08T13:37:30.013966+00:00"
+    },
+    {
+      "id": "scibench_000372",
+      "replicate": 3,
+      "archived_request_sha256": "5219cb423eb04f13d2e08f4e9c700c69bd27376c6f63235f6894b084a584934d",
+      "reconstructed_request_sha256": "5219cb423eb04f13d2e08f4e9c700c69bd27376c6f63235f6894b084a584934d",
+      "original_timestamp": "2026-10-08T13:36:28.992207+00:00"
+    },
+    {
+      "id": "scibench_000374",
+      "replicate": 3,
+      "archived_request_sha256": "96cb3a9c5651e612c4982d1a1f32909e28296dc948a1b6b76d72a15b2d2e9931",
+      "reconstructed_request_sha256": "96cb3a9c5651e612c4982d1a1f32909e28296dc948a1b6b76d72a15b2d2e9931",
+      "original_timestamp": "2026-10-08T13:38:11.538175+00:00"
+    },
+    {
+      "id": "scibench_000405",
+      "replicate": 3,
+      "archived_request_sha256": "f237a0d3bd4ac6c1f9a36b3867a927ac2735c4ac4fd46ad5d4a7542300233804",
+      "reconstructed_request_sha256": "f237a0d3bd4ac6c1f9a36b3867a927ac2735c4ac4fd46ad5d4a7542300233804",
+      "original_timestamp": "2026-10-08T13:41:22.502784+00:00"
+    },
+    {
+      "id": "scibench_000409",
+      "replicate": 3,
+      "archived_request_sha256": "84b6ffb533393fe555c3fa6e2ff1c26d99d78cb29e06d4874af57f311d28fecb",
+      "reconstructed_request_sha256": "84b6ffb533393fe555c3fa6e2ff1c26d99d78cb29e06d4874af57f311d28fecb",
+      "original_timestamp": "2026-10-08T13:38:42.320277+00:00"
+    },
+    {
+      "id": "scibench_000413",
+      "replicate": 3,
+      "archived_request_sha256": "f23fd429d021680c7648bccd1592d25f182e14ec46cb06df43d4e6181d8a6a2a",
+      "reconstructed_request_sha256": "f23fd429d021680c7648bccd1592d25f182e14ec46cb06df43d4e6181d8a6a2a",
+      "original_timestamp": "2026-10-08T13:39:55.421550+00:00"
+    },
+    {
+      "id": "scibench_000414",
+      "replicate": 3,
+      "archived_request_sha256": "2ba73a5f246cee78e99395c25988120522c195de4f54a8502d1723ffa87211ce",
+      "reconstructed_request_sha256": "2ba73a5f246cee78e99395c25988120522c195de4f54a8502d1723ffa87211ce",
+      "original_timestamp": "2026-10-08T13:38:06.325570+00:00"
+    },
+    {
+      "id": "scibench_000416",
+      "replicate": 3,
+      "archived_request_sha256": "99ace799568e65b38fce8957fd65dac7a7989c149c690aa649dacd667726d082",
+      "reconstructed_request_sha256": "99ace799568e65b38fce8957fd65dac7a7989c149c690aa649dacd667726d082",
+      "original_timestamp": "2026-10-08T13:44:18.185524+00:00"
+    },
+    {
+      "id": "scibench_000420",
+      "replicate": 3,
+      "archived_request_sha256": "6c16e99aeaeaea231bebbeab9f7a5c507524b1d00edd5e2127872ab7e7f7199f",
+      "reconstructed_request_sha256": "6c16e99aeaeaea231bebbeab9f7a5c507524b1d00edd5e2127872ab7e7f7199f",
+      "original_timestamp": "2026-10-08T13:49:11.975157+00:00"
+    },
+    {
+      "id": "scibench_000541",
+      "replicate": 3,
+      "archived_request_sha256": "cfd9ea29d3405382591283206181f809cf4e774e94f0bd44ba3c1bd77a90e0da",
+      "reconstructed_request_sha256": "cfd9ea29d3405382591283206181f809cf4e774e94f0bd44ba3c1bd77a90e0da",
+      "original_timestamp": "2026-10-08T13:45:42.611167+00:00"
+    },
+    {
+      "id": "scibench_000546",
+      "replicate": 3,
+      "archived_request_sha256": "1ca5170dcbb846f84ea87e3a135e8620f28ee2a85e5d5329e74dce292b747c5b",
+      "reconstructed_request_sha256": "1ca5170dcbb846f84ea87e3a135e8620f28ee2a85e5d5329e74dce292b747c5b",
+      "original_timestamp": "2026-10-08T13:47:17.585860+00:00"
+    },
+    {
+      "id": "scibench_000549",
+      "replicate": 3,
+      "archived_request_sha256": "6e162817c6c91332b2be428260dff7eee5d83463bb80572b1d7bc8f43006c6d1",
+      "reconstructed_request_sha256": "6e162817c6c91332b2be428260dff7eee5d83463bb80572b1d7bc8f43006c6d1",
+      "original_timestamp": "2026-10-08T13:50:19.735255+00:00"
+    },
+    {
+      "id": "scibench_000550",
+      "replicate": 3,
+      "archived_request_sha256": "c252e77a51954311ac6832161fc6926ace419df0379898861fc7a5e18f23a5de",
+      "reconstructed_request_sha256": "c252e77a51954311ac6832161fc6926ace419df0379898861fc7a5e18f23a5de",
+      "original_timestamp": "2026-10-08T13:48:41.336207+00:00"
+    },
+    {
+      "id": "scibench_000551",
+      "replicate": 3,
+      "archived_request_sha256": "c291cdd14252c32a9bfbcfc6365817e9112a520b46ea8dc9316bc964a0928c72",
+      "reconstructed_request_sha256": "c291cdd14252c32a9bfbcfc6365817e9112a520b46ea8dc9316bc964a0928c72",
+      "original_timestamp": "2026-10-08T13:50:11.073835+00:00"
+    },
+    {
+      "id": "scibench_000555",
+      "replicate": 3,
+      "archived_request_sha256": "548fed46c058cdc230ccb5d5c564a8758f962600e9574233bfeb96c81004abb6",
+      "reconstructed_request_sha256": "548fed46c058cdc230ccb5d5c564a8758f962600e9574233bfeb96c81004abb6",
+      "original_timestamp": "2026-10-08T13:44:56.230456+00:00"
+    },
+    {
+      "id": "scibench_000565",
+      "replicate": 3,
+      "archived_request_sha256": "346648a75e1abcdbe7c7bbf5aeb9faf83b0a6ec933cd16bed96a60ef5ab902dc",
+      "reconstructed_request_sha256": "346648a75e1abcdbe7c7bbf5aeb9faf83b0a6ec933cd16bed96a60ef5ab902dc",
+      "original_timestamp": "2026-10-08T13:50:29.665794+00:00"
+    },
+    {
+      "id": "scibench_000574",
+      "replicate": 3,
+      "archived_request_sha256": "507d1e9dfe7687ca47e2a1578bc34f11b61e11bb95a8c6a0ad28a767b69c8516",
+      "reconstructed_request_sha256": "507d1e9dfe7687ca47e2a1578bc34f11b61e11bb95a8c6a0ad28a767b69c8516",
+      "original_timestamp": "2026-10-08T13:50:41.503992+00:00"
+    },
+    {
+      "id": "scibench_000576",
+      "replicate": 3,
+      "archived_request_sha256": "4fd4f7937b5938228def8eaf3455625fde7e03456abff9f1009af3e1123ceaeb",
+      "reconstructed_request_sha256": "4fd4f7937b5938228def8eaf3455625fde7e03456abff9f1009af3e1123ceaeb",
+      "original_timestamp": "2026-10-08T13:50:56.486526+00:00"
+    },
+    {
+      "id": "scibench_000578",
+      "replicate": 3,
+      "archived_request_sha256": "bd67dd7d2b24c97503be85265b37c5fe28f6f8738144275f6bd661dbc063987c",
+      "reconstructed_request_sha256": "bd67dd7d2b24c97503be85265b37c5fe28f6f8738144275f6bd661dbc063987c",
+      "original_timestamp": "2026-10-08T13:50:41.938579+00:00"
+    },
+    {
+      "id": "scibench_000579",
+      "replicate": 3,
+      "archived_request_sha256": "3338f10dee162abfdbf47b5124537def664c89b96e5022c21ff1c1fadf944a69",
+      "reconstructed_request_sha256": "3338f10dee162abfdbf47b5124537def664c89b96e5022c21ff1c1fadf944a69",
+      "original_timestamp": "2026-10-08T13:51:18.894514+00:00"
+    },
+    {
+      "id": "scibench_000580",
+      "replicate": 3,
+      "archived_request_sha256": "e293457f69295975916de537302dc517f57a0a2b295b4c94db14aca56d8ea3f6",
+      "reconstructed_request_sha256": "e293457f69295975916de537302dc517f57a0a2b295b4c94db14aca56d8ea3f6",
+      "original_timestamp": "2026-10-08T13:51:19.314086+00:00"
+    },
+    {
+      "id": "scibench_000639",
+      "replicate": 3,
+      "archived_request_sha256": "7044d4b44fae659bc4ddfa97b4ee246b03d0db1d2a28b768b0259b95a9465fa6",
+      "reconstructed_request_sha256": "7044d4b44fae659bc4ddfa97b4ee246b03d0db1d2a28b768b0259b95a9465fa6",
+      "original_timestamp": "2026-10-08T13:54:36.519205+00:00"
+    },
+    {
+      "id": "scibench_000641",
+      "replicate": 3,
+      "archived_request_sha256": "4a87ad48e8654a632b253cd0bd3df5a194c99585c1164f873d7fb390af21281f",
+      "reconstructed_request_sha256": "4a87ad48e8654a632b253cd0bd3df5a194c99585c1164f873d7fb390af21281f",
+      "original_timestamp": "2026-10-08T13:53:45.913952+00:00"
+    },
+    {
+      "id": "scibench_000642",
+      "replicate": 3,
+      "archived_request_sha256": "c9c39ae35d99cfa7d42b8e0e07d443155d3b3775b5c6b788c00be328413daae8",
+      "reconstructed_request_sha256": "c9c39ae35d99cfa7d42b8e0e07d443155d3b3775b5c6b788c00be328413daae8",
+      "original_timestamp": "2026-10-08T13:53:19.073519+00:00"
+    },
+    {
+      "id": "scibench_000644",
+      "replicate": 3,
+      "archived_request_sha256": "1098777e8be097efd0b503e02509c6758566897333f81ceaaceddd8fe29711ba",
+      "reconstructed_request_sha256": "1098777e8be097efd0b503e02509c6758566897333f81ceaaceddd8fe29711ba",
+      "original_timestamp": "2026-10-08T13:52:14.765968+00:00"
+    },
+    {
+      "id": "scibench_000648",
+      "replicate": 3,
+      "archived_request_sha256": "d5b94018696489f140aa2c2e26ab5920288af3836e4fb8bb5076ec6f3fbeedaa",
+      "reconstructed_request_sha256": "d5b94018696489f140aa2c2e26ab5920288af3836e4fb8bb5076ec6f3fbeedaa",
+      "original_timestamp": "2026-10-08T13:53:48.626634+00:00"
+    },
+    {
+      "id": "scibench_000652",
+      "replicate": 3,
+      "archived_request_sha256": "6f23345c3ed4af82b7aeff294cb6fc2b407107af64313f103afd8bef6cc0a2b0",
+      "reconstructed_request_sha256": "6f23345c3ed4af82b7aeff294cb6fc2b407107af64313f103afd8bef6cc0a2b0",
+      "original_timestamp": "2026-10-08T13:55:37.261748+00:00"
+    },
+    {
+      "id": "scibench_000661",
+      "replicate": 3,
+      "archived_request_sha256": "e4c7b87da33f771ada0d9e80505f7f39d854feba5fa1e3923d0124cdba84c261",
+      "reconstructed_request_sha256": "e4c7b87da33f771ada0d9e80505f7f39d854feba5fa1e3923d0124cdba84c261",
+      "original_timestamp": "2026-10-08T13:55:07.859724+00:00"
+    },
+    {
+      "id": "scibench_000663",
+      "replicate": 3,
+      "archived_request_sha256": "8104e6c0d526bcaa2e230c91a237de6ce94015c4cc3101741c2d46702c6bbbdc",
+      "reconstructed_request_sha256": "8104e6c0d526bcaa2e230c91a237de6ce94015c4cc3101741c2d46702c6bbbdc",
+      "original_timestamp": "2026-10-08T13:55:16.013955+00:00"
+    },
+    {
+      "id": "scibench_000664",
+      "replicate": 3,
+      "archived_request_sha256": "f1cafff3edf2e8b87c2ca6aab392264ffdd89c9a16d0d90319fde61b4b047521",
+      "reconstructed_request_sha256": "f1cafff3edf2e8b87c2ca6aab392264ffdd89c9a16d0d90319fde61b4b047521",
+      "original_timestamp": "2026-10-08T13:54:49.827468+00:00"
+    },
+    {
+      "id": "scibench_000668",
+      "replicate": 3,
+      "archived_request_sha256": "f39a0566db1c1fcdd99089a1220fd965e582affdf57d1e149181c009d16a8098",
+      "reconstructed_request_sha256": "f39a0566db1c1fcdd99089a1220fd965e582affdf57d1e149181c009d16a8098",
+      "original_timestamp": "2026-10-08T13:55:46.099099+00:00"
+    },
+    {
+      "id": "scibench_000673",
+      "replicate": 3,
+      "archived_request_sha256": "1964deb0781b7c89a247767e7d01c9d7c0bdb4aa01a36c16e7b44984d559a4aa",
+      "reconstructed_request_sha256": "1964deb0781b7c89a247767e7d01c9d7c0bdb4aa01a36c16e7b44984d559a4aa",
+      "original_timestamp": "2026-10-08T13:55:29.798580+00:00"
+    },
+    {
+      "id": "scibench_000674",
+      "replicate": 3,
+      "archived_request_sha256": "94e6ac1acd23262f4f775da58f0075b333270065448315713e8bd015de1f7809",
+      "reconstructed_request_sha256": "94e6ac1acd23262f4f775da58f0075b333270065448315713e8bd015de1f7809",
+      "original_timestamp": "2026-10-08T13:56:04.868624+00:00"
+    },
+    {
+      "id": "scibench_000679",
+      "replicate": 3,
+      "archived_request_sha256": "34d43d0dfa1e971788bcb3e5599e41c12b5f157d14f6fd08c5da1488c509f9a3",
+      "reconstructed_request_sha256": "34d43d0dfa1e971788bcb3e5599e41c12b5f157d14f6fd08c5da1488c509f9a3",
+      "original_timestamp": "2026-10-08T13:56:02.236862+00:00"
+    },
+    {
+      "id": "scibench_000682",
+      "replicate": 3,
+      "archived_request_sha256": "58004d55691afa7c92be971f7da22aaf47eab21755e4fcee55e221fa1911008c",
+      "reconstructed_request_sha256": "58004d55691afa7c92be971f7da22aaf47eab21755e4fcee55e221fa1911008c",
+      "original_timestamp": "2026-10-08T13:57:08.819467+00:00"
+    },
+    {
+      "id": "scibench_000686",
+      "replicate": 3,
+      "archived_request_sha256": "a82b19bd83d993b8ad06adfbf0fd529735f4b541aacd3706dd93885bbdf06291",
+      "reconstructed_request_sha256": "a82b19bd83d993b8ad06adfbf0fd529735f4b541aacd3706dd93885bbdf06291",
+      "original_timestamp": "2026-10-08T13:57:38.278304+00:00"
+    },
+    {
+      "id": "scibench_000687",
+      "replicate": 3,
+      "archived_request_sha256": "72576cc1aebbbf33c6b172ec04aff1767b591eef9212f774f1669b0e20ff3cd1",
+      "reconstructed_request_sha256": "72576cc1aebbbf33c6b172ec04aff1767b591eef9212f774f1669b0e20ff3cd1",
+      "original_timestamp": "2026-10-08T13:56:16.915767+00:00"
+    },
+    {
+      "id": "scibench_000694",
+      "replicate": 3,
+      "archived_request_sha256": "5cfedc584694d2aae5a6b6319a97c48db59e3e9c82bd8d4569d816272e25763e",
+      "reconstructed_request_sha256": "5cfedc584694d2aae5a6b6319a97c48db59e3e9c82bd8d4569d816272e25763e",
+      "original_timestamp": "2026-10-08T13:57:34.600873+00:00"
+    },
+    {
+      "id": "scibench_000697",
+      "replicate": 3,
+      "archived_request_sha256": "74f03f8f65c76aecfe29d3c66f7f61b46320711d7a25e1e4081295248157b12a",
+      "reconstructed_request_sha256": "74f03f8f65c76aecfe29d3c66f7f61b46320711d7a25e1e4081295248157b12a",
+      "original_timestamp": "2026-10-08T13:57:18.762943+00:00"
+    },
+    {
+      "id": "scibench_000699",
+      "replicate": 3,
+      "archived_request_sha256": "d6d34729a71e65a9cccd3c03329c06306d961766c8619f39b4e2c48234eded93",
+      "reconstructed_request_sha256": "d6d34729a71e65a9cccd3c03329c06306d961766c8619f39b4e2c48234eded93",
+      "original_timestamp": "2026-10-08T14:00:51.215732+00:00"
+    },
+    {
+      "id": "scibench_000700",
+      "replicate": 3,
+      "archived_request_sha256": "c6d154f483ff1534ee2be3d59d5de37dd6ef7057592084b1894e184d51eec3e5",
+      "reconstructed_request_sha256": "c6d154f483ff1534ee2be3d59d5de37dd6ef7057592084b1894e184d51eec3e5",
+      "original_timestamp": "2026-10-08T13:58:39.660920+00:00"
+    },
+    {
+      "id": "scibench_000701",
+      "replicate": 3,
+      "archived_request_sha256": "f6e24f43632b4a15bad3b58ec04277022e2f4b814dc956e6e52621a1f177f1f7",
+      "reconstructed_request_sha256": "f6e24f43632b4a15bad3b58ec04277022e2f4b814dc956e6e52621a1f177f1f7",
+      "original_timestamp": "2026-10-08T13:58:30.461329+00:00"
+    },
+    {
+      "id": "scibench_000707",
+      "replicate": 3,
+      "archived_request_sha256": "c1396ff7af457babb25c599240f93071a49fb79656687aa5a39dc7c8c24e272c",
+      "reconstructed_request_sha256": "c1396ff7af457babb25c599240f93071a49fb79656687aa5a39dc7c8c24e272c",
+      "original_timestamp": "2026-10-08T14:09:28.735382+00:00"
+    },
+    {
+      "id": "scibench_000710",
+      "replicate": 3,
+      "archived_request_sha256": "0f6e5ae4ea80c602e315d813eb887aea2cb8186341544d20893beef35bc99940",
+      "reconstructed_request_sha256": "0f6e5ae4ea80c602e315d813eb887aea2cb8186341544d20893beef35bc99940",
+      "original_timestamp": "2026-10-08T14:02:34.562673+00:00"
+    },
+    {
+      "id": "scibench_000715",
+      "replicate": 3,
+      "archived_request_sha256": "ff59a72900fb6e29ec6c7240a1324b5860e68491322a52d0e79f4ef9f0a287e2",
+      "reconstructed_request_sha256": "ff59a72900fb6e29ec6c7240a1324b5860e68491322a52d0e79f4ef9f0a287e2",
+      "original_timestamp": "2026-10-08T13:57:58.827709+00:00"
+    },
+    {
+      "id": "scibench_000718",
+      "replicate": 3,
+      "archived_request_sha256": "6a93d60b35c95d23d89bdd4b0162812f439399f883fbf48f5cba8741f8a94dfc",
+      "reconstructed_request_sha256": "6a93d60b35c95d23d89bdd4b0162812f439399f883fbf48f5cba8741f8a94dfc",
+      "original_timestamp": "2026-10-08T14:06:26.674384+00:00"
+    },
+    {
+      "id": "scibench_000725",
+      "replicate": 3,
+      "archived_request_sha256": "bf0a50a5e4489de145b8955eb74d4c989c2de77e3c2cbfcd6a77558c54b2be4a",
+      "reconstructed_request_sha256": "bf0a50a5e4489de145b8955eb74d4c989c2de77e3c2cbfcd6a77558c54b2be4a",
+      "original_timestamp": "2026-10-08T14:03:02.310381+00:00"
+    },
+    {
+      "id": "scibench_000726",
+      "replicate": 3,
+      "archived_request_sha256": "c42cde05df649074b4320cf96eedcf4cece62e7601a70f39b33d0d37111fef06",
+      "reconstructed_request_sha256": "c42cde05df649074b4320cf96eedcf4cece62e7601a70f39b33d0d37111fef06",
+      "original_timestamp": "2026-10-08T14:06:18.845363+00:00"
+    },
+    {
+      "id": "scibench_000751",
+      "replicate": 3,
+      "archived_request_sha256": "528764c42e51bc4bc53ed3641b1cc10580949408e888e9dc5b1dc03c8f33720d",
+      "reconstructed_request_sha256": "528764c42e51bc4bc53ed3641b1cc10580949408e888e9dc5b1dc03c8f33720d",
+      "original_timestamp": "2026-10-08T14:10:29.355017+00:00"
+    },
+    {
+      "id": "scibench_000753",
+      "replicate": 3,
+      "archived_request_sha256": "27b3b2cf03a8bf3877e0cb11e16d374015e8784725e70501147ed7a7165357fa",
+      "reconstructed_request_sha256": "27b3b2cf03a8bf3877e0cb11e16d374015e8784725e70501147ed7a7165357fa",
+      "original_timestamp": "2026-10-08T14:10:45.585093+00:00"
+    },
+    {
+      "id": "scibench_000754",
+      "replicate": 3,
+      "archived_request_sha256": "cb1ab26a48606ac36e1d5b70040e65ca47f6f168c59d1b7d6604b5bb45a2d80d",
+      "reconstructed_request_sha256": "cb1ab26a48606ac36e1d5b70040e65ca47f6f168c59d1b7d6604b5bb45a2d80d",
+      "original_timestamp": "2026-10-08T14:08:20.416175+00:00"
+    },
+    {
+      "id": "scibench_000757",
+      "replicate": 3,
+      "archived_request_sha256": "5073a0b287e601ba637501781e095474ead3ed9de9beb980975142a5f878438f",
+      "reconstructed_request_sha256": "5073a0b287e601ba637501781e095474ead3ed9de9beb980975142a5f878438f",
+      "original_timestamp": "2026-10-08T14:11:33.523616+00:00"
+    },
+    {
+      "id": "scibench_000759",
+      "replicate": 3,
+      "archived_request_sha256": "f1479aaa5df909b6c7b352c75412575b89ba17e7b9f4d4e26406df81c47cdfd2",
+      "reconstructed_request_sha256": "f1479aaa5df909b6c7b352c75412575b89ba17e7b9f4d4e26406df81c47cdfd2",
+      "original_timestamp": "2026-10-08T14:09:11.825299+00:00"
+    },
+    {
+      "id": "scibench_000763",
+      "replicate": 3,
+      "archived_request_sha256": "835df766061c8ea3ccb785b2ee10ac736f0bee5438654470b0b92d5795465340",
+      "reconstructed_request_sha256": "835df766061c8ea3ccb785b2ee10ac736f0bee5438654470b0b92d5795465340",
+      "original_timestamp": "2026-10-08T14:09:00.957351+00:00"
+    },
+    {
+      "id": "scibench_000770",
+      "replicate": 3,
+      "archived_request_sha256": "a7f4418a22435246b738ea6dc1fbf545685a21519086e265c65526e8e41f2f63",
+      "reconstructed_request_sha256": "a7f4418a22435246b738ea6dc1fbf545685a21519086e265c65526e8e41f2f63",
+      "original_timestamp": "2026-10-08T14:11:39.023437+00:00"
+    },
+    {
+      "id": "scibench_000771",
+      "replicate": 3,
+      "archived_request_sha256": "4916c6db677e0af37be0e43b3526ec97fb371996e795d5ffe219890d8030e8ec",
+      "reconstructed_request_sha256": "4916c6db677e0af37be0e43b3526ec97fb371996e795d5ffe219890d8030e8ec",
+      "original_timestamp": "2026-10-08T14:12:03.746599+00:00"
+    },
+    {
+      "id": "scibench_000774",
+      "replicate": 3,
+      "archived_request_sha256": "9495a63f1e41da9831732debaa797a68751cb53cf6cbee347c3663bfed7c854a",
+      "reconstructed_request_sha256": "9495a63f1e41da9831732debaa797a68751cb53cf6cbee347c3663bfed7c854a",
+      "original_timestamp": "2026-10-08T14:12:06.522537+00:00"
+    },
+    {
+      "id": "scibench_000777",
+      "replicate": 3,
+      "archived_request_sha256": "2bd9c5a4d970361c965f81afbda203ef14000b1f4f70fa4fe37c48d70203dff0",
+      "reconstructed_request_sha256": "2bd9c5a4d970361c965f81afbda203ef14000b1f4f70fa4fe37c48d70203dff0",
+      "original_timestamp": "2026-10-08T14:12:12.483794+00:00"
+    },
+    {
+      "id": "scibench_000779",
+      "replicate": 3,
+      "archived_request_sha256": "6580d0ec57bd6bef6b1a42d5c5eccbc4e25eaf8c4816449f863f927400bb60aa",
+      "reconstructed_request_sha256": "6580d0ec57bd6bef6b1a42d5c5eccbc4e25eaf8c4816449f863f927400bb60aa",
+      "original_timestamp": "2026-10-08T14:11:52.940135+00:00"
+    },
+    {
+      "id": "scibench_000780",
+      "replicate": 3,
+      "archived_request_sha256": "a7e5a29beaf4656f24e285f8652bdd6094270c92e9aaf3e9be7d76b0e2800ec6",
+      "reconstructed_request_sha256": "a7e5a29beaf4656f24e285f8652bdd6094270c92e9aaf3e9be7d76b0e2800ec6",
+      "original_timestamp": "2026-10-08T14:11:33.824672+00:00"
+    },
+    {
+      "id": "scibench_000843",
+      "replicate": 3,
+      "archived_request_sha256": "11daf71292b35368ed9b6f79d8fde09584272bce156f97420158853d8de91ce0",
+      "reconstructed_request_sha256": "11daf71292b35368ed9b6f79d8fde09584272bce156f97420158853d8de91ce0",
+      "original_timestamp": "2026-10-08T14:13:44.137687+00:00"
+    },
+    {
+      "id": "scibench_000844",
+      "replicate": 3,
+      "archived_request_sha256": "0f16ef9cbef2d17573cd6eb37f1373b9a372bc96747bc37ce118dcfb641ca059",
+      "reconstructed_request_sha256": "0f16ef9cbef2d17573cd6eb37f1373b9a372bc96747bc37ce118dcfb641ca059",
+      "original_timestamp": "2026-10-08T14:15:46.823695+00:00"
+    },
+    {
+      "id": "scibench_000846",
+      "replicate": 3,
+      "archived_request_sha256": "28efbb9fef8389b7bd3038e856867f66cfa4287d730b4102fb645ac4b0660239",
+      "reconstructed_request_sha256": "28efbb9fef8389b7bd3038e856867f66cfa4287d730b4102fb645ac4b0660239",
+      "original_timestamp": "2026-10-08T14:15:21.508889+00:00"
+    },
+    {
+      "id": "scibench_000850",
+      "replicate": 3,
+      "archived_request_sha256": "103c3dee641a078c77446dea3efb5518b5c7b9bc62a4b2f681b0039c3df0eed8",
+      "reconstructed_request_sha256": "103c3dee641a078c77446dea3efb5518b5c7b9bc62a4b2f681b0039c3df0eed8",
+      "original_timestamp": "2026-10-08T14:15:53.341933+00:00"
+    },
+    {
+      "id": "scibench_000854",
+      "replicate": 3,
+      "archived_request_sha256": "2bcd585fc85a1645653faeca450b6508c6392fb6a6e2b4573e2265018579581d",
+      "reconstructed_request_sha256": "2bcd585fc85a1645653faeca450b6508c6392fb6a6e2b4573e2265018579581d",
+      "original_timestamp": "2026-10-08T14:12:40.933496+00:00"
+    },
+    {
+      "id": "scibench_000858",
+      "replicate": 3,
+      "archived_request_sha256": "8d080d70248ffe8421a4f05268bd1a9430531f6805fd165340ecf957d65ed9ab",
+      "reconstructed_request_sha256": "8d080d70248ffe8421a4f05268bd1a9430531f6805fd165340ecf957d65ed9ab",
+      "original_timestamp": "2026-10-08T14:14:21.578071+00:00"
+    }
+  ]
+}

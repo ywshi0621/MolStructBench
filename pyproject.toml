@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "molstructbench-core"
+version = "1.0.0"
+description = "Molecular structure understanding and grounding benchmark with local automatic scoring"
+requires-python = ">=3.10,<3.12"
+dependencies = ["PyYAML==6.0.2"]
+[project.scripts]
+molstructbench = "scibench.cli:main"
+scibench = "scibench.cli:main"
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["scibench*", "runner*", "evaluator*", "tests*", "scripts*", "benchmark_core*"]

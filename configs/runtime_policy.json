@@ -1,0 +1,14 @@
+{
+  "opencode_version": "1.2.27",
+  "request_timeout_seconds": 1800,
+  "sample_timeout_seconds": 7200,
+  "max_model_calls": 24,
+  "max_tool_calls": 32,
+  "tool_timeout_seconds": 180,
+  "api_max_attempts": 3,
+  "soft_model_calls": 18,
+  "soft_tool_calls": 20,
+  "hard_model_calls": 24,
+  "hard_tool_calls": 32,
+  "budget_protocol": "soft18-20_hard24-32_final1_v1"
+}
