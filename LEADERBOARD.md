@@ -1,23 +1,27 @@
-# MolStructBench Reference Leaderboard
+# MolStructBench reference leaderboard
 
-Version 1.0 · 288 fixed questions · Profile A agent runs.
+Five agent runs on the fixed 288-question evaluation set. The official score gives equal weight to Native3D, 3D→2D, and Pure2D. All values are on a 0–100 scale.
 
-Scores are computed from six-question task-unit means, then domain means, then an equal-weight mean of Native3D, 3D→2D, and Pure2D. All models use the same official scorer.
+![Five-model official scores](assets/leaderboard_overall.svg)
 
 | Model | MolStructBench Score | Native3D | 3D→2D | Pure2D |
-| --- | ---: | ---: | ---: | ---: |
+|---|---:|---:|---:|---:|
 | GPT-6 Astra | 98.78 | 100.00 | 97.40 | 98.96 |
 | Kimi K3 | 95.66 | 95.83 | 93.23 | 97.92 |
 | DeepSeek V4 Pro 0813 | 93.92 | 91.67 | 91.15 | 98.96 |
 | Qwen3.8-Max | 90.28 | 93.75 | 87.50 | 89.58 |
 | GLM-5.3-Max | 87.38 | 85.42 | 85.42 | 91.32 |
 
-Values are on a 0–100 scale. Deterministic, semantic, and micro averages are secondary metrics in [the complete results](examples/history/leaderboard.csv). The [48-task breakdown](examples/history/task_breakdown.csv) provides the detailed comparison.
+![Scores by structural domain](assets/leaderboard_domains.svg)
 
-These reference results use the packaged historical predictions and archived judge votes. Reproduce them without API calls:
+## Secondary metrics
 
-```bash
-python scripts/reproduce_history.py --output results/history
-```
+| Model | Deterministic | Semantic | Micro |
+|---|---:|---:|---:|
+| GPT-6 Astra | 100.00 | 96.30 | 98.61 |
+| Kimi K3 | 95.56 | 96.76 | 96.01 |
+| DeepSeek V4 Pro 0813 | 96.94 | 92.13 | 95.14 |
+| Qwen3.8-Max | 91.11 | 87.04 | 89.58 |
+| GLM-5.3-Max | 90.56 | 84.72 | 88.37 |
 
-See the [technical report](docs/technical_report.md) for methods and task-level analysis.
+See the [48-task breakdown](examples/history/task_breakdown.csv) and [technical report](docs/technical_report.md) for task-level analysis.

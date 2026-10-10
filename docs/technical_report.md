@@ -4,13 +4,13 @@ Technical report   ·   Version 1.0   ·   October 2026
 
 ## Abstract
 
-A model may recognize an amide yet point to the wrong atoms. It may describe a stereocenter correctly yet assign the wrong configuration. MolStructBench measures whether molecular knowledge survives this move from a general description to a specific structure. The benchmark contains 288 fixed questions across three structural domains: Native3D, 3D→2D, and Pure2D. Its 48 dataset–task units cover structure grounding, conformational geometry, molecular properties, and medicinal chemistry. Each unit contains six questions.
+MolStructBench evaluates how language models interpret molecular graphs and three-dimensional structures, use scientific tools, and ground their answers in specific atoms, bonds, and coordinates. The benchmark contains 288 fixed questions across Native3D, 3D→2D, and Pure2D. Its 48 dataset–task units cover structure grounding, conformational geometry, molecular properties, and medicinal chemistry, with six questions in each unit.
 
 The release includes the questions, complete gold answers, an official local scorer, and an optional OpenCode agent harness. Deterministic evaluation handles 180 questions; 108 use a frozen Qwen3.8-Max judge with three independent votes and median aggregation. Five archived model runs are scored by the same procedure. Their MolStructBench Scores range from 87.38 to 98.78 out of 100. All predictions and archived judge votes needed to reproduce these scores are included.
 
 ## 1 Benchmark design
 
-MolStructBench asks a practical question: can a language model read a molecular representation, apply the stated chemical rules, and return an answer grounded in the molecule it was given? Answers may be atom indices, bond endpoints, three-dimensional bounding boxes, a molecular identity, or a chemical explanation. The representation and the required output are part of the task contract.
+Each question supplies a molecular representation and a task with explicit chemical rules. The model returns atom indices, bond endpoints, three-dimensional bounding boxes, a molecular identity, or a chemical explanation. Evaluation checks both the scientific content and its connection to the supplied structure. The task contract defines the input representation, required facts, and output format.
 
 | Domain | Task units | Questions | Input emphasis |
 | --- | --- | --- | --- |
@@ -19,29 +19,27 @@ MolStructBench asks a practical question: can a language model read a molecular 
 | Pure2D | 24 | 144 | SMILES and indexed graphs |
 | Total | 48 | 288 | 153 English and 135 Chinese |
 
-The fixed selection was drawn from a 940-question development pool using molecular and task features, without solver scores, judge outcomes, token usage, or trajectories. In 44 units, the selection contains one easy, two medium, and three hard questions. Four knowledge and identification units instead contain two questions at each of three structural-complexity levels. Label, language, query, and chemical diversity also constrain selection. The released IDs and hashes make this selection explicit.
+We selected the 288 questions from a 940-question pool using intrinsic molecular and task features. In 44 units, the selection contains one easy, two medium, and three hard questions. Four knowledge and identification units contain two questions at each of three structural-complexity levels. Selection also balances labels, languages, query types, and chemical diversity. The fixed ID list defines the evaluation set.
 
-## 1 Benchmark design continued
+### Structural domains
 
 ### Native3D
 
-The eight Native3D units use explicit atom, bond, and coordinate records. They ask the model to locate functional groups, rotatable bonds, stereocenters, pharmacophore relations, and regions associated with hydrogen-bond contact or torsion changes. Grounding is scored against ordered spatial boxes, with a 0.01 Å tolerance where specified; stereocenter tasks also require the CIP label. A correct chemical label attached to the wrong region does not satisfy the task.
+The eight Native3D units use explicit atom, bond, and coordinate records. They ask the model to locate functional groups, rotatable bonds, stereocenters, pharmacophore relations, and regions associated with hydrogen-bond contact or torsion changes. Grounding is scored against ordered spatial boxes, with a 0.01 Å tolerance where specified. Stereocenter tasks also require the CIP label. Both the chemical identification and the spatial location contribute to correctness.
 
-The conformer-energy unit is a stored-energy comparison control. The source energies are supplied in the question, so the task measures correct comparison of those values. It does not require an electronic-structure calculation. This unit remains part of the official score.
+The conformer-energy unit is a stored-energy comparison control. Each question provides the source energies of two conformers and asks for the higher-energy conformer. The unit evaluates comparison of the supplied values and contributes to the official score.
 
 ### 3D to 2D and Pure2D
 
 The 16 units in 3D→2D work with molecular topology derived from three-dimensional source structures. They combine exact atom-level grounding with scaffold descriptions, functional-group questions, graph comparisons, and property explanations. Pure2D adds eight further units, including bond localization, ring-system grounding, parent standardization, molecular identification, and target or mechanism knowledge. The full catalog appears in the appendix.
 
-These are structured molecular inputs: text records, indexed graphs, SMILES, and coordinates. The three domains distinguish the structural information available to the model. The current release does not require a molecular image encoder. Chemical knowledge questions and structural localization questions therefore remain traceable to the same explicit molecular record.
+Inputs are supplied as text records, indexed graphs, SMILES, and coordinate tables. The three domains distinguish the structural information available to the model. Chemical explanations and localization answers can be checked against the atoms, bonds, and coordinates in the molecular record.
 
 ## 2 The agent harness
 
 The supplied harness retains the OpenCode CLI agent loop and exposes a single scientific_shell tool. A model can write a calculation, receive its result, revise its approach, and produce a final answer. The shell provides Python with RDKit, NumPy, SciPy, pandas, and NetworkX for graph analysis, geometry, descriptors, and numerical work. Profile A gives each solver the same public prompt, tool access, runtime policy, and output schema.
 
-Provider differences are confined to adapters for OpenAI-compatible Chat Completions, the Responses API, and local OpenAI-compatible endpoints such as a configured vLLM service. The model-facing scientific task does not change across adapters. The OpenCode integration requires native tool calling and explicitly rejects an interface that cannot support it. A local endpoint still needs a model and server configuration capable of continuing after tool results.
-
-## 2 The agent harness continued
+Provider adapters connect OpenAI-compatible Chat Completions, the Responses API, and local OpenAI-compatible endpoints such as a configured vLLM service. Each adapter presents the same scientific task and tools to the model. The OpenCode integration requires native tool calling and model continuation after tool results.
 
 ### Runtime and records
 
@@ -56,7 +54,7 @@ Each question runs in its own session and workspace. Scientific code executes in
 | Scientific tool timeout | 180 seconds |
 | API attempts | Up to 3 with finite backoff |
 
-Soft budget reminders occur at 18 model calls and 20 tool calls. Rate limits, server failures, and transport timeouts receive bounded retries. A wrong scientific answer or an error in model-written Python remains part of that attempt rather than becoming a reason to rerun the question. Checkpoints support resume after interruption. Predictions, execution records, tool statistics, and provider usage are written separately. Archived runs retain their original configuration and provenance; the table above describes the published harness settings.
+Soft budget reminders occur at 18 model calls and 20 tool calls. Rate limits, server failures, and transport timeouts receive bounded retries. Scientific answer errors and errors in model-written Python are recorded within the current attempt. Checkpoints support resume after interruption. The harness writes predictions, execution records, tool statistics, and provider usage as separate outputs. The table describes the published runtime policy; historical runs retain their original configurations and provenance.
 
 ## 3 Official scoring
 
@@ -64,17 +62,15 @@ Soft budget reminders occur at 18 model calls and 20 tool calls. Rate limits, se
 
 The deterministic scorer checks the public task contract against complete gold and accepted variants. Depending on the task, this means comparing atom sets, sets of atom groups, bond indices or endpoints, canonical structures, class labels, names, or spatial boxes. If the contract permits multiple valid targets, the accepted set records those alternatives. The rules apply to every model through one scorer.
 
-The parser prioritizes the final answer and supports JSON, fenced JSON, tables, and natural-language wrappers. It normalizes equivalent forms and removes duplicate expressions of the same result. Candidate indices, coordinates, or R/S labels in an analysis section must not contaminate a later final conclusion. Contradictions inside the final answer are preserved for scoring. Molecular names accept the documented synonyms, including ordinary bilingual and parenthetical forms.
+The parser extracts the final answer from JSON, fenced JSON, tables, and natural-language wrappers. It normalizes equivalent forms and deduplicates repeated results. Final-answer extraction separates the submitted conclusion from candidate indices, coordinates, and R/S labels discussed earlier. Contradictions within the submitted conclusion remain part of the scored answer. Molecular names accept documented synonyms, including bilingual and parenthetical forms.
 
-Molecular identity tasks first use deterministic name and identity matching. An eligible unresolved identity can then use the same frozen three-vote judging procedure. This fallback accepts chemically equivalent naming without turning a single spelling into the only valid answer.
-
-## 3 Official scoring continued
+Molecular identity tasks first use deterministic name and identity matching. Eligible unresolved identities use the frozen three-vote judging procedure to assess chemical equivalence across naming conventions.
 
 ### Semantic evaluation
 
 The semantic judge receives the question, task specification, structured reference facts, frozen public evidence, and the final answer. It receives no solver identity, reasoning trace, or tool history. Qwen3.8-Max is anonymized in exactly the same way when its own solver answers are judged.
 
-The judge evaluates the task contract. A reference answer is non-exhaustive unless the task explicitly defines a closed ontology. Chemically equivalent descriptions and synonyms are accepted, and an additional scientifically correct fact is not penalized merely because it is absent from the reference. A contradiction with a required fact or an omitted required part lowers the grade.
+The judge evaluates the task contract using the structured reference facts. Reference answers allow other valid expressions of the same chemistry; tasks with a closed ontology specify that restriction explicitly. The judge accepts chemically equivalent descriptions, synonyms, and additional scientifically correct facts. Contradictions with required facts and omissions of required content lower the grade.
 
 | Judge setting | Frozen value |
 | --- | --- |
@@ -85,21 +81,21 @@ The judge evaluates the task contract. A reference answer is non-exhaustive unle
 | Votes | 3 independent requests |
 | Grade | 0 incorrect · 1 partial · 2 fully correct |
 
-Each vote is scaled from 0/1/2 to 0/0.5/1, and the median of the three votes is the sample score. Requests and cached results are checked against the judge identity, prompt, parameters, and anonymous-input hashes. Failed requests stay pending and can be resumed; they do not become zero grades. A complete official score requires all necessary votes.
+Each vote is scaled from 0/1/2 to 0/0.5/1, and the median of the three votes is the sample score. Judge requests and cached votes carry hashes of the model configuration, prompt, and anonymous input. Unsuccessful API requests remain pending for resume. Aggregation starts when every required vote is available.
 
 ### Aggregation
 
 First, the scorer averages the six sample scores within each dataset–task unit. It then averages the unit scores within each domain. The final MolStructBench Score is 100 times the equal-weight mean of the Native3D, 3D→2D, and Pure2D domain scores. Each domain therefore contributes one third of the headline score, although their question counts differ.
 
-Deterministic, semantic, and micro averages are secondary metrics. They answer different diagnostic questions and do not replace the official aggregation. Partial semantic credit also means that a score expressed out of 100 is not a simple count of fully correct answers.
+Deterministic and semantic averages summarize the two scoring methods. The micro average gives equal weight to each question. These secondary metrics accompany the official domain-weighted score. Scores on the 0–100 scale include partial semantic credit.
 
 ### Scoring reproducibility
 
-The release pins the data selection, evaluator, accepted variants, judge template, and configuration with file hashes. Historical judge inputs use the archived public-evidence snapshot, preserving the original request identity across local dependency versions. Offline replay validates the original votes and computes scores from predictions and votes. Expected result files serve only as comparison assertions.
+The data selection, evaluator, accepted variants, judge template, and configuration are versioned together. Historical replay reads the packaged predictions, judge inputs, and completed votes, computes each sample grade, and applies the official aggregation. The same scorer produces the reference leaderboard and scores new prediction files.
 
 ## 4 Five model results
 
-Table 1 reports five archived agent runs on the same 288 selected questions, evaluated with the official scorer. The release uses their existing answers and completed judge votes; preparing the release did not call the five solvers again. All 1,440 predictions are present, all 1,665 required votes are complete, and no score is pending. The vote total includes three votes for each of 540 semantic answers and 45 votes for 15 molecular-identity fallbacks.
+Five agent runs were evaluated on the same 288 questions with the official scorer. The results comprise 1,440 predictions and 1,665 completed judge votes: three votes for each of 540 semantic answers, plus 45 votes for 15 molecular-identity fallbacks. Table 1 reports the official scores and domain breakdown.
 
 Table 1   Official scores and domain breakdown on a 0 to 100 scale
 
@@ -125,40 +121,50 @@ Table 2   Secondary metrics on a 0 to 100 scale
 
 The secondary metrics help locate the source of a difference. DeepSeek scores 96.94 on deterministic tasks and 92.13 on semantic tasks; Kimi scores 95.56 and 96.76, respectively. The headline score also depends on where those results fall across the three equally weighted domains. The released per-question records and 48-unit breakdown allow readers to examine that structure directly.
 
+### Performance across structural domains
+
+Figure 1   Scores for the five reference models across Native3D, 3D→2D, and Pure2D. Each bar is the mean of the task-unit scores in that domain, on a 0–100 scale.
+
+![Scores across structural domains](../assets/leaderboard_domains.svg)
+
+Performance differs across structural representations. The Native3D scores range from 85.42 to 100, the 3D→2D scores from 85.42 to 97.40, and the Pure2D scores from 89.58 to 98.96. These domain means summarize localization and reasoning tasks with different inputs. The equal-weight aggregation gives each domain the same contribution to the final score.
+
+Astra leads on Native3D and 3D→2D and ties DeepSeek on Pure2D. Kimi exceeds DeepSeek on both Native3D and 3D→2D, while DeepSeek scores higher on Pure2D. Qwen scores higher than GLM on Native3D and 3D→2D; GLM scores higher on Pure2D. The 48-task breakdown resolves these domain differences into specific chemical and structural tasks.
+
 ## 5 What the task breakdown reveals
 
 ### Strict rotatable bonds
 
-The Native3D rotatable-bond grounding unit gives a sharp example of contract-sensitive chemistry. Astra answers all six questions correctly, Kimi four, and the other three models three each. A plausible flexible bond is not necessarily a rotatable bond under the stated strict definition. The model must select the right bond and localize it in space. A broader intuition about molecular flexibility cannot substitute for the requested criterion.
+In Native3D rotatable-bond grounding, Astra answers all six questions correctly, Kimi four, and the other three models three each. The unit uses a strict rotatable-bond definition and requires spatial localization of the selected bond. Applying that definition to the molecular graph is a substantial part of the task.
 
 ### Scaffold boundaries
 
-The 3D→2D scaffold-core grounding unit separates recognition from exact membership. Astra and DeepSeek score 100, GLM 83.33, Kimi 66.67, and Qwen 33.33. Calling a molecule a member of the right scaffold family does not establish which indexed atoms belong to its core. Exocyclic atoms, fused rings, and substituent attachment points make these boundaries consequential.
+In 3D→2D scaffold-core grounding, Astra and DeepSeek score 100, GLM 83.33, Kimi 66.67, and Qwen 33.33. Answers must identify the exact indexed atoms belonging to the scaffold core. Exocyclic atoms, fused rings, and substituent attachment points make the core boundary sensitive to the chemical definition used.
 
 ### Hydrogen bond explanations
 
-In the 3D→2D hydrogen-bond source explanation unit, scores range from 58.33 to 100. Naming a nitrogen or oxygen atom is only the start: the answer must account for donor or acceptor behavior in its actual chemical environment. Protonation, resonance, and functional-group context can change that role. This unit requires an explanation grounded in the supplied structure, rather than a generic list of heteroatoms.
+In the 3D→2D hydrogen-bond source explanation unit, scores range from 58.33 to 100. The answer must explain donor and acceptor behavior in the atom’s chemical environment. Protonation, resonance, and functional-group context can change that role. The unit tests whether a model connects those chemical factors to the supplied structure.
 
 ### Molecular identity
 
-Pure2D molecular identification produces another substantial spread: Astra scores 100 and Qwen 33.33. Two Qwen answers illustrate the difficulty. A glasdegib structure was identified as WAY-267464, and cefixime was identified as ceftibuten. These are different compounds rather than alternative names for the same molecule. Familiar structural motifs can suggest a drug family while still leading to the wrong molecular identity.
+Pure2D molecular identification shows a substantial spread: Astra scores 100 and Qwen 33.33. In two Qwen answers, glasdegib was identified as WAY-267464 and cefixime as ceftibuten. Both answers named a different compound. These cases show how recognition of familiar structural motifs can lead to an incorrect molecular identity.
 
 ### Computing and then using the result
 
-A pairwise property answer from Qwen recognized that both structures had zero rotatable bonds under the strict rule, then used broader counts of three and one to declare A more rotatable. The final comparison no longer followed the task definition. This failure is informative because access to a calculation alone would not fix it: the model also has to carry the correct definition into its conclusion.
+A pairwise property answer from Qwen recognized that both structures had zero rotatable bonds under the strict rule, then used broader counts of three and one to declare A more rotatable. The final comparison used a different definition from the question. This case tests whether the model carries the specified chemical rule through its calculation and into the final decision.
 
-These examples show why MolStructBench combines explanation with grounding and exact comparison. Chemical vocabulary, structural membership, and the final decision are separately observable. The aggregate ranking is useful, but the task breakdown reveals what a model actually handled well and where its interpretation changed along the way.
+The task-level results distinguish chemical explanation, structural membership, and the final decision. Exact localization exposes boundary errors; property comparisons reveal how a model applies a chemical definition; molecular identification tests whether a complete structure supports the proposed name. Together, these records provide a concrete account of performance across the benchmark.
 
 ## 6 Open source release and reproduction
 
-MolStructBench uses an open-gold release model. The repository includes all public questions, complete gold, accepted variants, the task catalog, the deterministic evaluator, the judge prompt and configuration, and the official aggregation. The dataset is consequently a public benchmark rather than a hidden test set. Solver execution and scoring remain separate stages even though both sets of assets are distributed together.
+MolStructBench publishes its questions and gold answers together. The repository includes accepted variants, the task catalog, the deterministic evaluator, the judge prompt and configuration, and the official aggregation. Researchers can inspect the scientific targets and run the scorer locally. During evaluation, the solver reads the question inputs and the scorer loads the gold in a separate stage.
 
 | Edition | Included components |
 | --- | --- |
 | With harness | Data, gold, local scorer, OpenCode agent, scientific_shell |
 | Without harness | The same data, gold, and local scorer for an external runner |
 
-Both editions produce the same official score for the same prediction file. The version without a harness lets researchers connect another framework while keeping the task inputs and scoring protocol fixed. Results from different tool or runtime profiles should identify that profile alongside the model and benchmark version.
+Both editions produce the same official score for the same prediction file. The core edition connects to external model or agent frameworks through the standard prediction format. The full edition supplies the OpenCode runner and Profile A scientific tool environment. Reporting the model, benchmark version, and execution profile identifies the experimental setup.
 
 ### Running and scoring locally
 
@@ -177,7 +183,7 @@ molstructbench score --predictions runs/model/predictions.jsonl \
   --output scores/model
 ```
 
-Scoring runs on the user’s machine. Deterministic checks are local, and semantic requests use the user’s DashScope key. No maintainer scoring service or submission token is required. Resume and validated judge caches avoid repeating completed work. The scorer writes final_results.json, per-sample scores, the three-domain and 48-task breakdowns, and judge usage statistics.
+Scoring runs locally, with semantic requests authenticated by the user’s DashScope key. Checkpoints and judge caches retain completed votes for resume. The scorer writes final_results.json, per-sample scores, the three-domain and 48-task breakdowns, and judge usage statistics.
 
 ### Reproducing the reference leaderboard
 
@@ -188,11 +194,11 @@ python scripts/gold_selftest.py
 python scripts/reproduce_history.py --output results/history
 ```
 
-The historical replay is fully offline. It uses the packaged predictions and original judge votes, checks their hashes, and reproduces all five model scores without solver or judge API calls. Automated release checks cover the fixed 288 IDs, the 48-unit catalog, 180 deterministic gold self-tests, parsing regressions, and score consistency.
+Historical replay runs offline using the packaged predictions and completed judge votes. The commands above check the dataset, run the test suite, verify all 180 deterministic gold answers, and reproduce the five-model leaderboard.
 
-## 7 Scientific scope
+## 7 Task contracts in practice
 
-MolStructBench focuses on molecular structure understanding and grounding with a bounded scientific tool workflow. Property and medicinal-chemistry questions evaluate the stated structural criteria and supporting explanations. For example, the metabolic-liability contract defines a long alkyl chain as at least five consecutive non-ring sp3 carbon atoms. A path through a saturated ring does not satisfy that condition. This precision keeps the gold, prompt, and evaluator aligned.
+Task contracts specify the chemical interpretation used in scoring. For example, the metabolic-liability contract defines a long alkyl chain as at least five consecutive non-ring sp3 carbon atoms. The model must check atom type, hybridization, ring membership, and connectivity to identify a qualifying chain. The question, gold facts, and evaluator use this same definition.
 
 The benchmark’s public representations make it possible to inspect an answer against atoms, bonds, and coordinates. They also make the failure cases interpretable: a wrong atom set, a reversed comparison, an unsupported identity, or an explanation that contradicts the molecule. The stored-energy control has a deliberately simpler role within that task set. Every unit keeps its declared scoring contract and official weight.
 
@@ -202,7 +208,7 @@ MolStructBench brings molecular explanations and structural localization into on
 
 ## Implementation references
 
-The engineering follows the separation of task data, execution, prediction artifacts, and evaluation used in established benchmark repositories. OpenCode supplies the agent loop. AstaBench, SWE-bench, MLE-bench, and the LM Evaluation Harness offer related reference implementations for scientific agents, executable environments, submission records, and common model interfaces.
+OpenCode supplies the agent loop. The implementation separates task data, execution, prediction artifacts, and evaluation, following the organization of established benchmark repositories. AstaBench, SWE-bench, MLE-bench, and the LM Evaluation Harness provide reference implementations for scientific agents, executable environments, prediction records, and common model interfaces.
 
 - [OpenCode](https://github.com/anomalyco/opencode)
 

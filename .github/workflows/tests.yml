@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update && sudo apt-get install -y python3.10-venv bubblewrap curl
-      # The tool sandbox exposes /usr; use its Python rather than /opt toolcache.
+      # Use Ubuntu system Python so the tool sandbox can access its interpreter.
       - run: env PATH=/usr/bin:/bin bash scripts/install_environment.sh
       - run: .runtime/venv/bin/python -m unittest discover -s tests -v
       - run: .runtime/venv/bin/python scripts/gold_selftest.py
